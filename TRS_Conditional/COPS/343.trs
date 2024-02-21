@@ -1,0 +1,7 @@
+(VAR x y z )
+(RULES 
+        add(x,0) -> x
+        add(x,s(y)) -> s(z) | add(x,y) -> z
+        
+)
+    

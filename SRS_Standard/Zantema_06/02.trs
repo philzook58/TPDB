@@ -1,0 +1,8 @@
+(VAR x1 )
+(RULES 
+        a(p(x1)) -> p(a(A(x1)))
+        a(A(x1)) -> A(a(x1))
+        p(A(A(x1))) -> a(p(x1))
+        
+)
+    

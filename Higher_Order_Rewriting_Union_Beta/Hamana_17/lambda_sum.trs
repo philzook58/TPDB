@@ -1,0 +1,101 @@
+
+(HO-SIGNATURE 
+
+        F: 
+A
+ -> 
+B
+ 
+        Y: 
+A
+ 
+        U: 
+arrAB
+ 
+        V: 
+A
+ 
+        I: 
+A
+ -> 
+C
+ 
+        J: 
+B
+ -> 
+C
+ 
+        X1: 
+B
+ 
+        Z1: 
+A
+ -> 
+C
+ 
+        G1: 
+B
+ -> 
+C
+ 
+        
+        app: [  ] --> 
+arrAB
+ -> 
+A
+ -> 
+B
+ 
+	case: [  ] --> 
+SAB
+ ->  (
+A
+ -> 
+C
+) ->  (
+B
+ -> 
+C
+) -> 
+C
+ 
+	inl: [  ] --> 
+A
+ -> 
+SAB
+ 
+	inr: [  ] --> 
+B
+ -> 
+SAB
+ 
+	lam: [  ] -->  (
+A
+ -> 
+B
+) -> 
+arrAB
+ 
+	
+)
+    
+(RULES 
+        (@ (@ app (@ lam \%X:
+A
+.(@ F %X ) ) ) Y ) -> (@ F Y )
+        (@ lam \%Y:
+A
+.(@ (@ app U ) %Y ) ) -> U
+        (@ (@ (@ case (@ inl V ) ) \%U:
+A
+.(@ I %U ) ) \%Z:
+B
+.(@ J %Z ) ) -> (@ I V )
+        (@ (@ (@ case (@ inr X1 ) ) \%W:
+A
+.(@ Z1 %W ) ) \%V:
+B
+.(@ G1 %V ) ) -> (@ G1 X1 )
+        
+)
+    

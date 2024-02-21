@@ -1,0 +1,7 @@
+(VAR x xs y ys )
+(RULES 
+        isnoc(cons(y,nil)) -> tp2(nil,y)
+        isnoc(cons(x,ys)) -> tp2(cons(x,xs),y) | isnoc(ys) -> tp2(xs,y)
+        
+)
+    

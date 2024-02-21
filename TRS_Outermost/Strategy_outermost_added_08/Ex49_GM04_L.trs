@@ -1,0 +1,15 @@
+(VAR X Y )
+(STRATEGY OUTERMOST)
+(RULES 
+        if(true) -> X
+        if(false) -> Y
+        minus -> 0
+        minus -> minus
+        geq -> true
+        geq -> false
+        geq -> geq
+        div(0) -> 0
+        div(s(X)) -> if(geq)
+        
+)
+    

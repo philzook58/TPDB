@@ -1,0 +1,10 @@
+(VAR x )
+(STRATEGY OUTERMOST)
+(RULES 
+        f(h(x)) -> f(i(x))
+        h(x) -> f(h(x))
+        i(x) -> h(x)
+        f(i(x)) -> a
+        
+)
+    

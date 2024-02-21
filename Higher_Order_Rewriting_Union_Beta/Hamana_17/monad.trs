@@ -1,0 +1,64 @@
+
+(HO-SIGNATURE 
+
+        X: 
+a
+ 
+        Z: 
+a
+ -> 
+Ta
+ 
+        U: 
+Ta
+ 
+        V: 
+Ta
+ 
+        I: 
+a
+ -> 
+Ta
+ 
+        J: 
+a
+ -> 
+Ta
+ 
+        
+        bind: [  ] --> 
+Ta
+ ->  (
+a
+ -> 
+Ta
+) -> 
+Ta
+ 
+	return: [  ] --> 
+a
+ -> 
+Ta
+ 
+	
+)
+    
+(RULES 
+        (@ (@ bind (@ return X ) ) \%X:
+a
+.(@ Z %X ) ) -> (@ Z X )
+        (@ (@ bind U ) \%Y:
+a
+.(@ return %Y ) ) -> U
+        (@ (@ bind (@ (@ bind V ) \%U:
+a
+.(@ I %U ) ) ) \%Z:
+a
+.(@ J %Z ) ) -> (@ (@ bind V ) \%W:
+a
+.(@ (@ bind (@ I %W ) ) \%V:
+a
+.(@ J %V ) ) )
+        
+)
+    

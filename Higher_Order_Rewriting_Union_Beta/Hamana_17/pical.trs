@@ -1,0 +1,146 @@
+
+(HO-SIGNATURE 
+
+        X: 
+A
+ 
+        Y: 
+A
+ 
+        G: 
+N
+ -> 
+A
+ 
+        H: 
+N
+ -> 
+A
+ 
+        W: 
+N
+ 
+        J: 
+N
+ -> 
+A
+ 
+        X1: 
+N
+ 
+        Y1: 
+N
+ 
+        G1: 
+N
+ -> 
+A
+ 
+        V1: 
+N
+ 
+        I1: 
+N
+ -> 
+N
+ -> 
+A
+ 
+        J1: 
+N
+ -> 
+A
+ 
+        F2: 
+N
+ -> 
+N
+ -> 
+A
+ 
+        
+        NIL: [  ] --> 
+A
+ 
+	in: [  ] --> 
+N
+ ->  (
+N
+ -> 
+A
+) -> 
+A
+ 
+	new: [  ] -->  (
+N
+ -> 
+A
+) -> 
+A
+ 
+	out: [  ] --> 
+N
+ -> 
+N
+ -> 
+A
+ -> 
+A
+ 
+	sum: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	tau: [  ] --> 
+A
+ -> 
+A
+ 
+	
+)
+    
+(RULES 
+        (@ (@ sum NIL ) X ) -> X
+        (@ new \%X:
+N
+.Y ) -> Y
+        (@ new \%Y:
+N
+.(@ (@ sum (@ G %Y ) ) (@ H %Y ) ) ) -> (@ (@ sum (@ new \%U:
+N
+.(@ G %U ) ) ) (@ new \%Z:
+N
+.(@ H %Z ) ) )
+        (@ new \%V:
+N
+.(@ (@ (@ out %V ) W ) (@ J %V ) ) ) -> NIL
+        (@ new \%W:
+N
+.(@ (@ (@ out X1 ) Y1 ) (@ G1 %W ) ) ) -> (@ (@ (@ out X1 ) Y1 ) (@ new \%F:
+N
+.(@ G1 %F ) ) )
+        (@ new \%H:
+N
+.(@ (@ in V1 ) \%G:
+N
+.(@ (@ I1 %H ) %G ) ) ) -> (@ (@ in V1 ) \%I:
+N
+.(@ new \%J:
+N
+.(@ (@ I1 %J ) %I ) ) )
+        (@ new \%P:
+N
+.(@ tau (@ J1 %P ) ) ) -> (@ tau (@ new \%Q:
+N
+.(@ J1 %Q ) ) )
+        (@ new \%S:
+N
+.(@ (@ in %S ) \%R:
+N
+.(@ (@ F2 %S ) %R ) ) ) -> NIL
+        
+)
+    

@@ -1,0 +1,38 @@
+
+(HO-SIGNATURE 
+
+        X: ArrNN 
+        Z: N -> N -> ArrNN 
+        U: N 
+        V: N 
+        W: ArrNN 
+        P: N 
+        F1: N -> ArrNN 
+        Y1: N 
+        U1: ArrNN 
+        V1: N 
+        I1: N -> N -> ArrNN 
+        P1: N 
+        X2: N 
+        Z2: N -> ArrNN 
+        U2: N 
+        
+        get: [  ] -->  (N -> ArrNN) -> ArrNN 
+	put: [  ] --> N -> ArrNN -> ArrNN 
+	return: [  ] --> N -> ArrNN 
+	sub: [  ] -->  (N -> ArrNN) -> N -> ArrNN 
+	
+)
+    
+(RULES 
+        (@ get \pX:N.(@ (@ put pX ) X ) ) -> X
+        (@ get \pY:N.(@ get \pZ:N.(@ (@ Z pZ ) pY ) ) ) -> (@ get \pU:N.(@ (@ Z pU ) pU ) )
+        (@ (@ put U ) (@ (@ put V ) W ) ) -> (@ (@ put V ) W )
+        (@ (@ put P ) (@ get \pV:N.(@ F1 pV ) ) ) -> (@ (@ put P ) (@ (@ sub \pW:N.(@ F1 pW ) ) P ) )
+        (@ (@ sub \pF:N.(@ return pF ) ) Y1 ) -> (@ return Y1 )
+        (@ (@ sub \pG:N.U1 ) V1 ) -> U1
+        (@ (@ sub \pH:N.(@ get \pI:N.(@ (@ I1 pI ) pH ) ) ) P1 ) -> (@ get \pP:N.(@ (@ sub \pJ:N.(@ (@ I1 pP ) pJ ) ) P1 ) )
+        (@ (@ sub \pQ:N.(@ (@ put X2 ) (@ Z2 pQ ) ) ) U2 ) -> (@ (@ put X2 ) (@ (@ sub \pR:N.(@ Z2 pR ) ) U2 ) )
+        
+)
+    

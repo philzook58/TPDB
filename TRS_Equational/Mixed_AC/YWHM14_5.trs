@@ -1,0 +1,10 @@
+(VAR x )
+(THEORY 
+        (AC plus) 
+)
+(RULES 
+        plus(f(x),g(x)) -> plus(g(x),plus(g(x),g(x)))
+        f(x) -> plus(g(x),a)
+        
+)
+    

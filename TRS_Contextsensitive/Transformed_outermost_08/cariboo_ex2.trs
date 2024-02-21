@@ -1,0 +1,19 @@
+(VAR x x0 y z )
+(STRATEGY CONTEXTSENSITIVE
+        (cons_1 ) 
+        (big_0 ) 
+        (cons_0 1 2) 
+        (*top*_0 1) 
+        (inf_1 ) 
+        (s_0 1) 
+)
+(RULES 
+        cons_1(x,cons_1(y,z)) -> big_0
+        cons_1(x,cons_0(y,z)) -> big_0
+        *top*_0(inf_1(x)) -> *top*_0(cons_0(x,inf_1(s_0(x))))
+        s_0(inf_1(x)) -> s_0(cons_0(x,inf_1(s_0(x))))
+        cons_0(inf_1(x),x0) -> cons_0(cons_0(x,inf_1(s_0(x))),x0)
+        cons_0(x0,inf_1(x)) -> cons_1(x0,cons_0(x,inf_1(s_0(x))))
+        
+)
+    

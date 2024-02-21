@@ -1,0 +1,26 @@
+(VAR X Y )
+(STRATEGY CONTEXTSENSITIVE
+        (gt 1 2) 
+        (0 ) 
+        (false ) 
+        (s 1) 
+        (true ) 
+        (p 1) 
+        (if 1) 
+        (minus 1 2) 
+        (div 1 2) 
+)
+(RULES 
+        gt(0,Y) -> false
+        gt(s(X),0) -> true
+        gt(s(X),s(Y)) -> gt(X,Y)
+        p(0) -> 0
+        p(s(X)) -> X
+        if(true,X,Y) -> X
+        if(false,X,Y) -> Y
+        minus(X,Y) -> if(gt(Y,0),minus(p(X),p(Y)),X)
+        div(0,s(Y)) -> 0
+        div(s(X),s(Y)) -> s(div(minus(X,Y),s(Y)))
+        
+)
+    

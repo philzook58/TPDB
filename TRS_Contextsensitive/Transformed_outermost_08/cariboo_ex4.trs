@@ -1,0 +1,14 @@
+(VAR x )
+(STRATEGY CONTEXTSENSITIVE
+        (f_1 ) 
+        (h_0 1) 
+        (i_1 ) 
+        (a_0 ) 
+)
+(RULES 
+        f_1(h_0(x)) -> f_1(i_1(x))
+        f_1(i_1(x)) -> a_0
+        i_1(x) -> h_0(x)
+        
+)
+    

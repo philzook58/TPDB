@@ -1,0 +1,8 @@
+(VAR x )
+(STRATEGY OUTERMOST)
+(RULES 
+        +(1,x) -> +(+(0,1),x)
+        +(0,x) -> x
+        
+)
+    

@@ -1,0 +1,18 @@
+(VAR x )
+(STRATEGY CONTEXTSENSITIVE
+        (f_1 ) 
+        (h_1 ) 
+        (i_1 ) 
+        (*top*_0 1) 
+        (f_0 1) 
+)
+(RULES 
+        f_1(h_1(x)) -> f_1(i_1(x))
+        h_1(x) -> f_1(h_1(x))
+        *top*_0(f_1(i_1(x))) -> *top*_0(x)
+        f_0(f_1(i_1(x))) -> f_1(x)
+        f_1(i_1(x)) -> x
+        i_1(x) -> h_1(x)
+        
+)
+    

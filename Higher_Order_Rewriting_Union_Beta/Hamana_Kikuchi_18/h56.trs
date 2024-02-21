@@ -1,0 +1,116 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+b
+ -> 
+b
+ 
+        Y: 
+b
+ 
+        G: 
+a
+ -> 
+b
+ -> 
+b
+ 
+        V: 
+b
+ 
+        W: 
+a
+ 
+        P: 
+b
+ 
+        F1: 
+a
+ -> 
+b
+ -> 
+b
+ 
+        Y1: 
+a
+ 
+        G1: 
+b
+ -> 
+b
+ 
+        V1: 
+b
+ 
+        
+        cons: [ 
+a
+ , 
+b
+ ] --> 
+b
+ 
+	foldr: [ 
+a
+ -> 
+b
+ -> 
+b
+ , 
+b
+ , 
+b
+ ] --> 
+b
+ 
+	nil: [  ] --> 
+b
+ 
+	xap: [ 
+a
+ -> 
+b
+ -> 
+b
+ , 
+a
+ ] --> 
+b
+ -> 
+b
+ 
+	yap: [ 
+b
+ -> 
+b
+ , 
+b
+ ] --> 
+b
+ 
+	
+)
+    
+(RULES 
+        foldr(\%X:
+a
+.\%Y:
+b
+.yap(xap(F,%X),%Y),Y,nil) -> Y
+        foldr(\%Z:
+a
+.\%U:
+b
+.yap(xap(G,%Z),%U),V,cons(W,P)) -> yap(xap(G,W),foldr(\%V:
+a
+.\%W:
+b
+.yap(xap(G,%V),%W),V,P))
+        xap(F1,Y1) -> (@ F1 Y1 )
+        yap(G1,V1) -> (@ G1 V1 )
+        
+)
+    

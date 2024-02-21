@@ -1,0 +1,31 @@
+(VAR a b c d r x y )
+(STRATEGY INNERMOST)
+(RULES 
+        plus(0,y) -> y
+        plus(s(x),y) -> s(plus(x,y))
+        times(0,y) -> 0
+        times(s(x),y) -> plus(y,times(x,y))
+        eq_nat(0,s(y)) -> false
+        eq_nat(0,0) -> true
+        eq_nat(s(x),s(y)) -> eq_nat(x,y)
+        eq_nat(s(x),0) -> false
+        eq_rat(pair(a,b),pair(c,d)) -> eq_nat(times(a,d),times(b,c))
+        div_rat(pair(a,b),pair(c,d)) -> pair(times(a,d),times(b,c))
+        times_rat(pair(a,b),pair(c,d)) -> pair(times(a,c),times(b,d))
+        plus_rat(pair(a,b),pair(c,d)) -> pair(plus(times(a,d),times(c,b)),times(b,d))
+        non_zero_rat(pair(a,b)) -> non_zero_nat(times(a,b))
+        non_zero_nat(s(0)) -> true
+        non_zero_nat(0) -> false
+        non_zero_nat(s(s(x))) -> non_zero_nat(s(x))
+        2 -> pair(s(s(0)),s(0))
+        minus_nat(s(x),s(y)) -> minus_nat(x,y)
+        sqrt2(r) -> if_approx(non_zero_rat(r),eq_rat(2,times_rat(r,r)),r)
+        if_approx(true,true,r) -> r
+        if_approx(true,false,r) -> sqrt2(div_rat(plus_rat(r,div_rat(2,r)),2))
+        init -> sqrt2(2)
+        cc(x,y) -> x
+        cc(x,y) -> y
+        f(aa) -> f(cc(aa,init))
+        
+)
+    

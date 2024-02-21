@@ -1,0 +1,10 @@
+(VAR x1 )
+(RULES 
+        a(s(x1)) -> s(s(s(p(s(b(p(p(s(s(x1))))))))))
+        b(s(x1)) -> s(s(s(p(p(s(s(c(p(s(p(s(x1))))))))))))
+        c(s(x1)) -> p(s(p(s(a(p(s(p(s(x1)))))))))
+        p(p(s(x1))) -> p(x1)
+        p(s(x1)) -> x1
+        
+)
+    

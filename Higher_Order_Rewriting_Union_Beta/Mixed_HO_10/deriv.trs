@@ -1,0 +1,115 @@
+
+(HO-SIGNATURE 
+
+        y: 
+real
+ 
+        F: 
+real
+ -> 
+real
+ 
+        G: 
+real
+ -> 
+real
+ 
+        
+        0: [  ] --> 
+real
+ 
+	1: [  ] --> 
+real
+ 
+	-: [ 
+real
+ ] --> 
+real
+ 
+	sin: [ 
+real
+ ] --> 
+real
+ 
+	cos: [ 
+real
+ ] --> 
+real
+ 
+	ln: [ 
+real
+ ] --> 
+real
+ 
+	+: [ 
+real
+ , 
+real
+ ] --> 
+real
+ 
+	*: [ 
+real
+ , 
+real
+ ] --> 
+real
+ 
+	/: [ 
+real
+ , 
+real
+ ] --> 
+real
+ 
+	der: [ 
+real
+ -> 
+real
+ ] --> 
+real
+ -> 
+real
+ 
+	
+)
+    
+(RULES 
+        der(\x:
+real
+.y) -> \x:
+real
+.0
+        der(\x:
+real
+.x) -> \x:
+real
+.1
+        der(\x:
+real
+.sin(x)) -> \x:
+real
+.cos(x)
+        der(\x:
+real
+.cos(x)) -> \x:
+real
+.-(sin(x))
+        der(\x:
+real
+.+((@ F x ),(@ G x ))) -> \x:
+real
+.+((@ der(F) x ),(@ der(G) x ))
+        der(\x:
+real
+.*((@ F x ),(@ G x ))) -> \x:
+real
+.+(*((@ der(F) x ),(@ G x )),*((@ F x ),(@ der(G) x )))
+        der(\x:
+real
+.ln((@ F x ))) -> \x:
+real
+./((@ der(F) x ),(@ F x ))
+        
+)
+    

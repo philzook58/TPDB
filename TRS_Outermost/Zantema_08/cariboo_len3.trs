@@ -1,0 +1,8 @@
+(VAR x xs y z )
+(STRATEGY OUTERMOST)
+(RULES 
+        cons(x,cons(y,cons(z,xs))) -> big
+        inf(x) -> cons(x,inf(s(x)))
+        
+)
+    

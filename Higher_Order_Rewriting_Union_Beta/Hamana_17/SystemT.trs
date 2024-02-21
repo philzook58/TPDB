@@ -1,0 +1,94 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+b
+ 
+        Y: 
+a
+ 
+        U: 
+arrab
+ 
+        V: 
+a
+ 
+        I: 
+Nat
+ -> 
+a
+ -> 
+a
+ 
+        P: 
+Nat
+ 
+        X1: 
+a
+ 
+        Z1: 
+Nat
+ -> 
+a
+ -> 
+a
+ 
+        
+        app: [  ] --> 
+arrab
+ -> 
+a
+ -> 
+b
+ 
+	lam: [  ] -->  (
+a
+ -> 
+b
+) -> 
+arrab
+ 
+	rec: [  ] --> 
+Nat
+ -> 
+a
+ ->  (
+Nat
+ -> 
+a
+ -> 
+a
+) -> 
+a
+ 
+	succ: [  ] --> 
+Nat
+ -> 
+Nat
+ 
+	zero: [  ] --> 
+Nat
+ 
+	
+)
+    
+(RULES 
+        (@ (@ app (@ lam \%X:
+a
+.(@ F %X ) ) ) Y ) -> (@ F Y )
+        (@ lam \%Y:
+a
+.(@ (@ app U ) %Y ) ) -> U
+        (@ (@ (@ rec zero ) V ) \%Z:
+Nat
+.(@ I %Z ) ) -> V
+        (@ (@ (@ rec (@ succ P ) ) X1 ) \%U:
+Nat
+.(@ Z1 %U ) ) -> (@ (@ Z1 P ) (@ (@ (@ rec P ) X1 ) \%V:
+Nat
+.(@ Z1 %V ) ) )
+        
+)
+    

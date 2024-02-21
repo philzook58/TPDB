@@ -1,0 +1,39 @@
+
+(HO-SIGNATURE 
+
+        X: 
+o
+ -> 
+o
+ 
+        Y: 
+o
+ 
+        
+        fapp: [ 
+o
+ , 
+o
+ ] --> 
+o
+ 
+	lam: [ 
+o
+ -> 
+o
+ ] --> 
+o
+ 
+	h: [ 
+o
+ ] --> 
+o
+ 
+	
+)
+    
+(RULES 
+        fapp(lam(X),Y) -> (@ X h(Y) )
+        
+)
+    

@@ -1,0 +1,9 @@
+(VAR x )
+(RULES 
+        a -> b
+        g(x,x) -> h(x)
+        h(x) -> i(x)
+        f(x) -> A | x -> b
+        
+)
+    

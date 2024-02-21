@@ -1,0 +1,77 @@
+
+(HO-SIGNATURE 
+
+        X: 
+a
+ 
+        Y: 
+c
+ 
+        U: 
+a
+ 
+        V: 
+c
+ 
+        I: 
+a
+ -> 
+b
+ 
+        J: 
+a
+ -> 
+b
+ 
+        X1: 
+a
+ 
+        Y1: 
+c
+ 
+        
+        cons: [ 
+a
+ , 
+c
+ ] --> 
+c
+ 
+	consif: [ 
+b
+ , 
+a
+ , 
+c
+ ] --> 
+c
+ 
+	false: [  ] --> 
+b
+ 
+	filter: [ 
+a
+ -> 
+b
+ , 
+c
+ ] --> 
+c
+ 
+	nil: [  ] --> 
+c
+ 
+	true: [  ] --> 
+b
+ 
+	
+)
+    
+(RULES 
+        consif(true,X,Y) -> cons(X,Y)
+        consif(false,U,V) -> V
+        filter(I,nil) -> nil
+        filter(J,cons(X1,Y1)) -> consif((@ J X1 ),X1,filter(J,Y1))
+        
+)
+    

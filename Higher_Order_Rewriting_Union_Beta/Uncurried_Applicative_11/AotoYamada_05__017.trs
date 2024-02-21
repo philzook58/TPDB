@@ -1,0 +1,38 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+b
+ -> 
+c
+ 
+        Y: 
+a
+ 
+        U: 
+b
+ 
+        
+        uncurry: [ 
+a
+ -> 
+b
+ -> 
+c
+ , 
+a
+ , 
+b
+ ] --> 
+c
+ 
+	
+)
+    
+(RULES 
+        uncurry(F,Y,U) -> (@ (@ F Y ) U )
+        
+)
+    

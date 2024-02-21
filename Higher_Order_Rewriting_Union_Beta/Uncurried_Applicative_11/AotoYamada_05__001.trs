@@ -1,0 +1,36 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+a
+ 
+        Y: 
+a
+ 
+        
+        cons: [ 
+a
+ , 
+b
+ ] --> 
+b
+ 
+	iterate: [ 
+a
+ -> 
+a
+ , 
+a
+ ] --> 
+b
+ 
+	
+)
+    
+(RULES 
+        iterate(F,Y) -> cons(Y,iterate(F,(@ F Y )))
+        
+)
+    

@@ -1,0 +1,7 @@
+(VAR u v x y z )
+(STRATEGY INNERMOST)
+(RULES 
+        if(if(x,y,z),u,v) -> if(x,if(y,u,v),if(z,u,v))
+        
+)
+    

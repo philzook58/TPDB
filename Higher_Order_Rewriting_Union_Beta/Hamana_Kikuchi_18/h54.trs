@@ -1,0 +1,155 @@
+
+(HO-SIGNATURE 
+
+        F: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        Y: 
+nat
+ 
+        G: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        V: 
+nat
+ 
+        W: 
+nat
+ 
+        P: 
+list
+ 
+        X1: 
+nat
+ 
+        Y1: 
+nat
+ 
+        U1: 
+nat
+ 
+        V1: 
+list
+ 
+        I1: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        P1: 
+nat
+ 
+        F2: 
+nat
+ -> 
+nat
+ 
+        Y2: 
+nat
+ 
+        
+        0: [  ] --> 
+nat
+ 
+	cons: [ 
+nat
+ , 
+list
+ ] --> 
+list
+ 
+	foldl: [ 
+nat
+ -> 
+nat
+ -> 
+nat
+ , 
+nat
+ , 
+list
+ ] --> 
+nat
+ 
+	nil: [  ] --> 
+list
+ 
+	plusc: [  ] --> 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+	s: [ 
+nat
+ ] --> 
+nat
+ 
+	sum: [ 
+list
+ ] --> 
+nat
+ 
+	xap: [ 
+nat
+ -> 
+nat
+ -> 
+nat
+ , 
+nat
+ ] --> 
+nat
+ -> 
+nat
+ 
+	yap: [ 
+nat
+ -> 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        foldl(\%X:
+nat
+.\%Y:
+nat
+.yap(xap(F,%X),%Y),Y,nil) -> Y
+        foldl(\%Z:
+nat
+.\%U:
+nat
+.yap(xap(G,%Z),%U),V,cons(W,P)) -> foldl(\%V:
+nat
+.\%W:
+nat
+.yap(xap(G,%V),%W),yap(xap(G,V),W),P)
+        (@ (@ plusc X1 ) 0 ) -> X1
+        (@ (@ plusc Y1 ) s(U1) ) -> s((@ (@ plusc Y1 ) U1 ))
+        sum(V1) -> foldl(\%F:
+nat
+.\%G:
+nat
+.yap(xap(plusc,%F),%G),0,V1)
+        xap(I1,P1) -> (@ I1 P1 )
+        yap(F2,Y2) -> (@ F2 Y2 )
+        
+)
+    

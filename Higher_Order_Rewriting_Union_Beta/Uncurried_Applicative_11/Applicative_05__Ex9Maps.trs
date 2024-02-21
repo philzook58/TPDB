@@ -1,0 +1,108 @@
+
+(HO-SIGNATURE 
+
+        F: 
+d
+ -> 
+d
+ 
+        Y: 
+d
+ 
+        U: 
+e
+ 
+        V: 
+a
+ 
+        I: 
+d
+ -> 
+a
+ -> 
+d
+ 
+        P: 
+d
+ 
+        X1: 
+e
+ 
+        Y1: 
+c
+ 
+        G1: 
+b
+ -> 
+d
+ -> 
+c
+ -> 
+d
+ 
+        V1: 
+d
+ 
+        W1: 
+e
+ 
+        
+        cons: [ 
+d
+ , 
+e
+ ] --> 
+e
+ 
+	g: [  ] --> 
+b
+ 
+	map!62201: [ 
+d
+ -> 
+d
+ , 
+e
+ ] --> 
+e
+ 
+	map!62202: [ 
+d
+ -> 
+a
+ -> 
+d
+ , 
+a
+ , 
+e
+ ] --> 
+e
+ 
+	map!62203: [ 
+b
+ -> 
+d
+ -> 
+c
+ -> 
+d
+ , 
+b
+ , 
+c
+ , 
+e
+ ] --> 
+e
+ 
+	
+)
+    
+(RULES 
+        map!62201(F,cons(Y,U)) -> cons((@ F Y ),map!62201(F,U))
+        map!62202(I,V,cons(P,X1)) -> cons((@ (@ I P ) V ),map!62202(I,V,X1))
+        map!62203(G1,g,Y1,cons(V1,W1)) -> cons((@ (@ (@ G1 g ) V1 ) Y1 ),map!62203(G1,g,Y1,W1))
+        
+)
+    

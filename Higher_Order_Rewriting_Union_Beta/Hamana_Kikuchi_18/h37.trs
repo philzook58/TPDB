@@ -1,0 +1,515 @@
+
+(HO-SIGNATURE 
+
+        X: 
+A
+ 
+        Y: 
+A
+ 
+        U: 
+A
+ 
+        V: 
+A
+ 
+        W: 
+A
+ 
+        P: 
+A
+ 
+        X1: 
+A
+ 
+        Y1: 
+A
+ 
+        U1: 
+A
+ 
+        V1: 
+A
+ 
+        W1: 
+A
+ 
+        P1: 
+A
+ 
+        X2: 
+A
+ 
+        Y2: 
+A
+ 
+        U2: 
+A
+ 
+        V2: 
+A
+ 
+        W2: 
+A
+ 
+        P2: 
+A
+ 
+        X3: 
+A
+ 
+        Y3: 
+A
+ 
+        U3: 
+A
+ 
+        V3: 
+A
+ 
+        W3: 
+A
+ 
+        P3: 
+A
+ 
+        X4: 
+A
+ 
+        Y4: 
+A
+ 
+        U4: 
+A
+ 
+        V4: 
+A
+ 
+        W4: 
+A
+ 
+        P4: 
+A
+ 
+        X5: 
+A
+ 
+        Y5: 
+A
+ 
+        U5: 
+A
+ 
+        V5: 
+A
+ 
+        W5: 
+A
+ 
+        P5: 
+A
+ 
+        X6: 
+A
+ 
+        Y6: 
+A
+ 
+        U6: 
+A
+ 
+        V6: 
+A
+ 
+        W6: 
+A
+ 
+        P6: 
+A
+ 
+        X7: 
+A
+ 
+        Y7: 
+A
+ 
+        U7: 
+A
+ 
+        V7: 
+A
+ 
+        W7: 
+A
+ 
+        P7: 
+A
+ 
+        X8: 
+A
+ 
+        Y8: 
+A
+ 
+        U8: 
+A
+ 
+        V8: 
+A
+ 
+        W8: 
+A
+ 
+        P8: 
+A
+ 
+        X9: 
+A
+ 
+        Y9: 
+A
+ 
+        U9: 
+A
+ 
+        V9: 
+A
+ 
+        W9: 
+A
+ 
+        P9: 
+A
+ 
+        X10: 
+A
+ 
+        Y10: 
+A
+ 
+        U10: 
+A
+ 
+        V10: 
+A
+ 
+        W10: 
+A
+ 
+        P10: 
+A
+ 
+        X11: 
+A
+ 
+        Y11: 
+A
+ 
+        U11: 
+A
+ 
+        V11: 
+A
+ 
+        W11: 
+A
+ 
+        P11: 
+A
+ 
+        X12: 
+A
+ 
+        Z12: 
+A
+ -> 
+A
+ -> 
+A
+ 
+        U12: 
+A
+ 
+        H12: 
+A
+ -> 
+A
+ -> 
+A
+ 
+        W12: 
+A
+ 
+        P12: 
+A
+ 
+        X13: 
+A
+ 
+        
+        0: [  ] --> 
+A
+ 
+	afterNth: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	and: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	axxafterNth: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	axxand: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	axxfst: [  ] --> 
+A
+ -> 
+A
+ 
+	axxhead: [  ] --> 
+A
+ -> 
+A
+ 
+	axxnatsFrom: [  ] --> 
+A
+ -> 
+A
+ 
+	axxsel: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	axxsnd: [  ] --> 
+A
+ -> 
+A
+ 
+	axxsplitAt: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	axxtail: [  ] --> 
+A
+ -> 
+A
+ 
+	axxtake: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	axxu11: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	axxu12: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	cons: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	foldr: [  ] -->  (
+A
+ -> 
+A
+ -> 
+A
+) -> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	fst: [  ] --> 
+A
+ -> 
+A
+ 
+	head: [  ] --> 
+A
+ -> 
+A
+ 
+	mark: [  ] --> 
+A
+ -> 
+A
+ 
+	natsFrom: [  ] --> 
+A
+ -> 
+A
+ 
+	nil: [  ] --> 
+A
+ 
+	pair: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	s: [  ] --> 
+A
+ -> 
+A
+ 
+	sel: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	snd: [  ] --> 
+A
+ -> 
+A
+ 
+	splitAt: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	tail: [  ] --> 
+A
+ -> 
+A
+ 
+	take: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	tt: [  ] --> 
+A
+ 
+	u11: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	u12: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	
+)
+    
+(RULES 
+        (@ (@ (@ (@ axxu11 tt ) X ) Y ) U ) -> (@ (@ axxu12 (@ (@ axxsplitAt (@ mark X ) ) (@ mark U ) ) ) Y )
+        (@ (@ axxu12 (@ (@ pair V ) W ) ) P ) -> (@ (@ pair (@ (@ cons (@ mark P ) ) V ) ) (@ mark W ) )
+        (@ (@ axxafterNth X1 ) Y1 ) -> (@ axxsnd (@ (@ axxsplitAt (@ mark X1 ) ) (@ mark Y1 ) ) )
+        (@ (@ axxand tt ) U1 ) -> (@ mark U1 )
+        (@ axxfst (@ (@ pair V1 ) W1 ) ) -> (@ mark V1 )
+        (@ axxhead (@ (@ cons P1 ) X2 ) ) -> (@ mark P1 )
+        (@ axxnatsFrom Y2 ) -> (@ (@ cons (@ mark Y2 ) ) (@ natsFrom (@ s Y2 ) ) )
+        (@ (@ axxsel U2 ) V2 ) -> (@ axxhead (@ (@ axxafterNth (@ mark U2 ) ) (@ mark V2 ) ) )
+        (@ axxsnd (@ (@ pair W2 ) P2 ) ) -> (@ mark P2 )
+        (@ (@ axxsplitAt 0 ) X3 ) -> (@ (@ pair nil ) (@ mark X3 ) )
+        (@ (@ axxsplitAt (@ s Y3 ) ) (@ (@ cons U3 ) V3 ) ) -> (@ (@ (@ (@ axxu11 tt ) Y3 ) U3 ) V3 )
+        (@ axxtail (@ (@ cons W3 ) P3 ) ) -> (@ mark P3 )
+        (@ (@ axxtake X4 ) Y4 ) -> (@ axxfst (@ (@ axxsplitAt (@ mark X4 ) ) (@ mark Y4 ) ) )
+        (@ mark (@ (@ (@ (@ u11 U4 ) V4 ) W4 ) P4 ) ) -> (@ (@ (@ (@ axxu11 (@ mark U4 ) ) V4 ) W4 ) P4 )
+        (@ mark (@ (@ u12 X5 ) Y5 ) ) -> (@ (@ axxu12 (@ mark X5 ) ) Y5 )
+        (@ mark (@ (@ splitAt U5 ) V5 ) ) -> (@ (@ axxsplitAt (@ mark U5 ) ) (@ mark V5 ) )
+        (@ mark (@ (@ afterNth W5 ) P5 ) ) -> (@ (@ axxafterNth (@ mark W5 ) ) (@ mark P5 ) )
+        (@ mark (@ snd X6 ) ) -> (@ axxsnd (@ mark X6 ) )
+        (@ mark (@ (@ and Y6 ) U6 ) ) -> (@ (@ axxand (@ mark Y6 ) ) U6 )
+        (@ mark (@ fst V6 ) ) -> (@ axxfst (@ mark V6 ) )
+        (@ mark (@ head W6 ) ) -> (@ axxhead (@ mark W6 ) )
+        (@ mark (@ natsFrom P6 ) ) -> (@ axxnatsFrom (@ mark P6 ) )
+        (@ mark (@ (@ sel X7 ) Y7 ) ) -> (@ (@ axxsel (@ mark X7 ) ) (@ mark Y7 ) )
+        (@ mark (@ tail U7 ) ) -> (@ axxtail (@ mark U7 ) )
+        (@ mark (@ (@ take V7 ) W7 ) ) -> (@ (@ axxtake (@ mark V7 ) ) (@ mark W7 ) )
+        (@ mark tt ) -> tt
+        (@ mark (@ (@ pair P7 ) X8 ) ) -> (@ (@ pair (@ mark P7 ) ) (@ mark X8 ) )
+        (@ mark (@ (@ cons Y8 ) U8 ) ) -> (@ (@ cons (@ mark Y8 ) ) U8 )
+        (@ mark (@ s V8 ) ) -> (@ s (@ mark V8 ) )
+        (@ mark 0 ) -> 0
+        (@ mark nil ) -> nil
+        (@ (@ (@ (@ axxu11 W8 ) P8 ) X9 ) Y9 ) -> (@ (@ (@ (@ u11 W8 ) P8 ) X9 ) Y9 )
+        (@ (@ axxu12 U9 ) V9 ) -> (@ (@ u12 U9 ) V9 )
+        (@ (@ axxsplitAt W9 ) P9 ) -> (@ (@ splitAt W9 ) P9 )
+        (@ (@ axxafterNth X10 ) Y10 ) -> (@ (@ afterNth X10 ) Y10 )
+        (@ axxsnd U10 ) -> (@ snd U10 )
+        (@ (@ axxand V10 ) W10 ) -> (@ (@ and V10 ) W10 )
+        (@ axxfst P10 ) -> (@ fst P10 )
+        (@ axxhead X11 ) -> (@ head X11 )
+        (@ axxnatsFrom Y11 ) -> (@ natsFrom Y11 )
+        (@ (@ axxsel U11 ) V11 ) -> (@ (@ sel U11 ) V11 )
+        (@ axxtail W11 ) -> (@ tail W11 )
+        (@ (@ axxtake P11 ) X12 ) -> (@ (@ take P11 ) X12 )
+        (@ (@ (@ foldr \%Y:
+A
+.\%X:
+A
+.(@ (@ Z12 %Y ) %X ) ) U12 ) nil ) -> U12
+        (@ (@ (@ foldr \%U:
+A
+.\%Z:
+A
+.(@ (@ H12 %U ) %Z ) ) W12 ) (@ (@ cons P12 ) X13 ) ) -> (@ (@ H12 P12 ) (@ (@ (@ foldr \%W:
+A
+.\%V:
+A
+.(@ (@ H12 %W ) %V ) ) W12 ) X13 ) )
+        
+)
+    

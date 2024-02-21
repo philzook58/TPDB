@@ -1,0 +1,57 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+b
+ -> 
+b
+ 
+        Y: 
+b
+ 
+        G: 
+a
+ -> 
+b
+ -> 
+b
+ 
+        V: 
+b
+ 
+        W: 
+a
+ 
+        
+        0: [  ] --> 
+a
+ 
+	rec: [ 
+a
+ -> 
+b
+ -> 
+b
+ , 
+b
+ , 
+a
+ ] --> 
+b
+ 
+	s: [ 
+a
+ ] --> 
+a
+ 
+	
+)
+    
+(RULES 
+        rec(F,Y,0) -> Y
+        rec(G,V,s(W)) -> (@ (@ G s(W) ) rec(G,V,W) )
+        
+)
+    

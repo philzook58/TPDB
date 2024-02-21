@@ -1,0 +1,20 @@
+(VAR x1 )
+(RULES 
+        r(r(x1)) -> s(r(x1))
+        r(s(x1)) -> s(r(x1))
+        r(n(x1)) -> s(r(x1))
+        r(b(x1)) -> u(s(b(x1)))
+        r(u(x1)) -> u(r(x1))
+        s(u(x1)) -> u(s(x1))
+        n(u(x1)) -> u(n(x1))
+        t(r(u(x1))) -> t(c(r(x1)))
+        t(s(u(x1))) -> t(c(r(x1)))
+        t(n(u(x1))) -> t(c(r(x1)))
+        c(u(x1)) -> u(c(x1))
+        c(s(x1)) -> s(c(x1))
+        c(r(x1)) -> r(c(x1))
+        c(n(x1)) -> n(c(x1))
+        c(n(x1)) -> n(x1)
+        
+)
+    

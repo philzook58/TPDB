@@ -1,0 +1,48 @@
+
+(HO-SIGNATURE 
+
+        X: 
+nat
+ 
+        Z: 
+nat
+ -> 
+nat
+ 
+        
+        0: [  ] --> 
+nat
+ 
+	I: [ 
+nat
+ ] --> 
+nat
+ 
+	s: [ 
+nat
+ ] --> 
+nat
+ 
+	twice: [ 
+nat
+ -> 
+nat
+ ] --> 
+nat
+ -> 
+nat
+ 
+	
+)
+    
+(RULES 
+        I(0) -> 0
+        I(s(X)) -> s((@ twice(\%X:
+nat
+.I(%X)) X ))
+        twice(Z) -> \%Y:
+nat
+.(@ Z (@ Z %Y ) )
+        
+)
+    

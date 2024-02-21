@@ -1,0 +1,46 @@
+
+(HO-SIGNATURE 
+
+        X: 
+o
+ 
+        Y: 
+o
+ 
+        Z: 
+o
+ 
+        
+        fapp: [ 
+o
+ , 
+o
+ ] --> 
+o
+ 
+	lam: [ 
+o
+ ] --> 
+o
+ 
+	v: [  ] --> 
+o
+ 
+	subst: [ 
+o
+ , 
+o
+ ] --> 
+o
+ 
+	
+)
+    
+(RULES 
+        fapp(lam(X),Y) -> subst(X,Y)
+        subst(v,Y) -> Y
+        subst(lam(X),Y) -> lam(X)
+        subst(fapp(X,Z),Y) -> fapp(subst(X,Y),subst(Z,Y))
+        
+)
+    

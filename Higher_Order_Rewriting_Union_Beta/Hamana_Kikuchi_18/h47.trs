@@ -1,0 +1,147 @@
+
+(HO-SIGNATURE 
+
+        X: 
+nat
+ 
+        Y: 
+nat
+ 
+        U: 
+nat
+ 
+        V: 
+nat
+ 
+        I: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        P: 
+nat
+ 
+        X1: 
+nat
+ 
+        Z1: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        U1: 
+nat
+ 
+        V1: 
+nat
+ 
+        I1: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        P1: 
+nat
+ 
+        F2: 
+nat
+ -> 
+nat
+ 
+        Y2: 
+nat
+ 
+        
+        0: [  ] --> 
+nat
+ 
+	rec: [ 
+nat
+ , 
+nat
+ , 
+nat
+ -> 
+nat
+ -> 
+nat
+ ] --> 
+nat
+ 
+	s: [ 
+nat
+ ] --> 
+nat
+ 
+	xap: [ 
+nat
+ -> 
+nat
+ -> 
+nat
+ , 
+nat
+ ] --> 
+nat
+ -> 
+nat
+ 
+	xplus: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	xtimes: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	yap: [ 
+nat
+ -> 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        xplus(X,0) -> X
+        xplus(Y,s(U)) -> s(xplus(Y,U))
+        rec(0,V,\%X:
+nat
+.\%Y:
+nat
+.yap(xap(I,%X),%Y)) -> V
+        rec(s(P),X1,\%Z:
+nat
+.\%U:
+nat
+.yap(xap(Z1,%Z),%U)) -> yap(xap(Z1,P),rec(P,X1,\%V:
+nat
+.\%W:
+nat
+.yap(xap(Z1,%V),%W)))
+        xtimes(U1,V1) -> rec(V1,0,\%G:
+nat
+.\%F:
+nat
+.xplus(U1,%F))
+        xap(I1,P1) -> (@ I1 P1 )
+        yap(F2,Y2) -> (@ F2 Y2 )
+        
+)
+    

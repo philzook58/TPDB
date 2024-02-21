@@ -1,0 +1,9 @@
+(VAR x y z )
+(RULES 
+        h(a,a) -> i(b)
+        h(a,b) -> i(c)
+        h(b,b) -> i(d)
+        f(x) -> g(x,y,z) | h(a,x) -> i(y), h(a,y) -> i(z)
+        
+)
+    

@@ -1,0 +1,109 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+a
+ 
+        Z: 
+a
+ -> 
+a
+ 
+        U: 
+a
+ 
+        V: 
+alist
+ 
+        I: 
+a
+ -> 
+a
+ 
+        J: 
+a
+ -> 
+a
+ 
+        X1: 
+alist
+ 
+        Z1: 
+a
+ -> 
+a
+ 
+        G1: 
+a
+ -> 
+a
+ 
+        V1: 
+a
+ 
+        
+        cons: [  ] --> 
+a
+ -> 
+alist
+ -> 
+alist
+ 
+	map: [  ] -->  (
+a
+ -> 
+a
+) -> 
+alist
+ -> 
+alist
+ 
+	nil: [  ] --> 
+alist
+ 
+	o: [  ] -->  (
+a
+ -> 
+a
+) ->  (
+a
+ -> 
+a
+) -> 
+a
+ -> 
+a
+ 
+	
+)
+    
+(RULES 
+        (@ (@ map \%X:
+a
+.(@ F %X ) ) nil ) -> nil
+        (@ (@ map \%Y:
+a
+.(@ Z %Y ) ) (@ (@ cons U ) V ) ) -> (@ (@ cons (@ Z U ) ) (@ (@ map \%Z:
+a
+.(@ Z %Z ) ) V ) )
+        (@ (@ map \%V:
+a
+.(@ I %V ) ) (@ (@ map \%U:
+a
+.(@ J %U ) ) X1 ) ) -> (@ (@ map \%W:
+a
+.(@ (@ (@ o \%G:
+a
+.(@ I %G ) ) \%F:
+a
+.(@ J %F ) ) %W ) ) X1 )
+        (@ (@ (@ o \%I:
+a
+.(@ Z1 %I ) ) \%H:
+a
+.(@ G1 %H ) ) V1 ) -> (@ Z1 (@ G1 V1 ) )
+        
+)
+    

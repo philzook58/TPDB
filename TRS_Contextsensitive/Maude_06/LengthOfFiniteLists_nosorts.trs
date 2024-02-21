@@ -1,0 +1,19 @@
+(VAR L N X )
+(STRATEGY CONTEXTSENSITIVE
+        (zeros ) 
+        (cons 1) 
+        (0 ) 
+        (and 1) 
+        (tt ) 
+        (length 1) 
+        (nil ) 
+        (s 1) 
+)
+(RULES 
+        zeros -> cons(0,zeros)
+        and(tt,X) -> X
+        length(nil) -> 0
+        length(cons(N,L)) -> s(length(L))
+        
+)
+    

@@ -1,0 +1,9 @@
+(VAR M N X )
+(STRATEGY OUTERMOST)
+(RULES 
+        and(tt) -> X
+        plus(N,0) -> N
+        plus(N,s(M)) -> s(plus(N,M))
+        
+)
+    

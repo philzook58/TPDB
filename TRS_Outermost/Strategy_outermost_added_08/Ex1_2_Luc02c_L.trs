@@ -1,0 +1,8 @@
+(VAR X Y )
+(STRATEGY OUTERMOST)
+(RULES 
+        2nd(cons(X)) -> Y
+        from(X) -> cons(X)
+        
+)
+    

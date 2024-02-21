@@ -1,0 +1,7 @@
+(VAR x0 x1 x2 x3 )
+(STRATEGY INNERMOST)
+(RULES 
+        p(a(x0),p(x1,p(x2,x3))) -> p(x1,p(x0,p(a(x3),x3)))
+        
+)
+    

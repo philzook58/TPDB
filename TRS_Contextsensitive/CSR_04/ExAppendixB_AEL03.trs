@@ -1,0 +1,35 @@
+(VAR N X Y Z )
+(STRATEGY CONTEXTSENSITIVE
+        (from 1) 
+        (cons 1) 
+        (s 1) 
+        (2ndspos 1 2) 
+        (0 ) 
+        (rnil ) 
+        (cons2 2) 
+        (rcons 1 2) 
+        (posrecip 1) 
+        (2ndsneg 1 2) 
+        (negrecip 1) 
+        (pi 1) 
+        (plus 1 2) 
+        (times 1 2) 
+        (square 1) 
+)
+(RULES 
+        from(X) -> cons(X,from(s(X)))
+        2ndspos(0,Z) -> rnil
+        2ndspos(s(N),cons(X,Z)) -> 2ndspos(s(N),cons2(X,Z))
+        2ndspos(s(N),cons2(X,cons(Y,Z))) -> rcons(posrecip(Y),2ndsneg(N,Z))
+        2ndsneg(0,Z) -> rnil
+        2ndsneg(s(N),cons(X,Z)) -> 2ndsneg(s(N),cons2(X,Z))
+        2ndsneg(s(N),cons2(X,cons(Y,Z))) -> rcons(negrecip(Y),2ndspos(N,Z))
+        pi(X) -> 2ndspos(X,from(0))
+        plus(0,Y) -> Y
+        plus(s(X),Y) -> s(plus(X,Y))
+        times(0,Y) -> 0
+        times(s(X),Y) -> plus(Y,times(X,Y))
+        square(X) -> times(X,X)
+        
+)
+    

@@ -1,0 +1,14 @@
+(VAR q r x y )
+(RULES 
+        m(x,0) -> x
+        m(0,y) -> 0
+        m(s(x),s(y)) -> m(x,y)
+        greater(s(x),s(y)) -> greater(x,y)
+        greater(s(x),0) -> true
+        leq(s(x),s(y)) -> leq(x,y)
+        leq(0,x) -> true
+        div(x,y) -> pair(0,y) | greater(y,x) -> true
+        div(x,y) -> pair(s(q),r) | leq(y,x) -> true, div(m(x,y),y) -> pair(q,r)
+        
+)
+    

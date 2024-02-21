@@ -1,0 +1,10 @@
+(VAR v w xs xs' y ys' z )
+(RULES 
+        ssp(nil,0) -> nil
+        sub(z,0) -> z
+        ssp(cons(y,ys'),v) -> xs | ssp(ys',v) -> xs
+        ssp(cons(y,ys'),v) -> cons(y,xs') | sub(v,y) -> w, ssp(ys',w) -> xs'
+        sub(s(v),s(w)) -> z | sub(v,w) -> z
+        
+)
+    

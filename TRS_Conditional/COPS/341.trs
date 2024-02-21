@@ -1,0 +1,8 @@
+(VAR x y )
+(RULES 
+        a -> c
+        b -> c
+        f(x) -> g(y) | x -> y
+        
+)
+    

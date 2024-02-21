@@ -1,0 +1,7 @@
+(VAR x )
+(RULES 
+        a -> b
+        f(s(x)) ->= c(x,f(x))
+        c(x,c(y,z)) ->= c(y,c(x,z))
+)
+    

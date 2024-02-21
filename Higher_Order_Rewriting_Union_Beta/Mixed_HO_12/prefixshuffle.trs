@@ -1,0 +1,137 @@
+
+(HO-SIGNATURE 
+
+        n: 
+nat
+ 
+        x: 
+natlist
+ 
+        y: 
+natlist
+ 
+        l: 
+natlist
+ 
+        z: 
+pair
+ 
+        F: 
+pair
+ -> 
+nat
+ -> 
+pair
+ 
+        
+        nil: [  ] --> 
+natlist
+ 
+	pnil: [  ] --> 
+plist
+ 
+	app: [ 
+natlist
+ , 
+natlist
+ ] --> 
+natlist
+ 
+	cons: [ 
+nat
+ , 
+natlist
+ ] --> 
+natlist
+ 
+	p: [ 
+natlist
+ , 
+natlist
+ ] --> 
+pair
+ 
+	pcons: [ 
+pair
+ , 
+plist
+ ] --> 
+plist
+ 
+	fst: [ 
+pair
+ ] --> 
+natlist
+ 
+	shuffle: [ 
+natlist
+ ] --> 
+natlist
+ 
+	reverse: [ 
+natlist
+ ] --> 
+natlist
+ 
+	pshuffle: [ 
+natlist
+ ] --> 
+pair
+ 
+	prefixshuffle: [ 
+pair
+ , 
+natlist
+ ] --> 
+plist
+ 
+	apply2: [ 
+pair
+ -> 
+nat
+ -> 
+pair
+ , 
+pair
+ , 
+nat
+ ] --> 
+pair
+ 
+	pps: [ 
+natlist
+ ] --> 
+plist
+ 
+	s: [ 
+nat
+ ] --> 
+nat
+ 
+	0: [  ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        app(nil,l) -> l
+        app(cons(n,l),y) -> cons(n,app(l,y))
+        reverse(nil) -> nil
+        reverse(cons(n,l)) -> app(reverse(l),cons(n,nil))
+        shuffle(nil) -> nil
+        shuffle(cons(n,l)) -> cons(n,shuffle(reverse(l)))
+        fst(p(x,y)) -> x
+        pshuffle(l) -> p(l,shuffle(l))
+        prefixshuffle(z,nil) -> pcons(z,pnil)
+        prefixshuffle(z,cons(n,l)) -> pcons(z,prefixshuffle(apply2(\x:
+pair
+.\y:
+nat
+.pshuffle(app(fst(x),cons(y,nil))),z,n),reverse(l)))
+        apply2(F,z,0) -> z
+        apply2(F,z,s(n)) -> (@ (@ F z ) s(n) )
+        pps(l) -> prefixshuffle(p(nil,nil),l)
+        
+)
+    

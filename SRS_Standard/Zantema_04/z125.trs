@@ -1,0 +1,11 @@
+(VAR x1 )
+(RULES 
+        f(x1) -> n(c(n(a(x1))))
+        c(f(x1)) -> f(n(a(c(x1))))
+        n(a(x1)) -> c(x1)
+        c(c(x1)) -> c(x1)
+        n(s(x1)) -> f(s(s(x1)))
+        n(f(x1)) -> f(n(x1))
+        
+)
+    

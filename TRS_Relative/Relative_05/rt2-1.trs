@@ -1,0 +1,6 @@
+(VAR x y )
+(RULES 
+        T(I(x),y) -> T(x,y)
+        T(x,y) ->= T(x,I(y))
+)
+    

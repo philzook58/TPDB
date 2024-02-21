@@ -1,0 +1,15 @@
+(VAR x1 )
+(STRATEGY INNERMOST)
+(RULES 
+        tower(0(x1)) -> s(0(p(s(p(s(x1))))))
+        tower(s(x1)) -> p(s(p(s(twoto(p(s(p(s(tower(p(s(p(s(x1))))))))))))))
+        twoto(0(x1)) -> s(0(x1))
+        twoto(s(x1)) -> p(p(s(p(p(p(s(s(p(s(s(p(s(s(p(s(twice(p(s(p(s(p(p(p(s(s(s(twoto(p(s(p(s(x1))))))))))))))))))))))))))))))))
+        twice(0(x1)) -> 0(x1)
+        twice(s(x1)) -> p(p(p(s(s(s(s(s(twice(p(p(p(s(s(s(x1)))))))))))))))
+        p(p(s(x1))) -> p(x1)
+        p(s(x1)) -> x1
+        p(0(x1)) -> 0(s(s(s(s(s(s(s(s(x1)))))))))
+        
+)
+    

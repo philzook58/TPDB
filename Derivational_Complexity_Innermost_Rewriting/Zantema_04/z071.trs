@@ -1,0 +1,14 @@
+(VAR x1 )
+(STRATEGY INNERMOST)
+(RULES 
+        R(x1) -> r(x1)
+        r(p(x1)) -> p(p(r(P(x1))))
+        r(r(x1)) -> x1
+        r(P(P(x1))) -> P(P(r(x1)))
+        p(P(x1)) -> x1
+        P(p(x1)) -> x1
+        r(R(x1)) -> x1
+        R(r(x1)) -> x1
+        
+)
+    

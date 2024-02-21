@@ -1,0 +1,177 @@
+
+(HO-SIGNATURE 
+
+        X: 
+list
+ 
+        Y: 
+nat
+ 
+        U: 
+list
+ 
+        V: 
+list
+ 
+        I: 
+list
+ -> 
+nat
+ -> 
+list
+ 
+        P: 
+list
+ 
+        F1: 
+list
+ -> 
+nat
+ -> 
+list
+ 
+        Y1: 
+list
+ 
+        U1: 
+nat
+ 
+        V1: 
+list
+ 
+        W1: 
+list
+ 
+        P1: 
+nat
+ 
+        X2: 
+list
+ 
+        Y2: 
+list
+ 
+        G2: 
+list
+ -> 
+nat
+ -> 
+list
+ 
+        V2: 
+list
+ 
+        I2: 
+nat
+ -> 
+list
+ 
+        P2: 
+nat
+ 
+        
+        app: [ 
+list
+ , 
+list
+ ] --> 
+list
+ 
+	cons: [ 
+nat
+ , 
+list
+ ] --> 
+list
+ 
+	foldl: [ 
+list
+ -> 
+nat
+ -> 
+list
+ , 
+list
+ , 
+list
+ ] --> 
+list
+ 
+	iconsc: [  ] --> 
+list
+ -> 
+nat
+ -> 
+list
+ 
+	nil: [  ] --> 
+list
+ 
+	reverse: [ 
+list
+ ] --> 
+list
+ 
+	reverse1: [ 
+list
+ ] --> 
+list
+ 
+	xap: [ 
+list
+ -> 
+nat
+ -> 
+list
+ , 
+list
+ ] --> 
+nat
+ -> 
+list
+ 
+	yap: [ 
+nat
+ -> 
+list
+ , 
+nat
+ ] --> 
+list
+ 
+	
+)
+    
+(RULES 
+        app(nil,X) -> X
+        app(cons(Y,U),V) -> cons(Y,app(U,V))
+        foldl(\%X:
+list
+.\%Y:
+nat
+.yap(xap(I,%X),%Y),P,nil) -> P
+        foldl(\%Z:
+list
+.\%U:
+nat
+.yap(xap(F1,%Z),%U),Y1,cons(U1,V1)) -> foldl(\%V:
+list
+.\%W:
+nat
+.yap(xap(F1,%V),%W),yap(xap(F1,Y1),U1),V1)
+        (@ (@ iconsc W1 ) P1 ) -> cons(P1,W1)
+        reverse(X2) -> foldl(\%F:
+list
+.\%G:
+nat
+.yap(xap(iconsc,%F),%G),nil,X2)
+        reverse1(Y2) -> foldl(\%I:
+list
+.\%H:
+nat
+.app(cons(%H,nil),%I),nil,Y2)
+        xap(G2,V2) -> (@ G2 V2 )
+        yap(I2,P2) -> (@ I2 P2 )
+        
+)
+    

@@ -1,0 +1,71 @@
+
+(HO-SIGNATURE 
+
+        x: 
+nat
+ 
+        y: 
+nat
+ 
+        U: 
+nat
+ 
+        F: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        
+        0: [  ] --> 
+nat
+ 
+	s: [ 
+nat
+ ] --> 
+nat
+ 
+	+: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	*: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	rec: [ 
+nat
+ , 
+nat
+ , 
+nat
+ -> 
+nat
+ -> 
+nat
+ ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        +(x,0) -> x
+        +(x,s(y)) -> s(+(x,y))
+        rec(0,U,F) -> U
+        rec(s(x),U,F) -> (@ (@ F x ) rec(x,U,F) )
+        *(x,y) -> rec(y,0,\z1:
+nat
+.\z2:
+nat
+.+(x,z2))
+        
+)
+    

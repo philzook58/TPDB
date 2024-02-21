@@ -1,0 +1,8 @@
+(VAR x y )
+(RULES 
+        plus(0,y) -> y
+        plus(s(x),y) -> plus(x,s(y))
+        f(x,y) -> plus(y,z) | plus(x,y) -> plus(z,z)
+        
+)
+    

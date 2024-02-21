@@ -1,0 +1,158 @@
+
+(HO-SIGNATURE 
+
+        F: 
+c
+ -> 
+a
+ -> 
+c
+ 
+        Y: 
+c
+ 
+        G: 
+c
+ -> 
+a
+ -> 
+c
+ 
+        V: 
+a
+ 
+        W: 
+b
+ 
+        P: 
+c
+ 
+        X1: 
+b
+ 
+        Y1: 
+b
+ 
+        G1: 
+c
+ -> 
+a
+ -> 
+c
+ 
+        V1: 
+c
+ 
+        I1: 
+a
+ -> 
+c
+ 
+        P1: 
+a
+ 
+        
+        0: [  ] --> 
+c
+ 
+	1: [  ] --> 
+c
+ 
+	add: [  ] --> 
+c
+ -> 
+a
+ -> 
+c
+ 
+	cons: [ 
+a
+ , 
+b
+ ] --> 
+b
+ 
+	fold: [ 
+c
+ -> 
+a
+ -> 
+c
+ , 
+b
+ , 
+c
+ ] --> 
+c
+ 
+	mul: [  ] --> 
+c
+ -> 
+a
+ -> 
+c
+ 
+	nil: [  ] --> 
+b
+ 
+	prod: [ 
+b
+ ] --> 
+c
+ 
+	sum: [ 
+b
+ ] --> 
+c
+ 
+	xap: [ 
+c
+ -> 
+a
+ -> 
+c
+ , 
+c
+ ] --> 
+a
+ -> 
+c
+ 
+	yap: [ 
+a
+ -> 
+c
+ , 
+a
+ ] --> 
+c
+ 
+	
+)
+    
+(RULES 
+        fold(\%X:
+c
+.\%Y:
+a
+.yap(xap(F,%X),%Y),nil,Y) -> Y
+        fold(\%Z:
+c
+.\%U:
+a
+.yap(xap(G,%Z),%U),cons(V,W),P) -> fold(\%V:
+c
+.\%W:
+a
+.yap(xap(G,%V),%W),W,yap(xap(G,P),V))
+        sum(X1) -> fold(\%F:
+c
+.\%G:
+a
+.yap(xap(add,%F),%G),X1,0)
+        fold(mul,Y1,1) -> prod(Y1)
+        xap(G1,V1) -> (@ G1 V1 )
+        yap(I1,P1) -> (@ I1 P1 )
+        
+)
+    

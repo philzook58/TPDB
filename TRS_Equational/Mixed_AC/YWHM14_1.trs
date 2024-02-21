@@ -1,0 +1,10 @@
+(VAR  )
+(THEORY 
+        (AC plus) 
+)
+(RULES 
+        f(plus(a,a)) -> plus(f(a),f(a))
+        plus(a,f(f(a))) -> plus(f(a),f(a))
+        
+)
+    

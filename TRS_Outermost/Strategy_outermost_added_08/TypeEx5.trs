@@ -1,0 +1,8 @@
+(VAR x y )
+(STRATEGY OUTERMOST)
+(RULES 
+        ap(ap(g,x),y) -> y
+        ap(f,x) -> ap(f,app(g,x))
+        
+)
+    

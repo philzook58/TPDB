@@ -1,0 +1,9 @@
+(VAR N X XS )
+(STRATEGY INNERMOST)
+(RULES 
+        after(s(N),cons(X)) -> after(N,XS)
+        from(X) -> cons(X)
+        after(0,XS) -> XS
+        
+)
+    

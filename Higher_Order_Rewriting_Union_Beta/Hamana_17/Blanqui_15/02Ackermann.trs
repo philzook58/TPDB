@@ -1,0 +1,41 @@
+
+(HO-SIGNATURE 
+
+        X: 
+N
+ 
+        Y: 
+N
+ 
+        U: 
+N
+ 
+        V: 
+N
+ 
+        
+        ack: [ 
+N
+ , 
+N
+ ] --> 
+N
+ 
+	s: [ 
+N
+ ] --> 
+N
+ 
+	z: [  ] --> 
+N
+ 
+	
+)
+    
+(RULES 
+        ack(z,X) -> s(X)
+        ack(s(Y),z) -> ack(Y,s(z))
+        ack(s(U),s(V)) -> ack(U,ack(s(U),V))
+        
+)
+    

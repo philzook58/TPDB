@@ -1,0 +1,43 @@
+
+(HO-SIGNATURE 
+
+        X: 
+a
+ 
+        Y: 
+a
+ 
+        U: 
+a
+ 
+        
+        0: [  ] --> 
+a
+ 
+	id: [  ] --> 
+a
+ -> 
+a
+ 
+	plus: [ 
+a
+ ] --> 
+a
+ -> 
+a
+ 
+	s: [ 
+a
+ ] --> 
+a
+ 
+	
+)
+    
+(RULES 
+        (@ id X ) -> X
+        plus(0) -> id
+        (@ plus(s(Y)) U ) -> s((@ plus(Y) U ))
+        
+)
+    

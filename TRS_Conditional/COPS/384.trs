@@ -1,0 +1,12 @@
+(VAR x )
+(RULES 
+        s(a) -> t
+        s(b) -> t
+        a -> c
+        b -> c
+        g(x,x) -> h(x,x)
+        f(x) -> A | s(x) -> t
+        f(x) -> B | s(x) -> t
+        
+)
+    

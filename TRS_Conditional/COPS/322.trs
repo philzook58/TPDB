@@ -1,0 +1,11 @@
+(VAR x y ys zs1 zs2 )
+(RULES 
+        split(x,nil) -> tp2(nil,nil)
+        le(0,y) -> true
+        le(s(x),0) -> false
+        le(s(x),s(y)) -> le(x,y)
+        split(x,cons(y,ys)) -> tp2(zs1,cons(y,zs2)) | split(x,ys) -> tp2(zs1,zs2), le(x,y) -> true
+        split(x,cons(y,ys)) -> tp2(cons(y,zs1),zs2) | split(x,ys) -> tp2(zs1,zs2), le(x,y) -> false
+        
+)
+    

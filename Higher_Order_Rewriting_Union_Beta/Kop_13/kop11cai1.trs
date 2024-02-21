@@ -1,0 +1,91 @@
+
+(HO-SIGNATURE 
+
+        F: 
+nat
+ -> 
+nat
+ 
+        Z: 
+nat
+ -> 
+nat
+ 
+        U: 
+nat
+ 
+        V: 
+nat
+ 
+        W: 
+list
+ 
+        
+        0: [  ] --> 
+nat
+ 
+	cons: [ 
+nat
+ , 
+list
+ ] --> 
+list
+ 
+	map: [ 
+nat
+ -> 
+nat
+ , 
+list
+ ] --> 
+list
+ 
+	nil: [  ] --> 
+list
+ 
+	op: [ 
+nat
+ -> 
+nat
+ , 
+nat
+ -> 
+nat
+ ] --> 
+nat
+ -> 
+nat
+ 
+	pow: [ 
+nat
+ -> 
+nat
+ , 
+nat
+ ] --> 
+nat
+ -> 
+nat
+ 
+	s: [ 
+nat
+ ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        map(F,nil) -> nil
+        map(F,cons(U,W)) -> cons((@ F U ),map(F,W))
+        pow(F,0) -> \%X:
+nat
+.%X
+        pow(F,s(V)) -> op(F,pow(F,V))
+        (@ op(F,Z) V ) -> (@ F (@ Z V ) )
+        \%Y:
+nat
+.(@ F %Y ) -> F
+        
+)
+    

@@ -1,0 +1,97 @@
+
+(HO-SIGNATURE 
+
+        F: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        Y: 
+nat
+ 
+        G: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        V: 
+nat
+ 
+        W: 
+nat
+ 
+        P: 
+natlist
+ 
+        X1: 
+natlist
+ 
+        
+        0: [  ] --> 
+nat
+ 
+	cons: [  ] --> 
+nat
+ -> 
+natlist
+ -> 
+natlist
+ 
+	foldl: [  ] -->  (
+nat
+ -> 
+nat
+ -> 
+nat
+) -> 
+nat
+ -> 
+natlist
+ -> 
+nat
+ 
+	nil: [  ] --> 
+natlist
+ 
+	plus: [  ] --> 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+	sum: [  ] --> 
+natlist
+ -> 
+nat
+ 
+	
+)
+    
+(RULES 
+        (@ (@ (@ foldl \%Y:
+nat
+.\%X:
+nat
+.(@ (@ F %Y ) %X ) ) Y ) nil ) -> Y
+        (@ (@ (@ foldl \%U:
+nat
+.\%Z:
+nat
+.(@ (@ G %U ) %Z ) ) V ) (@ (@ cons W ) P ) ) -> (@ (@ (@ foldl \%W:
+nat
+.\%V:
+nat
+.(@ (@ G %W ) %V ) ) (@ (@ G V ) W ) ) P )
+        (@ sum X1 ) -> (@ (@ (@ foldl \%G:
+nat
+.\%F:
+nat
+.(@ (@ plus %G ) %F ) ) 0 ) X1 )
+        
+)
+    

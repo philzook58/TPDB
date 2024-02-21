@@ -1,0 +1,110 @@
+
+(HO-SIGNATURE 
+
+        n: 
+nat
+ 
+        x: 
+list
+ 
+        y: 
+list
+ 
+        l: 
+list
+ 
+        F: 
+list
+ -> 
+list
+ 
+        
+        nil: [  ] --> 
+list
+ 
+	app: [ 
+list
+ , 
+list
+ ] --> 
+list
+ 
+	cons: [ 
+nat
+ , 
+list
+ ] --> 
+list
+ 
+	shuffle: [ 
+list
+ ] --> 
+list
+ 
+	hshuffle: [ 
+list
+ ] --> 
+list
+ 
+	reverse: [ 
+list
+ ] --> 
+list
+ 
+	hrepeat: [ 
+nat
+ , 
+list
+ -> 
+list
+ , 
+list
+ ] --> 
+list
+ 
+	0: [  ] --> 
+nat
+ 
+	s: [ 
+nat
+ ] --> 
+nat
+ 
+	uhalf: [ 
+nat
+ ] --> 
+nat
+ 
+	tail: [ 
+list
+ ] --> 
+list
+ 
+	head: [ 
+list
+ ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        app(nil,l) -> l
+        app(cons(n,l),y) -> cons(n,app(l,y))
+        reverse(nil) -> nil
+        reverse(cons(n,l)) -> app(reverse(l),cons(n,nil))
+        shuffle(nil) -> nil
+        shuffle(cons(n,l)) -> cons(n,shuffle(reverse(l)))
+        uhalf(0) -> 0
+        uhalf(s(0)) -> s(0)
+        uhalf(s(s(n))) -> s(uhalf(n))
+        hrepeat(0,F,l) -> l
+        hrepeat(s(n),F,l) -> hrepeat(uhalf(n),F,(@ F l ))
+        tail(cons(n,l)) -> l
+        head(cons(n,l)) -> n
+        hshuffle(l) -> hrepeat(head(l),\z:
+list
+.shuffle(z),tail(l))
+        
+)
+    

@@ -1,0 +1,8 @@
+(VAR x x' x'' y y' y'' )
+(RULES 
+        a -> b
+        f(x',x'') -> h(x,f(x,b)) | x' -> x, x'' -> x
+        f(g(y'),y'') -> h(y,f(g(y),a)) | y' -> y, y'' -> y
+        
+)
+    

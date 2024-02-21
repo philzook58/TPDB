@@ -1,0 +1,68 @@
+
+(HO-SIGNATURE 
+
+        F: 
+nat
+ -> 
+nat
+ 
+        Z: 
+nat
+ -> 
+nat
+ 
+        U: 
+nat
+ 
+        V: 
+list
+ 
+        I: 
+nat
+ -> 
+nat
+ 
+        P: 
+nat
+ 
+        
+        cons: [ 
+nat
+ , 
+list
+ ] --> 
+list
+ 
+	emap: [ 
+nat
+ -> 
+nat
+ , 
+list
+ ] --> 
+list
+ 
+	nil: [  ] --> 
+list
+ 
+	twice: [ 
+nat
+ -> 
+nat
+ ] --> 
+nat
+ -> 
+nat
+ 
+	
+)
+    
+(RULES 
+        emap(F,nil) -> nil
+        emap(Z,cons(U,V)) -> cons((@ Z U ),emap(\%X:
+nat
+.(@ twice(Z) %X ),V))
+        (@ twice(I) P ) -> (@ I (@ I P ) )
+        
+)
+    

@@ -1,0 +1,29 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+b
+ 
+        Y: 
+a
+ 
+        
+        apply: [ 
+a
+ -> 
+b
+ , 
+a
+ ] --> 
+b
+ 
+	
+)
+    
+(RULES 
+        apply(F,Y) -> (@ F Y )
+        
+)
+    

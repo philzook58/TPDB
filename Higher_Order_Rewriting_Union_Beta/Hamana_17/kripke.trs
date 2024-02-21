@@ -1,0 +1,60 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+b
+ 
+        Y: 
+a
+ 
+        U: 
+Arrab
+ 
+        V: 
+a
+ 
+        W: 
+Boxa
+ 
+        
+        abs: [  ] -->  (
+a
+ -> 
+b
+) -> 
+Arrab
+ 
+	app: [  ] --> 
+Arrab
+ -> 
+a
+ -> 
+b
+ 
+	box: [  ] --> 
+a
+ -> 
+Boxa
+ 
+	unbox: [  ] --> 
+Boxa
+ -> 
+a
+ 
+	
+)
+    
+(RULES 
+        (@ (@ app (@ abs \%X:
+a
+.(@ F %X ) ) ) Y ) -> (@ F Y )
+        (@ abs \%Y:
+a
+.(@ (@ app U ) %Y ) ) -> U
+        (@ unbox (@ box V ) ) -> V
+        (@ box (@ unbox W ) ) -> W
+        
+)
+    

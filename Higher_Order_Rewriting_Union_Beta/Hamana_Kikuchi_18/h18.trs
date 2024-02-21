@@ -1,0 +1,125 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+a
+ 
+        Z: 
+a
+ -> 
+a
+ 
+        U: 
+a
+ 
+        V: 
+alist
+ 
+        I: 
+a
+ -> 
+a
+ 
+        J: 
+a
+ -> 
+a
+ 
+        X1: 
+alist
+ 
+        Z1: 
+a
+ -> 
+a
+ 
+        G1: 
+a
+ -> 
+a
+ 
+        V1: 
+a
+ 
+        I1: 
+a
+ -> 
+a
+ 
+        P1: 
+a
+ 
+        
+        cons: [  ] --> 
+a
+ -> 
+alist
+ -> 
+alist
+ 
+	map: [  ] -->  (
+a
+ -> 
+a
+) -> 
+alist
+ -> 
+alist
+ 
+	nil: [  ] --> 
+alist
+ 
+	o: [  ] -->  (
+a
+ -> 
+a
+) ->  (
+a
+ -> 
+a
+) -> 
+a
+ -> 
+a
+ 
+	xap: [  ] -->  (
+a
+ -> 
+a
+) -> 
+a
+ -> 
+a
+ 
+	
+)
+    
+(RULES 
+        (@ (@ map \%X:
+a
+.(@ (@ xap F ) %X ) ) nil ) -> nil
+        (@ (@ map \%Y:
+a
+.(@ (@ xap Z ) %Y ) ) (@ (@ cons U ) V ) ) -> (@ (@ cons (@ (@ xap Z ) U ) ) (@ (@ map \%Z:
+a
+.(@ (@ xap Z ) %Z ) ) V ) )
+        (@ (@ map \%V:
+a
+.(@ (@ xap I ) %V ) ) (@ (@ map \%U:
+a
+.(@ (@ xap J ) %U ) ) X1 ) ) -> (@ (@ map (@ (@ o \%F:
+a
+.(@ (@ xap I ) %F ) ) \%W:
+a
+.(@ (@ xap J ) %W ) ) ) X1 )
+        (@ (@ (@ o \%H:
+a
+.(@ Z1 %H ) ) \%G:
+a
+.(@ G1 %G ) ) V1 ) -> (@ Z1 (@ G1 V1 ) )
+        (@ (@ xap I1 ) P1 ) -> (@ I1 P1 )
+        
+)
+    

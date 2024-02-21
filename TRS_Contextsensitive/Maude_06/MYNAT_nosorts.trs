@@ -1,0 +1,18 @@
+(VAR M N X )
+(STRATEGY CONTEXTSENSITIVE
+        (and 1) 
+        (tt ) 
+        (plus 1 2) 
+        (0 ) 
+        (s 1) 
+        (x 1 2) 
+)
+(RULES 
+        and(tt,X) -> X
+        plus(N,0) -> N
+        plus(N,s(M)) -> s(plus(N,M))
+        x(N,0) -> 0
+        x(N,s(M)) -> plus(x(N,M),N)
+        
+)
+    

@@ -1,0 +1,101 @@
+
+(HO-SIGNATURE 
+
+        X: 
+nat
+ 
+        Z: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        U: 
+nat
+ 
+        V: 
+nat
+ 
+        I: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        P: 
+nat
+ 
+        X1: 
+nat
+ 
+        Y1: 
+nat
+ 
+        U1: 
+nat
+ 
+        
+        0: [  ] --> 
+nat
+ 
+	plus: [  ] --> 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+	rec: [  ] --> 
+nat
+ -> 
+nat
+ ->  (
+nat
+ -> 
+nat
+ -> 
+nat
+) -> 
+nat
+ 
+	s: [  ] --> 
+nat
+ -> 
+nat
+ 
+	succ: [  ] --> 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+	
+)
+    
+(RULES 
+        (@ (@ (@ rec 0 ) X ) \%Y:
+nat
+.\%X:
+nat
+.(@ (@ Z %Y ) %X ) ) -> X
+        (@ (@ (@ rec (@ s U ) ) V ) \%U:
+nat
+.\%Z:
+nat
+.(@ (@ I %U ) %Z ) ) -> (@ (@ I U ) (@ (@ (@ rec U ) V ) \%W:
+nat
+.\%V:
+nat
+.(@ (@ I %W ) %V ) ) )
+        (@ (@ succ P ) X1 ) -> (@ s X1 )
+        (@ (@ plus Y1 ) U1 ) -> (@ (@ (@ rec Y1 ) U1 ) \%G:
+nat
+.\%F:
+nat
+.(@ (@ succ %G ) %F ) )
+        
+)
+    

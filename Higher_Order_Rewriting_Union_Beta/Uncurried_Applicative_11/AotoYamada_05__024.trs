@@ -1,0 +1,48 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+a
+ 
+        Z: 
+a
+ -> 
+a
+ 
+        U: 
+a
+ 
+        V: 
+b
+ 
+        
+        cons: [ 
+a
+ , 
+b
+ ] --> 
+b
+ 
+	map: [ 
+a
+ -> 
+a
+ , 
+b
+ ] --> 
+b
+ 
+	nil: [  ] --> 
+b
+ 
+	
+)
+    
+(RULES 
+        map(F,nil) -> nil
+        map(Z,cons(U,V)) -> cons((@ Z U ),map(Z,V))
+        
+)
+    

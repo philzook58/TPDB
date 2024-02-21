@@ -1,0 +1,9 @@
+(VAR X )
+(STRATEGY OUTERMOST)
+(RULES 
+        f(a,X) -> f(X,X)
+        c -> a
+        c -> b
+        
+)
+    

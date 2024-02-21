@@ -1,0 +1,111 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+b
+ -> 
+b
+ 
+        Y: 
+b
+ 
+        G: 
+a
+ -> 
+b
+ -> 
+b
+ 
+        V: 
+b
+ 
+        W: 
+a
+ 
+        J: 
+a
+ -> 
+b
+ -> 
+b
+ 
+        X1: 
+a
+ 
+        Z1: 
+b
+ -> 
+b
+ 
+        U1: 
+b
+ 
+        
+        0: [  ] --> 
+a
+ 
+	rec: [ 
+a
+ -> 
+b
+ -> 
+b
+ , 
+b
+ , 
+a
+ ] --> 
+b
+ 
+	s: [ 
+a
+ ] --> 
+a
+ 
+	xap: [ 
+a
+ -> 
+b
+ -> 
+b
+ , 
+a
+ ] --> 
+b
+ -> 
+b
+ 
+	yap: [ 
+b
+ -> 
+b
+ , 
+b
+ ] --> 
+b
+ 
+	
+)
+    
+(RULES 
+        rec(\%X:
+a
+.\%Y:
+b
+.yap(xap(F,%X),%Y),Y,0) -> Y
+        rec(\%Z:
+a
+.\%U:
+b
+.yap(xap(G,%Z),%U),V,s(W)) -> yap(xap(G,s(W)),rec(\%V:
+a
+.\%W:
+b
+.yap(xap(G,%V),%W),V,W))
+        xap(J,X1) -> (@ J X1 )
+        yap(Z1,U1) -> (@ Z1 U1 )
+        
+)
+    

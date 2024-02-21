@@ -1,0 +1,10 @@
+(VAR  )
+(THEORY 
+        (AC ac1 ac2) 
+)
+(RULES 
+        ac1(a,ac2(b,c)) -> ac1(b,f(ac2(a,c)))
+        ac2(a,ac1(b,c)) -> ac2(b,f(ac1(a,c)))
+        
+)
+    

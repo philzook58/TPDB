@@ -1,0 +1,124 @@
+
+(HO-SIGNATURE 
+
+        X: 
+nat
+ 
+        Y: 
+nat
+ 
+        U: 
+nat
+ 
+        V: 
+nat
+ 
+        W: 
+nat
+ 
+        P: 
+nat
+ 
+        X1: 
+nat
+ 
+        Y1: 
+nat
+ 
+        U1: 
+nat
+ 
+        V1: 
+nat
+ 
+        W1: 
+nat
+ 
+        P1: 
+nat
+ 
+        F2: 
+nat
+ -> 
+nat
+ 
+        Y2: 
+list
+ 
+        U2: 
+nat
+ 
+        
+        0: [  ] --> 
+nat
+ 
+	build: [ 
+nat
+ ] --> 
+list
+ 
+	collapse: [ 
+list
+ ] --> 
+nat
+ 
+	cons: [ 
+nat
+ -> 
+nat
+ , 
+list
+ ] --> 
+list
+ 
+	diff: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	gcd: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	min: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	nil: [  ] --> 
+list
+ 
+	s: [ 
+nat
+ ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        min(X,0) -> 0
+        min(0,Y) -> 0
+        min(s(U),s(V)) -> s(min(U,V))
+        diff(W,0) -> W
+        diff(0,P) -> P
+        diff(s(X1),s(Y1)) -> diff(X1,Y1)
+        gcd(s(U1),0) -> s(U1)
+        gcd(0,s(V1)) -> s(V1)
+        gcd(s(W1),s(P1)) -> gcd(diff(W1,P1),s(min(W1,P1)))
+        collapse(nil) -> 0
+        collapse(cons(F2,Y2)) -> (@ F2 collapse(Y2) )
+        build(0) -> nil
+        build(s(U2)) -> cons(\%X:
+nat
+.gcd(%X,U2),build(U2))
+        
+)
+    

@@ -1,0 +1,9 @@
+(VAR x y z )
+(STRATEGY OUTERMOST)
+(RULES 
+        0 -> b(0,0)
+        b(b(x,y),z) -> c
+        b(x,b(y,z)) -> c
+        
+)
+    

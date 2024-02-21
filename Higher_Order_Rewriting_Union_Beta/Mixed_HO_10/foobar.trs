@@ -1,0 +1,29 @@
+
+(HO-SIGNATURE 
+
+        F: 
+o
+ -> 
+o
+ 
+        
+        foo: [ 
+o
+ ] --> 
+o
+ 
+	bar: [ 
+o
+ -> 
+o
+ ] --> 
+o
+ 
+	
+)
+    
+(RULES 
+        foo(bar(F)) -> (@ F bar(F) )
+        
+)
+    

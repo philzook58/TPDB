@@ -1,0 +1,34 @@
+
+(HO-SIGNATURE 
+
+        F: 
+nat
+ -> 
+nat
+ 
+        Y: 
+nat
+ 
+        
+        pair: [ 
+nat
+ -> 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	split: [ 
+nat
+ ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        split((@ F Y )) -> pair(F,Y)
+        
+)
+    

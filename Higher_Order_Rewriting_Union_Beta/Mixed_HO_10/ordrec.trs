@@ -1,0 +1,83 @@
+
+(HO-SIGNATURE 
+
+        F: 
+nat
+ -> 
+ord
+ 
+        U: 
+a
+ 
+        x: 
+ord
+ 
+        X: 
+ord
+ -> 
+a
+ -> 
+a
+ 
+        W:  (
+nat
+ -> 
+ord
+) ->  (
+nat
+ -> 
+a
+) -> 
+a
+ 
+        
+        0: [  ] --> 
+ord
+ 
+	s: [ 
+ord
+ ] --> 
+ord
+ 
+	lim: [ 
+nat
+ -> 
+ord
+ ] --> 
+ord
+ 
+	rec: [ 
+ord
+ , 
+a
+ , 
+ord
+ -> 
+a
+ -> 
+a
+ ,  (
+nat
+ -> 
+ord
+) ->  (
+nat
+ -> 
+a
+) -> 
+a
+ ] --> 
+a
+ 
+	
+)
+    
+(RULES 
+        rec(0,U,X,W) -> U
+        rec(s(x),U,X,W) -> (@ (@ X x ) rec(x,U,X,W) )
+        rec(lim(F),U,X,W) -> (@ (@ W F ) \n:
+nat
+.rec((@ F n ),U,X,W) )
+        
+)
+    

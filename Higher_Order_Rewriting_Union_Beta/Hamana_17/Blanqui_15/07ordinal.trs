@@ -1,0 +1,57 @@
+
+(HO-SIGNATURE 
+
+        X: 
+O
+ 
+        Y: 
+O
+ 
+        U: 
+O
+ 
+        H: 
+N
+ -> 
+O
+ 
+        W: 
+O
+ 
+        
+        lim: [  ] -->  (
+N
+ -> 
+O
+) -> 
+O
+ 
+	plus: [  ] --> 
+O
+ -> 
+O
+ -> 
+O
+ 
+	s: [  ] --> 
+O
+ -> 
+O
+ 
+	z: [  ] --> 
+O
+ 
+	
+)
+    
+(RULES 
+        (@ (@ plus z ) X ) -> X
+        (@ (@ plus (@ s Y ) ) U ) -> (@ s (@ (@ plus Y ) U ) )
+        (@ (@ plus (@ lim \%X:
+N
+.(@ H %X ) ) ) W ) -> (@ lim \%Y:
+N
+.(@ (@ plus (@ H %Y ) ) W ) )
+        
+)
+    

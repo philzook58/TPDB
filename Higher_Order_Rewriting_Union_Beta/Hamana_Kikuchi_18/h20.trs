@@ -1,0 +1,443 @@
+
+(HO-SIGNATURE 
+
+        X: 
+A
+ 
+        Y: 
+A
+ 
+        U: 
+A
+ 
+        V: 
+A
+ 
+        W: 
+A
+ 
+        P: 
+A
+ 
+        X1: 
+A
+ 
+        Y1: 
+A
+ 
+        U1: 
+A
+ 
+        V1: 
+A
+ 
+        W1: 
+A
+ 
+        P1: 
+A
+ 
+        X2: 
+A
+ 
+        Y2: 
+A
+ 
+        U2: 
+A
+ 
+        V2: 
+A
+ 
+        W2: 
+A
+ 
+        P2: 
+A
+ 
+        X3: 
+A
+ 
+        Y3: 
+A
+ 
+        U3: 
+A
+ 
+        V3: 
+A
+ 
+        W3: 
+A
+ 
+        P3: 
+A
+ 
+        X4: 
+A
+ 
+        Y4: 
+A
+ 
+        U4: 
+A
+ 
+        V4: 
+A
+ 
+        W4: 
+A
+ 
+        P4: 
+A
+ 
+        X5: 
+A
+ 
+        Y5: 
+A
+ 
+        U5: 
+A
+ 
+        V5: 
+A
+ 
+        W5: 
+A
+ 
+        P5: 
+A
+ 
+        X6: 
+A
+ 
+        Y6: 
+A
+ 
+        U6: 
+A
+ 
+        V6: 
+A
+ 
+        W6: 
+A
+ 
+        P6: 
+A
+ 
+        X7: 
+A
+ 
+        Y7: 
+A
+ 
+        U7: 
+A
+ 
+        V7: 
+A
+ 
+        W7: 
+A
+ 
+        P7: 
+A
+ 
+        X8: 
+A
+ 
+        Y8: 
+A
+ 
+        U8: 
+A
+ 
+        V8: 
+A
+ 
+        W8: 
+A
+ 
+        P8: 
+A
+ 
+        X9: 
+A
+ 
+        Y9: 
+A
+ 
+        U9: 
+A
+ 
+        V9: 
+A
+ 
+        W9: 
+A
+ 
+        P9: 
+A
+ 
+        X10: 
+A
+ 
+        Y10: 
+A
+ 
+        U10: 
+A
+ 
+        V10: 
+A
+ 
+        W10: 
+A
+ 
+        P10: 
+A
+ 
+        X11: 
+A
+ 
+        Y11: 
+A
+ 
+        U11: 
+A
+ 
+        V11: 
+A
+ 
+        W11: 
+A
+ 
+        P11: 
+A
+ 
+        X12: 
+A
+ 
+        Y12: 
+A
+ 
+        G12: 
+A
+ -> 
+A
+ 
+        H12: 
+A
+ -> 
+A
+ 
+        W12: 
+A
+ 
+        P12: 
+A
+ 
+        F13: 
+A
+ -> 
+A
+ 
+        Y13: 
+A
+ 
+        G13: 
+A
+ -> 
+A
+ -> 
+A
+ 
+        V13: 
+A
+ 
+        I13: 
+A
+ -> 
+A
+ -> 
+A
+ 
+        P13: 
+A
+ 
+        X14: 
+A
+ 
+        Y14: 
+A
+ 
+        
+        0: [  ] --> 
+A
+ 
+	active: [  ] --> 
+A
+ -> 
+A
+ 
+	app: [  ] -->  (
+A
+ -> 
+A
+) -> 
+A
+ -> 
+A
+ 
+	cons: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	foldr: [  ] -->  (
+A
+ -> 
+A
+ -> 
+A
+) -> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	from: [  ] --> 
+A
+ -> 
+A
+ 
+	map: [  ] -->  (
+A
+ -> 
+A
+) -> 
+A
+ -> 
+A
+ 
+	mark: [  ] --> 
+A
+ -> 
+A
+ 
+	minus: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	nil: [  ] --> 
+A
+ 
+	quot: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	s: [  ] --> 
+A
+ -> 
+A
+ 
+	sel: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	zWquot: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	
+)
+    
+(RULES 
+        (@ active (@ from X ) ) -> (@ mark (@ (@ cons X ) (@ from (@ s X ) ) ) )
+        (@ active (@ (@ sel 0 ) (@ (@ cons Y ) U ) ) ) -> (@ mark Y )
+        (@ active (@ (@ sel (@ s V ) ) (@ (@ cons W ) P ) ) ) -> (@ mark (@ (@ sel V ) P ) )
+        (@ active (@ (@ minus X1 ) 0 ) ) -> (@ mark 0 )
+        (@ active (@ (@ minus (@ s Y1 ) ) (@ s U1 ) ) ) -> (@ mark (@ (@ minus Y1 ) U1 ) )
+        (@ active (@ (@ quot 0 ) (@ s V1 ) ) ) -> (@ mark 0 )
+        (@ active (@ (@ quot (@ s W1 ) ) (@ s P1 ) ) ) -> (@ mark (@ s (@ (@ quot (@ (@ minus W1 ) P1 ) ) (@ s P1 ) ) ) )
+        (@ active (@ (@ zWquot X2 ) nil ) ) -> (@ mark nil )
+        (@ active (@ (@ zWquot nil ) Y2 ) ) -> (@ mark nil )
+        (@ active (@ (@ zWquot (@ (@ cons U2 ) V2 ) ) (@ (@ cons W2 ) P2 ) ) ) -> (@ mark (@ (@ cons (@ (@ quot U2 ) W2 ) ) (@ (@ zWquot V2 ) P2 ) ) )
+        (@ mark (@ from X3 ) ) -> (@ active (@ from (@ mark X3 ) ) )
+        (@ mark (@ (@ cons Y3 ) U3 ) ) -> (@ active (@ (@ cons (@ mark Y3 ) ) U3 ) )
+        (@ mark (@ s V3 ) ) -> (@ active (@ s (@ mark V3 ) ) )
+        (@ mark (@ (@ sel W3 ) P3 ) ) -> (@ active (@ (@ sel (@ mark W3 ) ) (@ mark P3 ) ) )
+        (@ mark 0 ) -> (@ active 0 )
+        (@ mark (@ (@ minus X4 ) Y4 ) ) -> (@ active (@ (@ minus (@ mark X4 ) ) (@ mark Y4 ) ) )
+        (@ mark (@ (@ quot U4 ) V4 ) ) -> (@ active (@ (@ quot (@ mark U4 ) ) (@ mark V4 ) ) )
+        (@ mark (@ (@ zWquot W4 ) P4 ) ) -> (@ active (@ (@ zWquot (@ mark W4 ) ) (@ mark P4 ) ) )
+        (@ mark nil ) -> (@ active nil )
+        (@ from (@ mark X5 ) ) -> (@ from X5 )
+        (@ from (@ active Y5 ) ) -> (@ from Y5 )
+        (@ (@ cons (@ mark U5 ) ) V5 ) -> (@ (@ cons U5 ) V5 )
+        (@ (@ cons W5 ) (@ mark P5 ) ) -> (@ (@ cons W5 ) P5 )
+        (@ (@ cons (@ active X6 ) ) Y6 ) -> (@ (@ cons X6 ) Y6 )
+        (@ (@ cons U6 ) (@ active V6 ) ) -> (@ (@ cons U6 ) V6 )
+        (@ s (@ mark W6 ) ) -> (@ s W6 )
+        (@ s (@ active P6 ) ) -> (@ s P6 )
+        (@ (@ sel (@ mark X7 ) ) Y7 ) -> (@ (@ sel X7 ) Y7 )
+        (@ (@ sel U7 ) (@ mark V7 ) ) -> (@ (@ sel U7 ) V7 )
+        (@ (@ sel (@ active W7 ) ) P7 ) -> (@ (@ sel W7 ) P7 )
+        (@ (@ sel X8 ) (@ active Y8 ) ) -> (@ (@ sel X8 ) Y8 )
+        (@ (@ minus (@ mark U8 ) ) V8 ) -> (@ (@ minus U8 ) V8 )
+        (@ (@ minus W8 ) (@ mark P8 ) ) -> (@ (@ minus W8 ) P8 )
+        (@ (@ minus (@ active X9 ) ) Y9 ) -> (@ (@ minus X9 ) Y9 )
+        (@ (@ minus U9 ) (@ active V9 ) ) -> (@ (@ minus U9 ) V9 )
+        (@ (@ quot (@ mark W9 ) ) P9 ) -> (@ (@ quot W9 ) P9 )
+        (@ (@ quot X10 ) (@ mark Y10 ) ) -> (@ (@ quot X10 ) Y10 )
+        (@ (@ quot (@ active U10 ) ) V10 ) -> (@ (@ quot U10 ) V10 )
+        (@ (@ quot W10 ) (@ active P10 ) ) -> (@ (@ quot W10 ) P10 )
+        (@ (@ zWquot (@ mark X11 ) ) Y11 ) -> (@ (@ zWquot X11 ) Y11 )
+        (@ (@ zWquot U11 ) (@ mark V11 ) ) -> (@ (@ zWquot U11 ) V11 )
+        (@ (@ zWquot (@ active W11 ) ) P11 ) -> (@ (@ zWquot W11 ) P11 )
+        (@ (@ zWquot X12 ) (@ active Y12 ) ) -> (@ (@ zWquot X12 ) Y12 )
+        (@ (@ map \%X:
+A
+.(@ G12 %X ) ) nil ) -> nil
+        (@ (@ map \%Y:
+A
+.(@ H12 %Y ) ) (@ (@ cons W12 ) P12 ) ) -> (@ (@ cons (@ H12 W12 ) ) (@ (@ map \%Z:
+A
+.(@ H12 %Z ) ) P12 ) )
+        (@ (@ app \%U:
+A
+.(@ F13 %U ) ) Y13 ) -> (@ F13 Y13 )
+        (@ (@ (@ foldr \%W:
+A
+.\%V:
+A
+.(@ (@ G13 %W ) %V ) ) V13 ) nil ) -> V13
+        (@ (@ (@ foldr \%G:
+A
+.\%F:
+A
+.(@ (@ I13 %G ) %F ) ) P13 ) (@ (@ cons X14 ) Y14 ) ) -> (@ (@ I13 X14 ) (@ (@ (@ foldr \%I:
+A
+.\%H:
+A
+.(@ (@ I13 %I ) %H ) ) P13 ) Y14 ) )
+        
+)
+    

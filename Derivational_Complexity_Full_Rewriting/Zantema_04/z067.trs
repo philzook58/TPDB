@@ -1,0 +1,14 @@
+(VAR x1 )
+(RULES 
+        P(x1) -> Q(Q(p(x1)))
+        p(p(x1)) -> q(q(x1))
+        p(Q(Q(x1))) -> Q(Q(p(x1)))
+        Q(p(q(x1))) -> q(p(Q(x1)))
+        q(q(p(x1))) -> p(q(q(x1)))
+        q(Q(x1)) -> x1
+        Q(q(x1)) -> x1
+        p(P(x1)) -> x1
+        P(p(x1)) -> x1
+        
+)
+    

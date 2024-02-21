@@ -1,0 +1,93 @@
+
+(HO-SIGNATURE 
+
+        F: 
+nat
+ -> 
+string
+ 
+        Z: 
+nat
+ -> 
+string
+ 
+        G: 
+nat
+ -> 
+nat
+ 
+        V: 
+funlist
+ 
+        
+        cons: [ 
+nat
+ -> 
+nat
+ , 
+funlist
+ ] --> 
+funlist
+ 
+	false: [  ] --> 
+bool
+ 
+	head: [ 
+funlist
+ ] --> 
+nat
+ -> 
+nat
+ 
+	if: [ 
+bool
+ , 
+nat
+ -> 
+string
+ , 
+nat
+ -> 
+string
+ ] --> 
+nat
+ -> 
+string
+ 
+	nil: [  ] --> 
+funlist
+ 
+	s: [ 
+nat
+ ] --> 
+nat
+ 
+	tail: [ 
+funlist
+ ] --> 
+funlist
+ 
+	test: [ 
+nat
+ -> 
+nat
+ ] --> 
+bool
+ 
+	true: [  ] --> 
+bool
+ 
+	
+)
+    
+(RULES 
+        if(true,F,Z) -> F
+        if(false,F,Z) -> Z
+        test(\%X:
+nat
+.s(%X)) -> true
+        head(cons(G,V)) -> G
+        tail(cons(G,V)) -> V
+        
+)
+    

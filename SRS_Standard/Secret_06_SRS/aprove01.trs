@@ -1,0 +1,14 @@
+(VAR x1 )
+(RULES 
+        p(0(x1)) -> 0(s(s(p(x1))))
+        p(s(x1)) -> x1
+        p(p(s(x1))) -> p(x1)
+        f(s(x1)) -> p(s(g(p(s(s(x1))))))
+        g(s(x1)) -> p(p(s(s(s(j(s(p(s(p(s(x1)))))))))))
+        j(s(x1)) -> p(s(s(p(s(f(p(s(p(p(s(x1)))))))))))
+        half(0(x1)) -> 0(s(s(half(p(s(p(s(x1))))))))
+        half(s(s(x1))) -> s(half(p(p(s(s(x1))))))
+        rd(0(x1)) -> 0(s(0(0(0(0(s(0(rd(x1)))))))))
+        
+)
+    

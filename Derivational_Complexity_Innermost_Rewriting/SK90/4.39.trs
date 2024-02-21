@@ -1,0 +1,7 @@
+(VAR x y )
+(STRATEGY INNERMOST)
+(RULES 
+        *(x,*(minus(y),y)) -> *(minus(*(y,y)),x)
+        
+)
+    

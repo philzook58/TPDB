@@ -1,0 +1,45 @@
+
+(HO-SIGNATURE 
+
+        X: 
+t
+ 
+        Y: 
+t
+ 
+        U: 
+t
+ 
+        V: 
+t
+ 
+        
+        and: [ 
+c
+ , 
+c
+ ] --> 
+c
+ 
+	arrow: [ 
+t
+ , 
+t
+ ] --> 
+t
+ 
+	lessthan: [ 
+t
+ , 
+t
+ ] --> 
+c
+ 
+	
+)
+    
+(RULES 
+        lessthan(arrow(X,Y),arrow(U,V)) -> and(lessthan(U,X),lessthan(Y,V))
+        
+)
+    

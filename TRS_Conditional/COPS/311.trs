@@ -1,0 +1,12 @@
+(VAR x y z )
+(RULES 
+        gcd(x,0) -> x
+        gcd(0,x) -> x
+        iadd(y) -> tp2(0,y)
+        iadd(add(x,y)) -> tp2(x,y)
+        gcd(z,y) -> gcd(x,y) | iadd(z) -> tp2(x,y)
+        gcd(y,z) -> gcd(x,y) | iadd(z) -> tp2(x,y)
+        iadd(s(z)) -> tp2(s(x),y) | iadd(z) -> tp2(x,y)
+        
+)
+    

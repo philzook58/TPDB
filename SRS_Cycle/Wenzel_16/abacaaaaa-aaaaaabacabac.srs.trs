@@ -1,0 +1,6 @@
+(VAR x1 )
+(RULES 
+        a(b(a(c(a(a(a(a(a(x1))))))))) -> a(a(a(a(a(a(b(a(c(a(b(a(c(x1)))))))))))))
+        
+)
+    

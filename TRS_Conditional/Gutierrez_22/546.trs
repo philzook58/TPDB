@@ -1,0 +1,7 @@
+(VAR x )
+(RULES 
+        g(x) -> f(x,x)
+        g(x) -> g(x) | g(x) -> f(a,b)
+        
+)
+    

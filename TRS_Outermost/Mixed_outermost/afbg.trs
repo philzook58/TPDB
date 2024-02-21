@@ -1,0 +1,11 @@
+(VAR x )
+(STRATEGY OUTERMOST)
+(RULES 
+        a -> f(a)
+        b -> g(b)
+        a -> b
+        f(f(f(f(f(f(f(f(f(f(x)))))))))) -> c
+        g(g(g(g(g(g(g(g(g(g(x)))))))))) -> c
+        
+)
+    

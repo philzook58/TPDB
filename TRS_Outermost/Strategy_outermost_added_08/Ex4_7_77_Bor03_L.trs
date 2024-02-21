@@ -1,0 +1,8 @@
+(VAR X XS )
+(STRATEGY OUTERMOST)
+(RULES 
+        tail(cons(X)) -> XS
+        zeros -> cons(0)
+        
+)
+    

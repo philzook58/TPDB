@@ -1,0 +1,10 @@
+(VAR L N X )
+(STRATEGY OUTERMOST)
+(RULES 
+        and(tt) -> X
+        length(cons(N)) -> s(length(L))
+        zeros -> cons(0)
+        length(nil) -> 0
+        
+)
+    

@@ -1,0 +1,20 @@
+(VAR x xs )
+(STRATEGY CONTEXTSENSITIVE
+        (from_2 ) 
+        (cons_0 1 2) 
+        (from_1 ) 
+        (s_0 1) 
+        (from_3 ) 
+        (from_4 ) 
+        (cons_1 ) 
+        (nil_0 ) 
+)
+(RULES 
+        from_2(x) -> cons_0(x,from_1(s_0(x)))
+        from_3(x) -> cons_0(x,from_2(s_0(x)))
+        from_4(x) -> cons_0(x,from_2(s_0(x)))
+        from_1(x) -> cons_1(x,from_1(s_0(x)))
+        cons_1(s_0(s_0(x)),xs) -> nil_0
+        
+)
+    

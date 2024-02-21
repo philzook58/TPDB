@@ -1,0 +1,95 @@
+
+(HO-SIGNATURE 
+
+        F: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        Y: 
+nat
+ 
+        G: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        V: 
+nat
+ 
+        W: 
+nat
+ 
+        P: 
+list
+ 
+        X1: 
+list
+ 
+        
+        0: [  ] --> 
+nat
+ 
+	cons: [  ] --> 
+nat
+ -> 
+list
+ -> 
+list
+ 
+	foldr: [  ] -->  (
+nat
+ -> 
+nat
+ -> 
+nat
+) -> 
+nat
+ -> 
+list
+ -> 
+nat
+ 
+	length: [  ] --> 
+list
+ -> 
+nat
+ 
+	nil: [  ] --> 
+list
+ 
+	s: [  ] --> 
+nat
+ -> 
+nat
+ 
+	
+)
+    
+(RULES 
+        (@ (@ (@ foldr \%Y:
+nat
+.\%X:
+nat
+.(@ (@ F %Y ) %X ) ) Y ) nil ) -> Y
+        (@ (@ (@ foldr \%U:
+nat
+.\%Z:
+nat
+.(@ (@ G %U ) %Z ) ) V ) (@ (@ cons W ) P ) ) -> (@ (@ G W ) (@ (@ (@ foldr \%W:
+nat
+.\%V:
+nat
+.(@ (@ G %W ) %V ) ) V ) P ) )
+        (@ length X1 ) -> (@ (@ (@ foldr \%G:
+nat
+.\%F:
+nat
+.(@ s %F ) ) 0 ) X1 )
+        
+)
+    

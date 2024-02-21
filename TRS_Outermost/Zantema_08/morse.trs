@@ -1,0 +1,11 @@
+(VAR s x )
+(STRATEGY OUTERMOST)
+(RULES 
+        M -> h(cons(0,tail(M)))
+        tail(cons(x,s)) -> s
+        h(cons(0,s)) -> cons(0,cons(1,h(s)))
+        h(cons(1,s)) -> cons(1,cons(0,h(s)))
+        cons(x,s) -> garbage
+        
+)
+    

@@ -1,0 +1,7 @@
+(VAR x1 )
+(RULES 
+        a(x1) -> b(x1)
+        b(b(a(c(x1)))) -> a(c(c(a(b(a(x1))))))
+        
+)
+    

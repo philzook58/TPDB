@@ -1,0 +1,56 @@
+
+(HO-SIGNATURE 
+
+        X: 
+b
+ 
+        Z: 
+b
+ -> 
+c
+ 
+        U: 
+a
+ 
+        V: 
+b
+ 
+        
+        cons: [ 
+c
+ , 
+d
+ ] --> 
+d
+ 
+	fcons: [ 
+b
+ -> 
+c
+ , 
+a
+ ] --> 
+a
+ 
+	fmap: [ 
+a
+ , 
+b
+ ] --> 
+d
+ 
+	fnil: [  ] --> 
+a
+ 
+	nil: [  ] --> 
+d
+ 
+	
+)
+    
+(RULES 
+        fmap(fnil,X) -> nil
+        fmap(fcons(Z,U),V) -> cons((@ Z V ),fmap(U,V))
+        
+)
+    

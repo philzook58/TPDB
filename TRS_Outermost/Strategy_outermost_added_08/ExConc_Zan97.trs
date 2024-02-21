@@ -1,0 +1,7 @@
+(VAR X )
+(STRATEGY OUTERMOST)
+(RULES 
+        f(X) -> g(h(f(X)))
+        
+)
+    

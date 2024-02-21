@@ -1,0 +1,40 @@
+
+(HO-SIGNATURE 
+
+        X: 
+A
+ 
+        Z: 
+N
+ -> 
+N
+ -> 
+A
+ 
+        
+        New: [  ] -->  (
+N
+ -> 
+A
+) -> 
+A
+ 
+	
+)
+    
+(RULES 
+        (@ New \%X:
+N
+.X ) -> X
+        (@ New \%Z:
+N
+.(@ New \%Y:
+N
+.(@ (@ Z %Z ) %Y ) ) ) -> (@ New \%U:
+N
+.(@ New \%V:
+N
+.(@ (@ Z %V ) %U ) ) )
+        
+)
+    

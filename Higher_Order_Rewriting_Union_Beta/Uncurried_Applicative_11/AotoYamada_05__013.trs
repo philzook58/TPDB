@@ -1,0 +1,106 @@
+
+(HO-SIGNATURE 
+
+        X: 
+c
+ 
+        Y: 
+b
+ 
+        U: 
+c
+ 
+        V: 
+c
+ 
+        I: 
+a
+ -> 
+b
+ 
+        P: 
+a
+ 
+        F1: 
+a
+ -> 
+b
+ 
+        Y1: 
+c
+ 
+        G1: 
+a
+ -> 
+b
+ 
+        H1: 
+a
+ -> 
+b
+ 
+        W1: 
+b
+ 
+        P1: 
+c
+ 
+        
+        append: [ 
+c
+ , 
+c
+ ] --> 
+c
+ 
+	cons: [ 
+b
+ , 
+c
+ ] --> 
+c
+ 
+	flatwith: [ 
+a
+ -> 
+b
+ , 
+b
+ ] --> 
+c
+ 
+	flatwithsub: [ 
+a
+ -> 
+b
+ , 
+c
+ ] --> 
+c
+ 
+	leaf: [ 
+a
+ ] --> 
+b
+ 
+	nil: [  ] --> 
+c
+ 
+	node: [ 
+c
+ ] --> 
+b
+ 
+	
+)
+    
+(RULES 
+        append(nil,X) -> X
+        append(cons(Y,U),V) -> cons(Y,append(U,V))
+        flatwith(I,leaf(P)) -> cons((@ I P ),nil)
+        flatwith(F1,node(Y1)) -> flatwithsub(F1,Y1)
+        flatwithsub(G1,nil) -> nil
+        flatwithsub(H1,cons(W1,P1)) -> append(flatwith(H1,W1),flatwithsub(H1,P1))
+        
+)
+    

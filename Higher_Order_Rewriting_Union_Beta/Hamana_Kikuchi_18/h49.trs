@@ -1,0 +1,172 @@
+
+(HO-SIGNATURE 
+
+        X: 
+nat
+ 
+        Z: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        U: 
+nat
+ 
+        V: 
+nat
+ 
+        I: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        P: 
+nat
+ 
+        X1: 
+nat
+ 
+        Y1: 
+nat
+ 
+        U1: 
+nat
+ 
+        V1: 
+nat
+ 
+        W1: 
+nat
+ 
+        P1: 
+nat
+ 
+        X2: 
+nat
+ 
+        Y2: 
+nat
+ 
+        G2: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        V2: 
+nat
+ 
+        I2: 
+nat
+ -> 
+nat
+ 
+        P2: 
+nat
+ 
+        
+        0: [  ] --> 
+nat
+ 
+	mult: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	plus: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	plus3: [ 
+nat
+ ] --> 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+	rec: [ 
+nat
+ , 
+nat
+ , 
+nat
+ -> 
+nat
+ -> 
+nat
+ ] --> 
+nat
+ 
+	s: [ 
+nat
+ ] --> 
+nat
+ 
+	succ2: [  ] --> 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+	xap: [ 
+nat
+ -> 
+nat
+ -> 
+nat
+ , 
+nat
+ ] --> 
+nat
+ -> 
+nat
+ 
+	yap: [ 
+nat
+ -> 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        rec(0,X,\%X:
+nat
+.\%Y:
+nat
+.yap(xap(Z,%X),%Y)) -> X
+        rec(s(U),V,\%Z:
+nat
+.\%U:
+nat
+.yap(xap(I,%Z),%U)) -> yap(xap(I,U),rec(U,V,\%V:
+nat
+.\%W:
+nat
+.yap(xap(I,%V),%W)))
+        (@ (@ succ2 P ) X1 ) -> s(X1)
+        plus(Y1,U1) -> rec(Y1,U1,succ2)
+        (@ (@ plus3(V1) W1 ) P1 ) -> plus(V1,plus(W1,P1))
+        mult(X2,Y2) -> rec(X2,0,plus3(Y2))
+        xap(G2,V2) -> (@ G2 V2 )
+        yap(I2,P2) -> (@ I2 P2 )
+        
+)
+    

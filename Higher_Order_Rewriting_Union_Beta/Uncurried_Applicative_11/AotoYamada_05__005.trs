@@ -1,0 +1,72 @@
+
+(HO-SIGNATURE 
+
+        X: 
+a
+ 
+        Y: 
+a
+ 
+        U: 
+a
+ 
+        H: 
+a
+ -> 
+a
+ -> 
+a
+ 
+        W: 
+a
+ 
+        P: 
+a
+ 
+        
+        0: [  ] --> 
+a
+ 
+	add: [  ] --> 
+a
+ -> 
+a
+ -> 
+a
+ 
+	curry: [ 
+a
+ -> 
+a
+ -> 
+a
+ ] --> 
+a
+ -> 
+a
+ -> 
+a
+ 
+	plus: [  ] --> 
+a
+ -> 
+a
+ -> 
+a
+ 
+	s: [ 
+a
+ ] --> 
+a
+ 
+	
+)
+    
+(RULES 
+        (@ (@ plus 0 ) X ) -> X
+        (@ (@ plus s(Y) ) U ) -> s((@ (@ plus Y ) U ))
+        (@ (@ curry(H) W ) P ) -> (@ (@ H W ) P )
+        add -> curry(plus)
+        
+)
+    

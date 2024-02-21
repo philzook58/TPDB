@@ -1,0 +1,95 @@
+
+(HO-SIGNATURE 
+
+        X: 
+list
+ 
+        Y: 
+nat
+ 
+        U: 
+list
+ 
+        V: 
+list
+ 
+        W: 
+nat
+ 
+        P: 
+list
+ 
+        X1: 
+nat
+ 
+        Y1: 
+list
+ 
+        G1: 
+nat
+ -> 
+nat
+ 
+        H1: 
+nat
+ -> 
+nat
+ 
+        W1: 
+nat
+ 
+        P1: 
+list
+ 
+        
+        app: [ 
+list
+ , 
+list
+ ] --> 
+list
+ 
+	cons: [ 
+nat
+ , 
+list
+ ] --> 
+list
+ 
+	map: [ 
+nat
+ -> 
+nat
+ , 
+list
+ ] --> 
+list
+ 
+	nil: [  ] --> 
+list
+ 
+	reverse: [ 
+list
+ ] --> 
+list
+ 
+	shuffle: [ 
+list
+ ] --> 
+list
+ 
+	
+)
+    
+(RULES 
+        app(nil,X) -> X
+        app(cons(Y,U),V) -> cons(Y,app(U,V))
+        reverse(nil) -> nil
+        reverse(cons(W,P)) -> app(reverse(P),cons(W,nil))
+        shuffle(nil) -> nil
+        shuffle(cons(X1,Y1)) -> cons(X1,shuffle(reverse(Y1)))
+        map(G1,nil) -> nil
+        map(H1,cons(W1,P1)) -> cons((@ H1 W1 ),map(H1,P1))
+        
+)
+    

@@ -1,0 +1,365 @@
+
+(HO-SIGNATURE 
+
+        X: 
+A
+ 
+        Y: 
+A
+ 
+        U: 
+A
+ 
+        V: 
+A
+ 
+        W: 
+A
+ 
+        P: 
+A
+ 
+        X1: 
+A
+ 
+        Y1: 
+A
+ 
+        U1: 
+A
+ 
+        V1: 
+A
+ 
+        W1: 
+A
+ 
+        P1: 
+A
+ 
+        X2: 
+A
+ 
+        Y2: 
+A
+ 
+        U2: 
+A
+ 
+        V2: 
+A
+ 
+        W2: 
+A
+ 
+        P2: 
+A
+ 
+        X3: 
+A
+ 
+        Y3: 
+A
+ 
+        U3: 
+A
+ 
+        V3: 
+A
+ 
+        W3: 
+A
+ 
+        P3: 
+A
+ 
+        X4: 
+A
+ 
+        Y4: 
+A
+ 
+        U4: 
+A
+ 
+        V4: 
+A
+ 
+        W4: 
+A
+ 
+        P4: 
+A
+ 
+        X5: 
+A
+ 
+        Y5: 
+A
+ 
+        U5: 
+A
+ 
+        V5: 
+A
+ 
+        W5: 
+A
+ 
+        P5: 
+A
+ 
+        X6: 
+A
+ 
+        Y6: 
+A
+ 
+        U6: 
+A
+ 
+        V6: 
+A
+ 
+        W6: 
+A
+ 
+        P6: 
+A
+ 
+        X7: 
+A
+ 
+        Y7: 
+A
+ 
+        U7: 
+A
+ 
+        V7: 
+A
+ 
+        W7: 
+A
+ 
+        P7: 
+A
+ 
+        F8: 
+A
+ -> 
+A
+ 
+        Z8: 
+A
+ -> 
+A
+ 
+        U8: 
+A
+ 
+        
+        0: [  ] --> 
+A
+ 
+	01: [  ] --> 
+A
+ 
+	activate: [  ] --> 
+A
+ -> 
+A
+ 
+	app: [  ] -->  (
+A
+ -> 
+A
+) -> 
+A
+ -> 
+A
+ 
+	cons: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	cons1: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	fcons: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	first: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	first1: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	from: [  ] --> 
+A
+ -> 
+A
+ 
+	map: [  ] -->  (
+A
+ -> 
+A
+) -> 
+A
+ -> 
+A
+ 
+	nil: [  ] --> 
+A
+ 
+	nil1: [  ] --> 
+A
+ 
+	nxx0: [  ] --> 
+A
+ 
+	nxxcons: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	nxxfirst: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	nxxfrom: [  ] --> 
+A
+ -> 
+A
+ 
+	nxxnil: [  ] --> 
+A
+ 
+	nxxs: [  ] --> 
+A
+ -> 
+A
+ 
+	nxxsel: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	quote: [  ] --> 
+A
+ -> 
+A
+ 
+	quote1: [  ] --> 
+A
+ -> 
+A
+ 
+	s: [  ] --> 
+A
+ -> 
+A
+ 
+	s1: [  ] --> 
+A
+ -> 
+A
+ 
+	sel: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	sel1: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	unquote: [  ] --> 
+A
+ -> 
+A
+ 
+	unquote1: [  ] --> 
+A
+ -> 
+A
+ 
+	
+)
+    
+(RULES 
+        (@ (@ sel (@ s X ) ) (@ (@ cons Y ) U ) ) -> (@ (@ sel X ) (@ activate U ) )
+        (@ (@ sel 0 ) (@ (@ cons V ) W ) ) -> V
+        (@ (@ first 0 ) P ) -> nil
+        (@ (@ first (@ s X1 ) ) (@ (@ cons Y1 ) U1 ) ) -> (@ (@ cons Y1 ) (@ (@ nxxfirst X1 ) (@ activate U1 ) ) )
+        (@ from V1 ) -> (@ (@ cons V1 ) (@ nxxfrom (@ nxxs V1 ) ) )
+        (@ (@ sel1 (@ s W1 ) ) (@ (@ cons P1 ) X2 ) ) -> (@ (@ sel1 W1 ) (@ activate X2 ) )
+        (@ (@ sel1 0 ) (@ (@ cons Y2 ) U2 ) ) -> (@ quote Y2 )
+        (@ (@ first1 0 ) V2 ) -> nil1
+        (@ (@ first1 (@ s W2 ) ) (@ (@ cons P2 ) X3 ) ) -> (@ (@ cons1 (@ quote P2 ) ) (@ (@ first1 W2 ) (@ activate X3 ) ) )
+        (@ quote nxx0 ) -> 01
+        (@ quote1 (@ (@ nxxcons Y3 ) U3 ) ) -> (@ (@ cons1 (@ quote (@ activate Y3 ) ) ) (@ quote1 (@ activate U3 ) ) )
+        (@ quote1 nxxnil ) -> nil1
+        (@ quote (@ nxxs V3 ) ) -> (@ s1 (@ quote (@ activate V3 ) ) )
+        (@ quote (@ (@ nxxsel W3 ) P3 ) ) -> (@ (@ sel1 (@ activate W3 ) ) (@ activate P3 ) )
+        (@ quote1 (@ (@ nxxfirst X4 ) Y4 ) ) -> (@ (@ first1 (@ activate X4 ) ) (@ activate Y4 ) )
+        (@ unquote 01 ) -> 0
+        (@ unquote (@ s1 U4 ) ) -> (@ s (@ unquote U4 ) )
+        (@ unquote1 nil1 ) -> nil
+        (@ unquote1 (@ (@ cons1 V4 ) W4 ) ) -> (@ (@ fcons (@ unquote V4 ) ) (@ unquote1 W4 ) )
+        (@ (@ fcons P4 ) X5 ) -> (@ (@ cons P4 ) X5 )
+        (@ (@ first Y5 ) U5 ) -> (@ (@ nxxfirst Y5 ) U5 )
+        (@ from V5 ) -> (@ nxxfrom V5 )
+        (@ s W5 ) -> (@ nxxs W5 )
+        0 -> nxx0
+        (@ (@ cons P5 ) X6 ) -> (@ (@ nxxcons P5 ) X6 )
+        nil -> nxxnil
+        (@ (@ sel Y6 ) U6 ) -> (@ (@ nxxsel Y6 ) U6 )
+        (@ activate (@ (@ nxxfirst V6 ) W6 ) ) -> (@ (@ first (@ activate V6 ) ) (@ activate W6 ) )
+        (@ activate (@ nxxfrom P6 ) ) -> (@ from (@ activate P6 ) )
+        (@ activate (@ nxxs X7 ) ) -> (@ s (@ activate X7 ) )
+        (@ activate nxx0 ) -> 0
+        (@ activate (@ (@ nxxcons Y7 ) U7 ) ) -> (@ (@ cons (@ activate Y7 ) ) U7 )
+        (@ activate nxxnil ) -> nil
+        (@ activate (@ (@ nxxsel V7 ) W7 ) ) -> (@ (@ sel (@ activate V7 ) ) (@ activate W7 ) )
+        (@ activate P7 ) -> P7
+        (@ (@ map \%X:
+A
+.(@ F8 %X ) ) nil ) -> nil
+        (@ (@ app \%Y:
+A
+.(@ Z8 %Y ) ) U8 ) -> (@ Z8 U8 )
+        
+)
+    

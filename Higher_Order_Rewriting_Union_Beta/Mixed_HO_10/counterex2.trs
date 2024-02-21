@@ -1,0 +1,31 @@
+
+(HO-SIGNATURE 
+
+        X: 
+nat
+ -> 
+nat
+ 
+        
+        f: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	g: [ 
+nat
+ -> 
+nat
+ ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        f(g(X),g(X)) -> (@ X g(X) )
+        
+)
+    

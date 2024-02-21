@@ -1,0 +1,37 @@
+
+(HO-SIGNATURE 
+
+        X: 
+nat
+ 
+        
+        s: [ 
+nat
+ ] --> 
+nat
+ 
+	I: [ 
+nat
+ ] --> 
+nat
+ 
+	0: [  ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        I(s(X)) -> s((@ (@ \Z:
+nat
+ -> 
+nat
+.\x46:
+nat
+.(@ Z (@ Z x46 ) ) \x45:
+nat
+.I(x45) ) X ))
+        I(0) -> 0
+        
+)
+    

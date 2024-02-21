@@ -1,0 +1,7 @@
+(VAR f g x )
+(STRATEGY INNERMOST)
+(RULES 
+        app(app(app(compose,f),g),x) -> app(f,app(g,x))
+        
+)
+    

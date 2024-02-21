@@ -1,0 +1,139 @@
+
+(HO-SIGNATURE 
+
+        F: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        Y: 
+nat
+ 
+        G: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        V: 
+nat
+ 
+        W: 
+nat
+ 
+        P: 
+natlist
+ 
+        X1: 
+natlist
+ 
+        Z1: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        U1: 
+nat
+ 
+        H1: 
+nat
+ -> 
+nat
+ 
+        W1: 
+nat
+ 
+        
+        0: [  ] --> 
+nat
+ 
+	cons: [ 
+nat
+ , 
+natlist
+ ] --> 
+natlist
+ 
+	foldl: [ 
+nat
+ -> 
+nat
+ -> 
+nat
+ , 
+nat
+ , 
+natlist
+ ] --> 
+nat
+ 
+	nil: [  ] --> 
+natlist
+ 
+	plus: [  ] --> 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+	sum: [ 
+natlist
+ ] --> 
+nat
+ 
+	xap: [ 
+nat
+ -> 
+nat
+ -> 
+nat
+ , 
+nat
+ ] --> 
+nat
+ -> 
+nat
+ 
+	yap: [ 
+nat
+ -> 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        foldl(\%X:
+nat
+.\%Y:
+nat
+.yap(xap(F,%X),%Y),Y,nil) -> Y
+        foldl(\%Z:
+nat
+.\%U:
+nat
+.yap(xap(G,%Z),%U),V,cons(W,P)) -> foldl(\%V:
+nat
+.\%W:
+nat
+.yap(xap(G,%V),%W),yap(xap(G,V),W),P)
+        sum(X1) -> foldl(\%F:
+nat
+.\%G:
+nat
+.yap(xap(plus,%F),%G),0,X1)
+        xap(Z1,U1) -> (@ Z1 U1 )
+        yap(H1,W1) -> (@ H1 W1 )
+        
+)
+    

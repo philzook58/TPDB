@@ -1,0 +1,12 @@
+(VAR x1 )
+(RULES 
+        o(l(x1)) -> r(x1)
+        n(l(o(x1))) -> r(o(x1))
+        L(l(o(x1))) -> L(r(o(x1)))
+        r(o(x1)) -> l(x1)
+        o(r(n(x1))) -> o(l(x1))
+        o(r(R(x1))) -> o(l(R(x1)))
+        L(x1) ->= L(n(x1))
+        R(x1) ->= n(R(x1))
+)
+    

@@ -1,0 +1,21 @@
+(VAR x x0 y z )
+(STRATEGY CONTEXTSENSITIVE
+        (f_1 ) 
+        (c_0 ) 
+        (f_0 1 2) 
+        (*top*_0 1) 
+        (a_1 ) 
+)
+(RULES 
+        f_1(f_1(x,y),z) -> c_0
+        f_1(f_0(x,y),z) -> c_0
+        f_1(x,f_1(y,z)) -> f_1(f_0(x,y),z)
+        f_1(x,f_1(y,z)) -> f_1(f_1(x,y),z)
+        f_1(x,f_0(y,z)) -> f_1(f_1(x,y),z)
+        f_1(x,f_0(y,z)) -> f_1(f_0(x,y),z)
+        *top*_0(a_1) -> *top*_0(f_0(a_1,a_1))
+        f_0(a_1,x0) -> f_1(f_0(a_1,a_1),x0)
+        f_0(x0,a_1) -> f_1(x0,f_0(a_1,a_1))
+        
+)
+    

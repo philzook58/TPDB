@@ -1,0 +1,7 @@
+(VAR u x y z )
+(STRATEGY INNERMOST)
+(RULES 
+        :(:(:(:(C,x),y),z),u) -> :(:(x,z),:(:(:(x,y),z),u))
+        
+)
+    

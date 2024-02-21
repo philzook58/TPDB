@@ -1,0 +1,59 @@
+
+(HO-SIGNATURE 
+
+        x: 
+nat
+ 
+        xs: 
+list
+ 
+        F: 
+nat
+ -> 
+nat
+ 
+        
+        nil: [  ] --> 
+list
+ 
+	cons: [ 
+nat
+ , 
+list
+ ] --> 
+list
+ 
+	+: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	map: [ 
+nat
+ -> 
+nat
+ , 
+list
+ ] --> 
+list
+ 
+	ps: [ 
+list
+ ] --> 
+list
+ 
+	
+)
+    
+(RULES 
+        map(F,nil) -> nil
+        map(F,cons(x,xs)) -> cons((@ F x ),map(F,xs))
+        ps(nil) -> nil
+        ps(cons(x,xs)) -> cons(x,ps(map(\y:
+nat
+.+(x,y),xs)))
+        
+)
+    

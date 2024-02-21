@@ -1,0 +1,11 @@
+(VAR x )
+(STRATEGY OUTERMOST)
+(RULES 
+        a(a(a(x))) -> c
+        b(u(x)) -> b(d(x))
+        d(a(x)) -> a(d(x))
+        d(b(x)) -> u(a(b(x)))
+        a(u(x)) -> u(a(x))
+        
+)
+    

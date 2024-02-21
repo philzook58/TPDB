@@ -1,0 +1,8 @@
+(VAR x )
+(RULES 
+        even(0) -> true
+        even(s(x)) -> true | odd(x) -> true
+        odd(s(x)) -> true | even(x) -> true
+        
+)
+    

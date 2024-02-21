@@ -1,0 +1,83 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+b
+ 
+        Y: 
+a
+ 
+        U: 
+ab
+ 
+        V: 
+a
+ 
+        I: 
+a
+ -> 
+BGb
+ 
+        P: 
+BGa
+ 
+        X1: 
+BGaBGb
+ 
+        
+        abs: [  ] -->  (
+a
+ -> 
+b
+) -> 
+ab
+ 
+	app: [  ] --> 
+ab
+ -> 
+a
+ -> 
+b
+ 
+	appBG: [  ] --> 
+BGaBGb
+ -> 
+BGa
+ -> 
+BGb
+ 
+	banga: [  ] --> 
+a
+ -> 
+BGa
+ 
+	let: [  ] --> 
+BGa
+ ->  (
+a
+ -> 
+BGb
+) -> 
+BGb
+ 
+	
+)
+    
+(RULES 
+        (@ (@ app (@ abs \%X:
+a
+.(@ F %X ) ) ) Y ) -> (@ F Y )
+        (@ abs \%Y:
+a
+.(@ (@ app U ) %Y ) ) -> U
+        (@ (@ let (@ banga V ) ) \%Z:
+a
+.(@ I %Z ) ) -> (@ I V )
+        (@ (@ let P ) \%U:
+a
+.(@ (@ appBG X1 ) (@ banga %U ) ) ) -> (@ (@ appBG X1 ) P )
+        
+)
+    

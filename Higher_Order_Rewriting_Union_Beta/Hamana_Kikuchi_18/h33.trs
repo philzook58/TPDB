@@ -1,0 +1,1380 @@
+
+(HO-SIGNATURE 
+
+        X: 
+A
+ 
+        Y: 
+A
+ 
+        U: 
+A
+ 
+        V: 
+A
+ 
+        W: 
+A
+ 
+        P: 
+A
+ 
+        X1: 
+A
+ 
+        Y1: 
+A
+ 
+        U1: 
+A
+ 
+        V1: 
+A
+ 
+        W1: 
+A
+ 
+        P1: 
+A
+ 
+        X2: 
+A
+ 
+        Y2: 
+A
+ 
+        U2: 
+A
+ 
+        V2: 
+A
+ 
+        W2: 
+A
+ 
+        P2: 
+A
+ 
+        X3: 
+A
+ 
+        Y3: 
+A
+ 
+        U3: 
+A
+ 
+        V3: 
+A
+ 
+        W3: 
+A
+ 
+        P3: 
+A
+ 
+        X4: 
+A
+ 
+        Y4: 
+A
+ 
+        U4: 
+A
+ 
+        V4: 
+A
+ 
+        W4: 
+A
+ 
+        P4: 
+A
+ 
+        X5: 
+A
+ 
+        Y5: 
+A
+ 
+        U5: 
+A
+ 
+        V5: 
+A
+ 
+        W5: 
+A
+ 
+        P5: 
+A
+ 
+        X6: 
+A
+ 
+        Y6: 
+A
+ 
+        U6: 
+A
+ 
+        V6: 
+A
+ 
+        W6: 
+A
+ 
+        P6: 
+A
+ 
+        X7: 
+A
+ 
+        Y7: 
+A
+ 
+        U7: 
+A
+ 
+        V7: 
+A
+ 
+        W7: 
+A
+ 
+        P7: 
+A
+ 
+        X8: 
+A
+ 
+        Y8: 
+A
+ 
+        U8: 
+A
+ 
+        V8: 
+A
+ 
+        W8: 
+A
+ 
+        P8: 
+A
+ 
+        X9: 
+A
+ 
+        Y9: 
+A
+ 
+        U9: 
+A
+ 
+        V9: 
+A
+ 
+        W9: 
+A
+ 
+        P9: 
+A
+ 
+        X10: 
+A
+ 
+        Y10: 
+A
+ 
+        U10: 
+A
+ 
+        V10: 
+A
+ 
+        W10: 
+A
+ 
+        P10: 
+A
+ 
+        X11: 
+A
+ 
+        Y11: 
+A
+ 
+        U11: 
+A
+ 
+        V11: 
+A
+ 
+        W11: 
+A
+ 
+        P11: 
+A
+ 
+        X12: 
+A
+ 
+        Y12: 
+A
+ 
+        U12: 
+A
+ 
+        V12: 
+A
+ 
+        W12: 
+A
+ 
+        P12: 
+A
+ 
+        X13: 
+A
+ 
+        Y13: 
+A
+ 
+        U13: 
+A
+ 
+        V13: 
+A
+ 
+        W13: 
+A
+ 
+        P13: 
+A
+ 
+        X14: 
+A
+ 
+        Y14: 
+A
+ 
+        U14: 
+A
+ 
+        V14: 
+A
+ 
+        W14: 
+A
+ 
+        P14: 
+A
+ 
+        X15: 
+A
+ 
+        Y15: 
+A
+ 
+        U15: 
+A
+ 
+        V15: 
+A
+ 
+        W15: 
+A
+ 
+        P15: 
+A
+ 
+        X16: 
+A
+ 
+        Y16: 
+A
+ 
+        U16: 
+A
+ 
+        V16: 
+A
+ 
+        W16: 
+A
+ 
+        P16: 
+A
+ 
+        X17: 
+A
+ 
+        Y17: 
+A
+ 
+        U17: 
+A
+ 
+        V17: 
+A
+ 
+        W17: 
+A
+ 
+        P17: 
+A
+ 
+        X18: 
+A
+ 
+        Y18: 
+A
+ 
+        U18: 
+A
+ 
+        V18: 
+A
+ 
+        W18: 
+A
+ 
+        P18: 
+A
+ 
+        X19: 
+A
+ 
+        Y19: 
+A
+ 
+        U19: 
+A
+ 
+        V19: 
+A
+ 
+        W19: 
+A
+ 
+        P19: 
+A
+ 
+        X20: 
+A
+ 
+        Y20: 
+A
+ 
+        U20: 
+A
+ 
+        V20: 
+A
+ 
+        W20: 
+A
+ 
+        P20: 
+A
+ 
+        X21: 
+A
+ 
+        Y21: 
+A
+ 
+        U21: 
+A
+ 
+        V21: 
+A
+ 
+        W21: 
+A
+ 
+        P21: 
+A
+ 
+        X22: 
+A
+ 
+        Y22: 
+A
+ 
+        U22: 
+A
+ 
+        V22: 
+A
+ 
+        W22: 
+A
+ 
+        P22: 
+A
+ 
+        X23: 
+A
+ 
+        Y23: 
+A
+ 
+        U23: 
+A
+ 
+        V23: 
+A
+ 
+        W23: 
+A
+ 
+        P23: 
+A
+ 
+        X24: 
+A
+ 
+        Y24: 
+A
+ 
+        U24: 
+A
+ 
+        V24: 
+A
+ 
+        W24: 
+A
+ 
+        P24: 
+A
+ 
+        X25: 
+A
+ 
+        Y25: 
+A
+ 
+        U25: 
+A
+ 
+        V25: 
+A
+ 
+        W25: 
+A
+ 
+        P25: 
+A
+ 
+        X26: 
+A
+ 
+        Y26: 
+A
+ 
+        U26: 
+A
+ 
+        V26: 
+A
+ 
+        W26: 
+A
+ 
+        P26: 
+A
+ 
+        X27: 
+A
+ 
+        Y27: 
+A
+ 
+        U27: 
+A
+ 
+        V27: 
+A
+ 
+        W27: 
+A
+ 
+        P27: 
+A
+ 
+        X28: 
+A
+ 
+        Y28: 
+A
+ 
+        U28: 
+A
+ 
+        V28: 
+A
+ 
+        W28: 
+A
+ 
+        P28: 
+A
+ 
+        X29: 
+A
+ 
+        Y29: 
+A
+ 
+        U29: 
+A
+ 
+        V29: 
+A
+ 
+        W29: 
+A
+ 
+        P29: 
+A
+ 
+        X30: 
+A
+ 
+        Y30: 
+A
+ 
+        U30: 
+A
+ 
+        V30: 
+A
+ 
+        W30: 
+A
+ 
+        P30: 
+A
+ 
+        X31: 
+A
+ 
+        Y31: 
+A
+ 
+        U31: 
+A
+ 
+        V31: 
+A
+ 
+        W31: 
+A
+ 
+        P31: 
+A
+ 
+        X32: 
+A
+ 
+        Y32: 
+A
+ 
+        U32: 
+A
+ 
+        V32: 
+A
+ 
+        W32: 
+A
+ 
+        P32: 
+A
+ 
+        X33: 
+A
+ 
+        Y33: 
+A
+ 
+        U33: 
+A
+ 
+        V33: 
+A
+ 
+        W33: 
+A
+ 
+        P33: 
+A
+ 
+        X34: 
+A
+ 
+        Y34: 
+A
+ 
+        U34: 
+A
+ 
+        V34: 
+A
+ 
+        W34: 
+A
+ 
+        P34: 
+A
+ 
+        X35: 
+A
+ 
+        Y35: 
+A
+ 
+        U35: 
+A
+ 
+        V35: 
+A
+ 
+        W35: 
+A
+ 
+        P35: 
+A
+ 
+        X36: 
+A
+ 
+        Y36: 
+A
+ 
+        U36: 
+A
+ 
+        V36: 
+A
+ 
+        W36: 
+A
+ 
+        P36: 
+A
+ 
+        X37: 
+A
+ 
+        Y37: 
+A
+ 
+        U37: 
+A
+ 
+        V37: 
+A
+ 
+        W37: 
+A
+ 
+        P37: 
+A
+ 
+        X38: 
+A
+ 
+        Y38: 
+A
+ 
+        U38: 
+A
+ 
+        V38: 
+A
+ 
+        W38: 
+A
+ 
+        P38: 
+A
+ 
+        X39: 
+A
+ 
+        Y39: 
+A
+ 
+        U39: 
+A
+ 
+        V39: 
+A
+ 
+        W39: 
+A
+ 
+        P39: 
+A
+ 
+        X40: 
+A
+ 
+        Y40: 
+A
+ 
+        U40: 
+A
+ 
+        V40: 
+A
+ 
+        W40: 
+A
+ 
+        P40: 
+A
+ 
+        X41: 
+A
+ 
+        Y41: 
+A
+ 
+        U41: 
+A
+ 
+        V41: 
+A
+ 
+        W41: 
+A
+ 
+        P41: 
+A
+ 
+        X42: 
+A
+ 
+        Y42: 
+A
+ 
+        U42: 
+A
+ 
+        V42: 
+A
+ 
+        W42: 
+A
+ 
+        P42: 
+A
+ 
+        X43: 
+A
+ 
+        Y43: 
+A
+ 
+        U43: 
+A
+ 
+        V43: 
+A
+ 
+        W43: 
+A
+ 
+        P43: 
+A
+ 
+        X44: 
+A
+ 
+        Y44: 
+A
+ 
+        U44: 
+A
+ 
+        V44: 
+A
+ 
+        W44: 
+A
+ 
+        P44: 
+A
+ 
+        X45: 
+A
+ 
+        Y45: 
+A
+ 
+        U45: 
+A
+ 
+        V45: 
+A
+ 
+        W45: 
+A
+ 
+        P45: 
+A
+ 
+        X46: 
+A
+ 
+        Y46: 
+A
+ 
+        U46: 
+A
+ 
+        V46: 
+A
+ 
+        W46: 
+A
+ 
+        P46: 
+A
+ 
+        X47: 
+A
+ 
+        Y47: 
+A
+ 
+        U47: 
+A
+ 
+        V47: 
+A
+ 
+        W47: 
+A
+ 
+        P47: 
+A
+ 
+        X48: 
+A
+ 
+        Y48: 
+A
+ 
+        U48: 
+A
+ 
+        V48: 
+A
+ 
+        W48: 
+A
+ 
+        P48: 
+A
+ 
+        X49: 
+A
+ 
+        Y49: 
+A
+ 
+        U49: 
+A
+ 
+        V49: 
+A
+ 
+        W49: 
+A
+ 
+        P49: 
+A
+ 
+        X50: 
+A
+ 
+        Y50: 
+A
+ 
+        U50: 
+A
+ 
+        V50: 
+A
+ 
+        W50: 
+A
+ 
+        P50: 
+A
+ 
+        X51: 
+A
+ 
+        Y51: 
+A
+ 
+        U51: 
+A
+ 
+        V51: 
+A
+ 
+        W51: 
+A
+ 
+        P51: 
+A
+ 
+        X52: 
+A
+ 
+        Y52: 
+A
+ 
+        U52: 
+A
+ 
+        V52: 
+A
+ 
+        W52: 
+A
+ 
+        P52: 
+A
+ 
+        X53: 
+A
+ 
+        Y53: 
+A
+ 
+        U53: 
+A
+ 
+        V53: 
+A
+ 
+        I53: 
+A
+ -> 
+A
+ 
+        J53: 
+A
+ -> 
+A
+ 
+        X54: 
+A
+ 
+        
+        0: [  ] --> 
+A
+ 
+	active: [  ] --> 
+A
+ -> 
+A
+ 
+	afterNth: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	and: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	app: [  ] -->  (
+A
+ -> 
+A
+) -> 
+A
+ -> 
+A
+ 
+	cons: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	fst: [  ] --> 
+A
+ -> 
+A
+ 
+	head: [  ] --> 
+A
+ -> 
+A
+ 
+	isLNat: [  ] --> 
+A
+ -> 
+A
+ 
+	isNatural: [  ] --> 
+A
+ -> 
+A
+ 
+	isPLNat: [  ] --> 
+A
+ -> 
+A
+ 
+	map: [  ] -->  (
+A
+ -> 
+A
+) -> 
+A
+ -> 
+A
+ 
+	mark: [  ] --> 
+A
+ -> 
+A
+ 
+	natsFrom: [  ] --> 
+A
+ -> 
+A
+ 
+	nil: [  ] --> 
+A
+ 
+	pair: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	s: [  ] --> 
+A
+ -> 
+A
+ 
+	sel: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	snd: [  ] --> 
+A
+ -> 
+A
+ 
+	splitAt: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	tail: [  ] --> 
+A
+ -> 
+A
+ 
+	take: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	tt: [  ] --> 
+A
+ 
+	u101: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	u11: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	u21: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	u31: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	u41: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	u51: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	u61: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	u71: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	u81: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	u82: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	u91: [  ] --> 
+A
+ -> 
+A
+ -> 
+A
+ 
+	
+)
+    
+(RULES 
+        (@ active (@ (@ (@ u101 tt ) X ) Y ) ) -> (@ mark (@ fst (@ (@ splitAt X ) Y ) ) )
+        (@ active (@ (@ (@ u11 tt ) U ) V ) ) -> (@ mark (@ snd (@ (@ splitAt U ) V ) ) )
+        (@ active (@ (@ u21 tt ) W ) ) -> (@ mark W )
+        (@ active (@ (@ u31 tt ) P ) ) -> (@ mark P )
+        (@ active (@ (@ u41 tt ) X1 ) ) -> (@ mark (@ (@ cons X1 ) (@ natsFrom (@ s X1 ) ) ) )
+        (@ active (@ (@ (@ u51 tt ) Y1 ) U1 ) ) -> (@ mark (@ head (@ (@ afterNth Y1 ) U1 ) ) )
+        (@ active (@ (@ u61 tt ) V1 ) ) -> (@ mark V1 )
+        (@ active (@ (@ u71 tt ) W1 ) ) -> (@ mark (@ (@ pair nil ) W1 ) )
+        (@ active (@ (@ (@ (@ u81 tt ) P1 ) X2 ) Y2 ) ) -> (@ mark (@ (@ u82 (@ (@ splitAt P1 ) Y2 ) ) X2 ) )
+        (@ active (@ (@ u82 (@ (@ pair U2 ) V2 ) ) W2 ) ) -> (@ mark (@ (@ pair (@ (@ cons W2 ) U2 ) ) V2 ) )
+        (@ active (@ (@ u91 tt ) P2 ) ) -> (@ mark P2 )
+        (@ active (@ (@ afterNth X3 ) Y3 ) ) -> (@ mark (@ (@ (@ u11 (@ (@ and (@ isNatural X3 ) ) (@ isLNat Y3 ) ) ) X3 ) Y3 ) )
+        (@ active (@ (@ and tt ) U3 ) ) -> (@ mark U3 )
+        (@ active (@ fst (@ (@ pair V3 ) W3 ) ) ) -> (@ mark (@ (@ u21 (@ (@ and (@ isLNat V3 ) ) (@ isLNat W3 ) ) ) V3 ) )
+        (@ active (@ head (@ (@ cons P3 ) X4 ) ) ) -> (@ mark (@ (@ u31 (@ (@ and (@ isNatural P3 ) ) (@ isLNat X4 ) ) ) P3 ) )
+        (@ active (@ isLNat nil ) ) -> (@ mark tt )
+        (@ active (@ isLNat (@ (@ afterNth Y4 ) U4 ) ) ) -> (@ mark (@ (@ and (@ isNatural Y4 ) ) (@ isLNat U4 ) ) )
+        (@ active (@ isLNat (@ (@ cons V4 ) W4 ) ) ) -> (@ mark (@ (@ and (@ isNatural V4 ) ) (@ isLNat W4 ) ) )
+        (@ active (@ isLNat (@ fst P4 ) ) ) -> (@ mark (@ isPLNat P4 ) )
+        (@ active (@ isLNat (@ natsFrom X5 ) ) ) -> (@ mark (@ isNatural X5 ) )
+        (@ active (@ isLNat (@ snd Y5 ) ) ) -> (@ mark (@ isPLNat Y5 ) )
+        (@ active (@ isLNat (@ tail U5 ) ) ) -> (@ mark (@ isLNat U5 ) )
+        (@ active (@ isLNat (@ (@ take V5 ) W5 ) ) ) -> (@ mark (@ (@ and (@ isNatural V5 ) ) (@ isLNat W5 ) ) )
+        (@ active (@ isNatural 0 ) ) -> (@ mark tt )
+        (@ active (@ isNatural (@ head P5 ) ) ) -> (@ mark (@ isLNat P5 ) )
+        (@ active (@ isNatural (@ s X6 ) ) ) -> (@ mark (@ isNatural X6 ) )
+        (@ active (@ isNatural (@ (@ sel Y6 ) U6 ) ) ) -> (@ mark (@ (@ and (@ isNatural Y6 ) ) (@ isLNat U6 ) ) )
+        (@ active (@ isPLNat (@ (@ pair V6 ) W6 ) ) ) -> (@ mark (@ (@ and (@ isLNat V6 ) ) (@ isLNat W6 ) ) )
+        (@ active (@ isPLNat (@ (@ splitAt P6 ) X7 ) ) ) -> (@ mark (@ (@ and (@ isNatural P6 ) ) (@ isLNat X7 ) ) )
+        (@ active (@ natsFrom Y7 ) ) -> (@ mark (@ (@ u41 (@ isNatural Y7 ) ) Y7 ) )
+        (@ active (@ (@ sel U7 ) V7 ) ) -> (@ mark (@ (@ (@ u51 (@ (@ and (@ isNatural U7 ) ) (@ isLNat V7 ) ) ) U7 ) V7 ) )
+        (@ active (@ snd (@ (@ pair W7 ) P7 ) ) ) -> (@ mark (@ (@ u61 (@ (@ and (@ isLNat W7 ) ) (@ isLNat P7 ) ) ) P7 ) )
+        (@ active (@ (@ splitAt 0 ) X8 ) ) -> (@ mark (@ (@ u71 (@ isLNat X8 ) ) X8 ) )
+        (@ active (@ (@ splitAt (@ s Y8 ) ) (@ (@ cons U8 ) V8 ) ) ) -> (@ mark (@ (@ (@ (@ u81 (@ (@ and (@ isNatural Y8 ) ) (@ (@ and (@ isNatural U8 ) ) (@ isLNat V8 ) ) ) ) Y8 ) U8 ) V8 ) )
+        (@ active (@ tail (@ (@ cons W8 ) P8 ) ) ) -> (@ mark (@ (@ u91 (@ (@ and (@ isNatural W8 ) ) (@ isLNat P8 ) ) ) P8 ) )
+        (@ active (@ (@ take X9 ) Y9 ) ) -> (@ mark (@ (@ (@ u101 (@ (@ and (@ isNatural X9 ) ) (@ isLNat Y9 ) ) ) X9 ) Y9 ) )
+        (@ mark (@ (@ (@ u101 U9 ) V9 ) W9 ) ) -> (@ active (@ (@ (@ u101 (@ mark U9 ) ) V9 ) W9 ) )
+        (@ mark tt ) -> (@ active tt )
+        (@ mark (@ fst P9 ) ) -> (@ active (@ fst (@ mark P9 ) ) )
+        (@ mark (@ (@ splitAt X10 ) Y10 ) ) -> (@ active (@ (@ splitAt (@ mark X10 ) ) (@ mark Y10 ) ) )
+        (@ mark (@ (@ (@ u11 U10 ) V10 ) W10 ) ) -> (@ active (@ (@ (@ u11 (@ mark U10 ) ) V10 ) W10 ) )
+        (@ mark (@ snd P10 ) ) -> (@ active (@ snd (@ mark P10 ) ) )
+        (@ mark (@ (@ u21 X11 ) Y11 ) ) -> (@ active (@ (@ u21 (@ mark X11 ) ) Y11 ) )
+        (@ mark (@ (@ u31 U11 ) V11 ) ) -> (@ active (@ (@ u31 (@ mark U11 ) ) V11 ) )
+        (@ mark (@ (@ u41 W11 ) P11 ) ) -> (@ active (@ (@ u41 (@ mark W11 ) ) P11 ) )
+        (@ mark (@ (@ cons X12 ) Y12 ) ) -> (@ active (@ (@ cons (@ mark X12 ) ) Y12 ) )
+        (@ mark (@ natsFrom U12 ) ) -> (@ active (@ natsFrom (@ mark U12 ) ) )
+        (@ mark (@ s V12 ) ) -> (@ active (@ s (@ mark V12 ) ) )
+        (@ mark (@ (@ (@ u51 W12 ) P12 ) X13 ) ) -> (@ active (@ (@ (@ u51 (@ mark W12 ) ) P12 ) X13 ) )
+        (@ mark (@ head Y13 ) ) -> (@ active (@ head (@ mark Y13 ) ) )
+        (@ mark (@ (@ afterNth U13 ) V13 ) ) -> (@ active (@ (@ afterNth (@ mark U13 ) ) (@ mark V13 ) ) )
+        (@ mark (@ (@ u61 W13 ) P13 ) ) -> (@ active (@ (@ u61 (@ mark W13 ) ) P13 ) )
+        (@ mark (@ (@ u71 X14 ) Y14 ) ) -> (@ active (@ (@ u71 (@ mark X14 ) ) Y14 ) )
+        (@ mark (@ (@ pair U14 ) V14 ) ) -> (@ active (@ (@ pair (@ mark U14 ) ) (@ mark V14 ) ) )
+        (@ mark nil ) -> (@ active nil )
+        (@ mark (@ (@ (@ (@ u81 W14 ) P14 ) X15 ) Y15 ) ) -> (@ active (@ (@ (@ (@ u81 (@ mark W14 ) ) P14 ) X15 ) Y15 ) )
+        (@ mark (@ (@ u82 U15 ) V15 ) ) -> (@ active (@ (@ u82 (@ mark U15 ) ) V15 ) )
+        (@ mark (@ (@ u91 W15 ) P15 ) ) -> (@ active (@ (@ u91 (@ mark W15 ) ) P15 ) )
+        (@ mark (@ (@ and X16 ) Y16 ) ) -> (@ active (@ (@ and (@ mark X16 ) ) Y16 ) )
+        (@ mark (@ isNatural U16 ) ) -> (@ active (@ isNatural U16 ) )
+        (@ mark (@ isLNat V16 ) ) -> (@ active (@ isLNat V16 ) )
+        (@ mark (@ isPLNat W16 ) ) -> (@ active (@ isPLNat W16 ) )
+        (@ mark (@ tail P16 ) ) -> (@ active (@ tail (@ mark P16 ) ) )
+        (@ mark (@ (@ take X17 ) Y17 ) ) -> (@ active (@ (@ take (@ mark X17 ) ) (@ mark Y17 ) ) )
+        (@ mark 0 ) -> (@ active 0 )
+        (@ mark (@ (@ sel U17 ) V17 ) ) -> (@ active (@ (@ sel (@ mark U17 ) ) (@ mark V17 ) ) )
+        (@ (@ (@ u101 (@ mark W17 ) ) P17 ) X18 ) -> (@ (@ (@ u101 W17 ) P17 ) X18 )
+        (@ (@ (@ u101 Y18 ) (@ mark U18 ) ) V18 ) -> (@ (@ (@ u101 Y18 ) U18 ) V18 )
+        (@ (@ (@ u101 W18 ) P18 ) (@ mark X19 ) ) -> (@ (@ (@ u101 W18 ) P18 ) X19 )
+        (@ (@ (@ u101 (@ active Y19 ) ) U19 ) V19 ) -> (@ (@ (@ u101 Y19 ) U19 ) V19 )
+        (@ (@ (@ u101 W19 ) (@ active P19 ) ) X20 ) -> (@ (@ (@ u101 W19 ) P19 ) X20 )
+        (@ (@ (@ u101 Y20 ) U20 ) (@ active V20 ) ) -> (@ (@ (@ u101 Y20 ) U20 ) V20 )
+        (@ fst (@ mark W20 ) ) -> (@ fst W20 )
+        (@ fst (@ active P20 ) ) -> (@ fst P20 )
+        (@ (@ splitAt (@ mark X21 ) ) Y21 ) -> (@ (@ splitAt X21 ) Y21 )
+        (@ (@ splitAt U21 ) (@ mark V21 ) ) -> (@ (@ splitAt U21 ) V21 )
+        (@ (@ splitAt (@ active W21 ) ) P21 ) -> (@ (@ splitAt W21 ) P21 )
+        (@ (@ splitAt X22 ) (@ active Y22 ) ) -> (@ (@ splitAt X22 ) Y22 )
+        (@ (@ (@ u11 (@ mark U22 ) ) V22 ) W22 ) -> (@ (@ (@ u11 U22 ) V22 ) W22 )
+        (@ (@ (@ u11 P22 ) (@ mark X23 ) ) Y23 ) -> (@ (@ (@ u11 P22 ) X23 ) Y23 )
+        (@ (@ (@ u11 U23 ) V23 ) (@ mark W23 ) ) -> (@ (@ (@ u11 U23 ) V23 ) W23 )
+        (@ (@ (@ u11 (@ active P23 ) ) X24 ) Y24 ) -> (@ (@ (@ u11 P23 ) X24 ) Y24 )
+        (@ (@ (@ u11 U24 ) (@ active V24 ) ) W24 ) -> (@ (@ (@ u11 U24 ) V24 ) W24 )
+        (@ (@ (@ u11 P24 ) X25 ) (@ active Y25 ) ) -> (@ (@ (@ u11 P24 ) X25 ) Y25 )
+        (@ snd (@ mark U25 ) ) -> (@ snd U25 )
+        (@ snd (@ active V25 ) ) -> (@ snd V25 )
+        (@ (@ u21 (@ mark W25 ) ) P25 ) -> (@ (@ u21 W25 ) P25 )
+        (@ (@ u21 X26 ) (@ mark Y26 ) ) -> (@ (@ u21 X26 ) Y26 )
+        (@ (@ u21 (@ active U26 ) ) V26 ) -> (@ (@ u21 U26 ) V26 )
+        (@ (@ u21 W26 ) (@ active P26 ) ) -> (@ (@ u21 W26 ) P26 )
+        (@ (@ u31 (@ mark X27 ) ) Y27 ) -> (@ (@ u31 X27 ) Y27 )
+        (@ (@ u31 U27 ) (@ mark V27 ) ) -> (@ (@ u31 U27 ) V27 )
+        (@ (@ u31 (@ active W27 ) ) P27 ) -> (@ (@ u31 W27 ) P27 )
+        (@ (@ u31 X28 ) (@ active Y28 ) ) -> (@ (@ u31 X28 ) Y28 )
+        (@ (@ u41 (@ mark U28 ) ) V28 ) -> (@ (@ u41 U28 ) V28 )
+        (@ (@ u41 W28 ) (@ mark P28 ) ) -> (@ (@ u41 W28 ) P28 )
+        (@ (@ u41 (@ active X29 ) ) Y29 ) -> (@ (@ u41 X29 ) Y29 )
+        (@ (@ u41 U29 ) (@ active V29 ) ) -> (@ (@ u41 U29 ) V29 )
+        (@ (@ cons (@ mark W29 ) ) P29 ) -> (@ (@ cons W29 ) P29 )
+        (@ (@ cons X30 ) (@ mark Y30 ) ) -> (@ (@ cons X30 ) Y30 )
+        (@ (@ cons (@ active U30 ) ) V30 ) -> (@ (@ cons U30 ) V30 )
+        (@ (@ cons W30 ) (@ active P30 ) ) -> (@ (@ cons W30 ) P30 )
+        (@ natsFrom (@ mark X31 ) ) -> (@ natsFrom X31 )
+        (@ natsFrom (@ active Y31 ) ) -> (@ natsFrom Y31 )
+        (@ s (@ mark U31 ) ) -> (@ s U31 )
+        (@ s (@ active V31 ) ) -> (@ s V31 )
+        (@ (@ (@ u51 (@ mark W31 ) ) P31 ) X32 ) -> (@ (@ (@ u51 W31 ) P31 ) X32 )
+        (@ (@ (@ u51 Y32 ) (@ mark U32 ) ) V32 ) -> (@ (@ (@ u51 Y32 ) U32 ) V32 )
+        (@ (@ (@ u51 W32 ) P32 ) (@ mark X33 ) ) -> (@ (@ (@ u51 W32 ) P32 ) X33 )
+        (@ (@ (@ u51 (@ active Y33 ) ) U33 ) V33 ) -> (@ (@ (@ u51 Y33 ) U33 ) V33 )
+        (@ (@ (@ u51 W33 ) (@ active P33 ) ) X34 ) -> (@ (@ (@ u51 W33 ) P33 ) X34 )
+        (@ (@ (@ u51 Y34 ) U34 ) (@ active V34 ) ) -> (@ (@ (@ u51 Y34 ) U34 ) V34 )
+        (@ head (@ mark W34 ) ) -> (@ head W34 )
+        (@ head (@ active P34 ) ) -> (@ head P34 )
+        (@ (@ afterNth (@ mark X35 ) ) Y35 ) -> (@ (@ afterNth X35 ) Y35 )
+        (@ (@ afterNth U35 ) (@ mark V35 ) ) -> (@ (@ afterNth U35 ) V35 )
+        (@ (@ afterNth (@ active W35 ) ) P35 ) -> (@ (@ afterNth W35 ) P35 )
+        (@ (@ afterNth X36 ) (@ active Y36 ) ) -> (@ (@ afterNth X36 ) Y36 )
+        (@ (@ u61 (@ mark U36 ) ) V36 ) -> (@ (@ u61 U36 ) V36 )
+        (@ (@ u61 W36 ) (@ mark P36 ) ) -> (@ (@ u61 W36 ) P36 )
+        (@ (@ u61 (@ active X37 ) ) Y37 ) -> (@ (@ u61 X37 ) Y37 )
+        (@ (@ u61 U37 ) (@ active V37 ) ) -> (@ (@ u61 U37 ) V37 )
+        (@ (@ u71 (@ mark W37 ) ) P37 ) -> (@ (@ u71 W37 ) P37 )
+        (@ (@ u71 X38 ) (@ mark Y38 ) ) -> (@ (@ u71 X38 ) Y38 )
+        (@ (@ u71 (@ active U38 ) ) V38 ) -> (@ (@ u71 U38 ) V38 )
+        (@ (@ u71 W38 ) (@ active P38 ) ) -> (@ (@ u71 W38 ) P38 )
+        (@ (@ pair (@ mark X39 ) ) Y39 ) -> (@ (@ pair X39 ) Y39 )
+        (@ (@ pair U39 ) (@ mark V39 ) ) -> (@ (@ pair U39 ) V39 )
+        (@ (@ pair (@ active W39 ) ) P39 ) -> (@ (@ pair W39 ) P39 )
+        (@ (@ pair X40 ) (@ active Y40 ) ) -> (@ (@ pair X40 ) Y40 )
+        (@ (@ (@ (@ u81 (@ mark U40 ) ) V40 ) W40 ) P40 ) -> (@ (@ (@ (@ u81 U40 ) V40 ) W40 ) P40 )
+        (@ (@ (@ (@ u81 X41 ) (@ mark Y41 ) ) U41 ) V41 ) -> (@ (@ (@ (@ u81 X41 ) Y41 ) U41 ) V41 )
+        (@ (@ (@ (@ u81 W41 ) P41 ) (@ mark X42 ) ) Y42 ) -> (@ (@ (@ (@ u81 W41 ) P41 ) X42 ) Y42 )
+        (@ (@ (@ (@ u81 U42 ) V42 ) W42 ) (@ mark P42 ) ) -> (@ (@ (@ (@ u81 U42 ) V42 ) W42 ) P42 )
+        (@ (@ (@ (@ u81 (@ active X43 ) ) Y43 ) U43 ) V43 ) -> (@ (@ (@ (@ u81 X43 ) Y43 ) U43 ) V43 )
+        (@ (@ (@ (@ u81 W43 ) (@ active P43 ) ) X44 ) Y44 ) -> (@ (@ (@ (@ u81 W43 ) P43 ) X44 ) Y44 )
+        (@ (@ (@ (@ u81 U44 ) V44 ) (@ active W44 ) ) P44 ) -> (@ (@ (@ (@ u81 U44 ) V44 ) W44 ) P44 )
+        (@ (@ (@ (@ u81 X45 ) Y45 ) U45 ) (@ active V45 ) ) -> (@ (@ (@ (@ u81 X45 ) Y45 ) U45 ) V45 )
+        (@ (@ u82 (@ mark W45 ) ) P45 ) -> (@ (@ u82 W45 ) P45 )
+        (@ (@ u82 X46 ) (@ mark Y46 ) ) -> (@ (@ u82 X46 ) Y46 )
+        (@ (@ u82 (@ active U46 ) ) V46 ) -> (@ (@ u82 U46 ) V46 )
+        (@ (@ u82 W46 ) (@ active P46 ) ) -> (@ (@ u82 W46 ) P46 )
+        (@ (@ u91 (@ mark X47 ) ) Y47 ) -> (@ (@ u91 X47 ) Y47 )
+        (@ (@ u91 U47 ) (@ mark V47 ) ) -> (@ (@ u91 U47 ) V47 )
+        (@ (@ u91 (@ active W47 ) ) P47 ) -> (@ (@ u91 W47 ) P47 )
+        (@ (@ u91 X48 ) (@ active Y48 ) ) -> (@ (@ u91 X48 ) Y48 )
+        (@ (@ and (@ mark U48 ) ) V48 ) -> (@ (@ and U48 ) V48 )
+        (@ (@ and W48 ) (@ mark P48 ) ) -> (@ (@ and W48 ) P48 )
+        (@ (@ and (@ active X49 ) ) Y49 ) -> (@ (@ and X49 ) Y49 )
+        (@ (@ and U49 ) (@ active V49 ) ) -> (@ (@ and U49 ) V49 )
+        (@ isNatural (@ mark W49 ) ) -> (@ isNatural W49 )
+        (@ isNatural (@ active P49 ) ) -> (@ isNatural P49 )
+        (@ isLNat (@ mark X50 ) ) -> (@ isLNat X50 )
+        (@ isLNat (@ active Y50 ) ) -> (@ isLNat Y50 )
+        (@ isPLNat (@ mark U50 ) ) -> (@ isPLNat U50 )
+        (@ isPLNat (@ active V50 ) ) -> (@ isPLNat V50 )
+        (@ tail (@ mark W50 ) ) -> (@ tail W50 )
+        (@ tail (@ active P50 ) ) -> (@ tail P50 )
+        (@ (@ take (@ mark X51 ) ) Y51 ) -> (@ (@ take X51 ) Y51 )
+        (@ (@ take U51 ) (@ mark V51 ) ) -> (@ (@ take U51 ) V51 )
+        (@ (@ take (@ active W51 ) ) P51 ) -> (@ (@ take W51 ) P51 )
+        (@ (@ take X52 ) (@ active Y52 ) ) -> (@ (@ take X52 ) Y52 )
+        (@ (@ sel (@ mark U52 ) ) V52 ) -> (@ (@ sel U52 ) V52 )
+        (@ (@ sel W52 ) (@ mark P52 ) ) -> (@ (@ sel W52 ) P52 )
+        (@ (@ sel (@ active X53 ) ) Y53 ) -> (@ (@ sel X53 ) Y53 )
+        (@ (@ sel U53 ) (@ active V53 ) ) -> (@ (@ sel U53 ) V53 )
+        (@ (@ map \%X:
+A
+.(@ I53 %X ) ) nil ) -> nil
+        (@ (@ app \%Y:
+A
+.(@ J53 %Y ) ) X54 ) -> (@ J53 X54 )
+        
+)
+    

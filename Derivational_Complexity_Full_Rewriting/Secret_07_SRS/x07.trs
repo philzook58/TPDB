@@ -1,0 +1,14 @@
+(VAR x1 )
+(RULES 
+        a(a(b(x1))) -> c(d(x1))
+        b(e(b(x1))) -> e(d(x1))
+        b(d(x1)) -> e(b(x1))
+        b(b(b(x1))) -> e(e(x1))
+        e(e(e(x1))) -> d(e(x1))
+        d(x1) -> b(e(x1))
+        c(d(a(x1))) -> c(x1)
+        d(c(x1)) -> c(d(a(x1)))
+        a(x1) -> e(b(x1))
+        
+)
+    

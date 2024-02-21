@@ -1,0 +1,16 @@
+(VAR x1 )
+(STRATEGY INNERMOST)
+(RULES 
+        p(0(x1)) -> 0(s(s(p(x1))))
+        p(s(x1)) -> x1
+        p(p(s(x1))) -> p(x1)
+        f(s(x1)) -> g(s(x1))
+        g(x1) -> i(s(half(x1)))
+        i(x1) -> f(p(x1))
+        half(0(x1)) -> 0(s(s(half(x1))))
+        half(s(s(x1))) -> s(half(p(p(s(s(x1))))))
+        0(x1) -> x1
+        rd(0(x1)) -> 0(0(0(0(0(0(rd(x1)))))))
+        
+)
+    

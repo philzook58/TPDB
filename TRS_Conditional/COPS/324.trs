@@ -1,0 +1,12 @@
+(VAR x )
+(RULES 
+        odd(0) -> false
+        even(0) -> true
+        eq(x,x) -> eq(T,T)
+        odd(s(x)) -> true | eq(even(x),true) -> eq(T,T)
+        odd(s(x)) -> false | eq(even(x),false) -> eq(T,T)
+        even(s(x)) -> true | eq(odd(x),true) -> eq(T,T)
+        even(s(x)) -> false | eq(odd(x),false) -> eq(T,T)
+        
+)
+    

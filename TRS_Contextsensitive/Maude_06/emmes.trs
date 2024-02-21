@@ -1,0 +1,21 @@
+(VAR x y )
+(STRATEGY CONTEXTSENSITIVE
+        (plus 1 2) 
+        (if 1) 
+        (isZero 1) 
+        (s 1) 
+        (p 1) 
+        (0 ) 
+        (true ) 
+        (false ) 
+)
+(RULES 
+        plus(x,y) -> if(isZero(x),y,s(plus(p(x),y)))
+        isZero(0) -> true
+        isZero(s(x)) -> false
+        p(s(x)) -> x
+        if(true,x,y) -> x
+        if(false,x,y) -> y
+        
+)
+    

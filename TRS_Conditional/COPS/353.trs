@@ -1,0 +1,12 @@
+(VAR v w ws x' xs xs' y y' ys ys' z zs )
+(RULES 
+        ssp'(xs,0) -> nil
+        sub(z,0) -> z
+        get(cons(y,ys)) -> tp2(y,ys)
+        ssp'(cons(y',ws),v) -> cons(y',ys') | sub(v,y') -> w, ssp'(ws,w) -> ys'
+        ssp'(cons(x',xs'),v) -> cons(y',ys') | get(xs') -> tp2(y',zs), sub(v,y') -> w, ssp'(cons(x',zs),w) -> ys'
+        sub(s(v),s(w)) -> z | sub(v,w) -> z
+        get(cons(x',xs')) -> tp2(y,cons(x',zs)) | get(xs') -> tp2(y,zs)
+        
+)
+    

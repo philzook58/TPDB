@@ -1,0 +1,18 @@
+(VAR x )
+(RULES 
+        a -> c
+        b -> c
+        c -> e
+        k -> l
+        d -> m
+        a -> d
+        b -> d
+        c -> l
+        k -> m
+        A -> h(f(a),f(b))
+        h(x,x) -> g(x,x,f(k))
+        g(d,x,x) -> A
+        f(x) -> x | x -> e
+        
+)
+    

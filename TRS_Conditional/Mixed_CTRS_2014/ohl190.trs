@@ -1,0 +1,8 @@
+(VAR  )
+(RULES 
+        b -> c
+        f(b) -> f(a)
+        a -> c | b -> c
+        
+)
+    

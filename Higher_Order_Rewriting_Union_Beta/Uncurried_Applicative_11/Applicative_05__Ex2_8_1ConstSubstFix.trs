@@ -1,0 +1,82 @@
+
+(HO-SIGNATURE 
+
+        X: 
+a
+ 
+        Y: 
+b
+ 
+        G: 
+c
+ -> 
+d
+ -> 
+e
+ 
+        H: 
+c
+ -> 
+d
+ 
+        W: 
+c
+ 
+        J:  (
+f
+ -> 
+g
+) -> 
+f
+ -> 
+g
+ 
+        X1: 
+f
+ 
+        
+        const: [ 
+a
+ , 
+b
+ ] --> 
+a
+ 
+	fix: [  (
+f
+ -> 
+g
+) -> 
+f
+ -> 
+g
+ ] --> 
+f
+ -> 
+g
+ 
+	subst: [ 
+c
+ -> 
+d
+ -> 
+e
+ , 
+c
+ -> 
+d
+ , 
+c
+ ] --> 
+e
+ 
+	
+)
+    
+(RULES 
+        const(X,Y) -> X
+        subst(G,H,W) -> (@ (@ G W ) (@ H W ) )
+        (@ fix(J) X1 ) -> (@ (@ J fix(J) ) X1 )
+        
+)
+    

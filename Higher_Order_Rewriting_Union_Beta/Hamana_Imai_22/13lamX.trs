@@ -1,0 +1,36 @@
+
+(HO-SIGNATURE 
+
+        F: VA -> B 
+        Y: A 
+        U: A 
+        V: VA 
+        W: B 
+        J: VA -> ArrCB 
+        F1: VA -> C 
+        Y1: A 
+        G1: VA -> VC -> B 
+        V1: A 
+        
+        ap: [  ] --> ArrAB -> A -> B 
+	ap1: [  ] --> ArrCB -> C -> B 
+	lam: [  ] -->  (VA -> B) -> ArrAB 
+	lam1: [  ] -->  (VC -> B) -> ArrCB 
+	sub: [  ] -->  (VA -> B) -> A -> B 
+	sub0: [  ] -->  (VA -> A) -> A -> A 
+	sub2: [  ] -->  (VA -> ArrCB) -> A -> ArrCB 
+	sub3: [  ] -->  (VA -> C) -> A -> C 
+	sub4: [  ] -->  (VB -> A) -> B -> A 
+	var: [  ] --> VA -> A 
+	
+)
+    
+(RULES 
+        (@ (@ ap (@ lam \pX:VA.(@ F pX ) ) ) Y ) -> (@ (@ sub \pY:VA.(@ F pY ) ) Y )
+        (@ (@ sub0 \pZ:VA.(@ var pZ ) ) U ) -> U
+        (@ (@ sub4 \pU:VB.(@ var V ) ) W ) -> (@ var V )
+        (@ (@ sub \pV:VA.(@ (@ ap1 (@ J pV ) ) (@ F1 pV ) ) ) Y1 ) -> (@ (@ ap1 (@ (@ sub2 \pF:VA.(@ J pF ) ) Y1 ) ) (@ (@ sub3 \pW:VA.(@ F1 pW ) ) Y1 ) )
+        (@ (@ sub2 \pH:VA.(@ lam1 \pG:VC.(@ (@ G1 pH ) pG ) ) ) V1 ) -> (@ lam1 \pI:VC.(@ (@ sub \pJ:VA.(@ (@ G1 pJ ) pI ) ) V1 ) )
+        
+)
+    

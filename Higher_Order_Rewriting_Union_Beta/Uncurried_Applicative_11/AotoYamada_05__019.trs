@@ -1,0 +1,53 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+a
+ 
+        Z: 
+a
+ -> 
+a
+ 
+        U: 
+a
+ 
+        H: 
+a
+ -> 
+a
+ 
+        
+        comp: [ 
+a
+ -> 
+a
+ , 
+a
+ -> 
+a
+ ] --> 
+a
+ -> 
+a
+ 
+	twice: [ 
+a
+ -> 
+a
+ ] --> 
+a
+ -> 
+a
+ 
+	
+)
+    
+(RULES 
+        (@ comp(F,Z) U ) -> (@ F (@ Z U ) )
+        twice(H) -> comp(H,H)
+        
+)
+    

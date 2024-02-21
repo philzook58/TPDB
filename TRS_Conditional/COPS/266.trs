@@ -1,0 +1,8 @@
+(VAR a b c )
+(RULES 
+        App(App(App(S,a),b),c) -> App(App(a,c),App(b,c)) | a -> I, b -> I, c -> I
+        App(App(K,a),b) -> a | a -> I, b -> I
+        App(I,a) -> a | a -> I
+        
+)
+    

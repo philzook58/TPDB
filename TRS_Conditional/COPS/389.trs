@@ -1,0 +1,7 @@
+(VAR x z )
+(RULES 
+        a -> f(a)
+        f(x) -> b | f(x) -> z, x -> z
+        
+)
+    

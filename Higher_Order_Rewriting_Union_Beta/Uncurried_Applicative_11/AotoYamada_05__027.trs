@@ -1,0 +1,83 @@
+
+(HO-SIGNATURE 
+
+        X: 
+a
+ 
+        Y: 
+a
+ 
+        U: 
+a
+ 
+        V: 
+b
+ 
+        I: 
+a
+ -> 
+a
+ 
+        J: 
+a
+ -> 
+a
+ 
+        X1: 
+a
+ 
+        Y1: 
+b
+ 
+        
+        0: [  ] --> 
+a
+ 
+	cons: [ 
+a
+ , 
+b
+ ] --> 
+b
+ 
+	inc: [ 
+b
+ ] --> 
+b
+ 
+	map: [ 
+a
+ -> 
+a
+ , 
+b
+ ] --> 
+b
+ 
+	nil: [  ] --> 
+b
+ 
+	plus: [ 
+a
+ ] --> 
+a
+ -> 
+a
+ 
+	s: [ 
+a
+ ] --> 
+a
+ 
+	
+)
+    
+(RULES 
+        (@ plus(0) X ) -> X
+        (@ plus(s(Y)) U ) -> s((@ plus(Y) U ))
+        inc(V) -> map(plus(s(0)),V)
+        map(I,nil) -> nil
+        map(J,cons(X1,Y1)) -> cons((@ J X1 ),map(J,Y1))
+        
+)
+    

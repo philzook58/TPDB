@@ -1,0 +1,15 @@
+(VAR x y )
+(THEORY 
+        (AC plus) 
+)
+(RULES 
+        f(plus(x,y)) -> plus(f(x),y)
+        plus(g(x),y) -> g(plus(x,y))
+        plus(f(a),g(b)) -> plus(f(b),g(a))
+        h(a,b) -> h(b,a)
+        h(a,g(g(a))) -> h(g(a),f(a))
+        h(g(a),a) -> h(a,g(b))
+        h(g(a),b) -> h(a,g(a))
+        
+)
+    

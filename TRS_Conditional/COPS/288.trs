@@ -1,0 +1,9 @@
+(VAR x y )
+(RULES 
+        pin(a) -> pout(b)
+        pin(b) -> pout(c)
+        tc(x) -> x
+        tc(x) -> y | pin(x) -> pout(z), tc(z) -> y
+        
+)
+    

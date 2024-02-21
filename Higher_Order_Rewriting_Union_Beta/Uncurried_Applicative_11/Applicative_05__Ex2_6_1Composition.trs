@@ -1,0 +1,38 @@
+
+(HO-SIGNATURE 
+
+        F: 
+b
+ -> 
+c
+ 
+        Z: 
+a
+ -> 
+b
+ 
+        U: 
+a
+ 
+        
+        compose: [ 
+b
+ -> 
+c
+ , 
+a
+ -> 
+b
+ , 
+a
+ ] --> 
+c
+ 
+	
+)
+    
+(RULES 
+        compose(F,Z,U) -> (@ F (@ Z U ) )
+        
+)
+    

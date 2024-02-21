@@ -1,0 +1,10 @@
+(VAR x y )
+(RULES 
+        -(x,0) -> x
+        -(s(x),s(y)) -> -(x,y)
+        quot(0,s(y)) -> 0
+        quot(s(x),s(y)) -> s(quot(-(x,y),s(y)))
+        gen ->= 0
+        gen ->= s(gen)
+)
+    

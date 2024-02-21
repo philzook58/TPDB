@@ -1,0 +1,208 @@
+
+(HO-SIGNATURE 
+
+        X: 
+a
+ 
+        Y: 
+a
+ 
+        U: 
+a
+ 
+        V: 
+a
+ 
+        W: 
+a
+ 
+        P: 
+a
+ 
+        X1: 
+a
+ 
+        Y1: 
+a
+ 
+        U1: 
+a
+ 
+        V1: 
+a
+ 
+        W1: 
+a
+ 
+        P1: 
+a
+ 
+        X2: 
+a
+ 
+        Y2: 
+a
+ 
+        U2: 
+a
+ 
+        V2: 
+a
+ 
+        W2: 
+a
+ 
+        P2: 
+a
+ 
+        F3: 
+c
+ -> 
+c
+ 
+        Z3: 
+c
+ -> 
+c
+ 
+        U3: 
+c
+ 
+        V3: 
+d
+ 
+        I3: 
+c
+ -> 
+b
+ 
+        J3: 
+c
+ -> 
+b
+ 
+        X4: 
+c
+ 
+        Y4: 
+d
+ 
+        G4: 
+c
+ -> 
+b
+ 
+        V4: 
+c
+ 
+        W4: 
+d
+ 
+        J4: 
+c
+ -> 
+b
+ 
+        X5: 
+c
+ 
+        Y5: 
+d
+ 
+        
+        !3220: [ 
+a
+ , 
+a
+ ] --> 
+a
+ 
+	!div: [ 
+a
+ , 
+a
+ ] --> 
+a
+ 
+	!dot: [ 
+a
+ , 
+a
+ ] --> 
+a
+ 
+	cons: [ 
+c
+ , 
+d
+ ] --> 
+d
+ 
+	e: [  ] --> 
+a
+ 
+	false: [  ] --> 
+b
+ 
+	filter: [ 
+c
+ -> 
+b
+ , 
+d
+ ] --> 
+d
+ 
+	filter2: [ 
+b
+ , 
+c
+ -> 
+b
+ , 
+c
+ , 
+d
+ ] --> 
+d
+ 
+	map: [ 
+c
+ -> 
+c
+ , 
+d
+ ] --> 
+d
+ 
+	nil: [  ] --> 
+d
+ 
+	true: [  ] --> 
+b
+ 
+	
+)
+    
+(RULES 
+        !3220(X,X) -> e
+        !3220(e,Y) -> Y
+        !3220(U,!dot(U,V)) -> V
+        !3220(!div(W,P),W) -> P
+        !div(X1,X1) -> e
+        !div(Y1,e) -> Y1
+        !div(!dot(V1,U1),U1) -> V1
+        !div(W1,!3220(P1,W1)) -> P1
+        !dot(e,X2) -> X2
+        !dot(Y2,e) -> Y2
+        !dot(U2,!3220(U2,V2)) -> V2
+        !dot(!div(P2,W2),W2) -> P2
+        map(F3,nil) -> nil
+        map(Z3,cons(U3,V3)) -> cons((@ Z3 U3 ),map(Z3,V3))
+        filter(I3,nil) -> nil
+        filter(J3,cons(X4,Y4)) -> filter2((@ J3 X4 ),J3,X4,Y4)
+        filter2(true,G4,V4,W4) -> cons(V4,filter(G4,W4))
+        filter2(false,J4,X5,Y5) -> filter(J4,Y5)
+        
+)
+    

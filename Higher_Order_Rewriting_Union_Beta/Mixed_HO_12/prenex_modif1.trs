@@ -1,0 +1,102 @@
+
+(HO-SIGNATURE 
+
+        Q: 
+term
+ -> 
+form
+ 
+        P: 
+form
+ 
+        
+        or: [ 
+form
+ , 
+form
+ ] --> 
+form
+ 
+	not: [ 
+form
+ ] --> 
+form
+ 
+	forall: [ 
+term
+ -> 
+form
+ ] --> 
+form
+ 
+	exists: [ 
+term
+ -> 
+form
+ ] --> 
+form
+ 
+	and: [ 
+form
+ , 
+form
+ ] --> 
+form
+ 
+	
+)
+    
+(RULES 
+        and(P,forall(\x46:
+term
+.(@ Q x46 ))) -> forall(\x45:
+term
+.and(P,(@ Q x45 )))
+        and(forall(\x48:
+term
+.(@ Q x48 )),P) -> forall(\x47:
+term
+.and((@ Q x47 ),P))
+        and(P,exists(\x50:
+term
+.(@ Q x50 ))) -> exists(\x49:
+term
+.and(P,(@ Q x49 )))
+        and(exists(\x52:
+term
+.(@ Q x52 )),P) -> exists(\x51:
+term
+.and((@ Q x51 ),P))
+        or(P,forall(\x54:
+term
+.(@ Q x54 ))) -> forall(\x53:
+term
+.or(P,(@ Q x53 )))
+        or(forall(\x56:
+term
+.(@ Q x56 )),P) -> forall(\x55:
+term
+.or((@ Q x55 ),P))
+        or(P,exists(\x58:
+term
+.(@ Q x58 ))) -> exists(\x57:
+term
+.or(P,(@ Q x57 )))
+        or(exists(\x60:
+term
+.(@ Q x60 )),P) -> exists(\x59:
+term
+.or((@ Q x59 ),P))
+        not(forall(\x62:
+term
+.(@ Q x62 ))) -> exists(\x61:
+term
+.not((@ Q x61 )))
+        not(exists(\x64:
+term
+.(@ Q x64 ))) -> forall(\x63:
+term
+.not((@ Q x63 )))
+        
+)
+    

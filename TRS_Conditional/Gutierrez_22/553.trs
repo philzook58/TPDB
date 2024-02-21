@@ -1,0 +1,11 @@
+(VAR x )
+(RULES 
+        c -> k(f(a))
+        c -> k(g(b))
+        h(x) -> k(x)
+        h(f(a)) -> c
+        a -> b
+        f(x) -> g(x) | h(f(x)) -> k(g(b))
+        
+)
+    

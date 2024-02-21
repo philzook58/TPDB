@@ -1,0 +1,7 @@
+(VAR x y z )
+(RULES 
+        sub(z,0) -> z
+        sub(s(z),s(y)) -> x | sub(z,y) -> x
+        
+)
+    

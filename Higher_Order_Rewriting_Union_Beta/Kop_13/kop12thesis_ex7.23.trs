@@ -1,0 +1,74 @@
+
+(HO-SIGNATURE 
+
+        F: 
+o
+ -> 
+o
+ 
+        Y: 
+o
+ 
+        G: 
+o
+ -> 
+o
+ 
+        V: 
+o
+ 
+        W: 
+o
+ 
+        P: 
+o
+ 
+        X1: 
+o
+ 
+        
+        0: [  ] --> 
+o
+ 
+	either: [ 
+o
+ , 
+o
+ ] --> 
+o
+ 
+	f: [ 
+o
+ -> 
+o
+ , 
+o
+ , 
+o
+ ] --> 
+o
+ 
+	g: [ 
+o
+ , 
+o
+ ] --> 
+o
+ 
+	s: [ 
+o
+ ] --> 
+o
+ 
+	
+)
+    
+(RULES 
+        f(F,Y,0) -> 0
+        f(G,V,s(W)) -> g(W,either(W,(@ G V )))
+        g(P,X1) -> f(\%X:
+o
+.s(0),X1,P)
+        
+)
+    

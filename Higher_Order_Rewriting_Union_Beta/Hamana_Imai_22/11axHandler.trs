@@ -1,0 +1,56 @@
+
+(HO-SIGNATURE 
+
+        X: ArrNN 
+        Z: N -> N -> ArrNN 
+        U: N 
+        V: N 
+        W: ArrNN 
+        P: N 
+        F1: N -> ArrNN 
+        Y1: N 
+        U1: ArrNN 
+        V1: N 
+        I1: N -> N -> ArrNN 
+        P1: N 
+        X2: N 
+        Z2: N -> ArrNN 
+        U2: N 
+        H2: N -> ArrNN 
+        I2: ArrNArrNN -> ArrNN 
+        J2: N -> ArrNN -> ArrNN 
+        F3: N -> ArrNN 
+        Z3: N -> ArrNN 
+        G3: ArrNArrNN -> ArrNN 
+        H3: N -> ArrNN -> ArrNN 
+        W3: N 
+        J3: N -> ArrNN 
+        F4: ArrNArrNN -> ArrNN 
+        Z4: N -> ArrNN -> ArrNN 
+        U4: N 
+        V4: ArrNN 
+        
+        get: [  ] -->  (N -> ArrNN) -> ArrNN 
+	handler: [  ] -->  (N -> ArrNN) ->  (ArrNArrNN -> ArrNN) ->  (N -> ArrNN -> ArrNN) -> ArrNN -> ArrNN 
+	lam: [  ] -->  (N -> ArrNN) -> ArrNArrNN 
+	put: [  ] --> N -> ArrNN -> ArrNN 
+	return: [  ] --> N -> ArrNN 
+	sub: [  ] -->  (N -> ArrNN) -> N -> ArrNN 
+	
+)
+    
+(RULES 
+        (@ get \pX:N.(@ (@ put pX ) X ) ) -> X
+        (@ get \pY:N.(@ get \pZ:N.(@ (@ Z pZ ) pY ) ) ) -> (@ get \pU:N.(@ (@ Z pU ) pU ) )
+        (@ (@ put U ) (@ (@ put V ) W ) ) -> (@ (@ put V ) W )
+        (@ (@ put P ) (@ get \pV:N.(@ F1 pV ) ) ) -> (@ (@ put P ) (@ (@ sub \pW:N.(@ F1 pW ) ) P ) )
+        (@ (@ sub \pF:N.(@ return pF ) ) Y1 ) -> (@ return Y1 )
+        (@ (@ sub \pG:N.U1 ) V1 ) -> U1
+        (@ (@ sub \pH:N.(@ get \pI:N.(@ (@ I1 pI ) pH ) ) ) P1 ) -> (@ get \pP:N.(@ (@ sub \pJ:N.(@ (@ I1 pP ) pJ ) ) P1 ) )
+        (@ (@ sub \pQ:N.(@ (@ put X2 ) (@ Z2 pQ ) ) ) U2 ) -> (@ (@ put X2 ) (@ (@ sub \pR:N.(@ Z2 pR ) ) U2 ) )
+        (@ (@ (@ (@ handler \pZb:N.(@ H2 pZb ) ) \pYb:ArrNArrNN.(@ I2 pYb ) ) \pXb:N.\pT:ArrNN.(@ (@ J2 pXb ) pT ) ) (@ get \pS:N.(@ F3 pS ) ) ) -> (@ I2 (@ lam \pUb:N.(@ (@ (@ (@ handler \pGb:N.(@ H2 pGb ) ) \pFb:ArrNArrNN.(@ I2 pFb ) ) \pWb:N.\pVb:ArrNN.(@ (@ J2 pWb ) pVb ) ) (@ F3 pUb ) ) ) )
+        (@ (@ (@ (@ handler \pPb:N.(@ Z3 pPb ) ) \pJb:ArrNArrNN.(@ G3 pJb ) ) \pIb:N.\pHb:ArrNN.(@ (@ H3 pIb ) pHb ) ) (@ return W3 ) ) -> (@ Z3 W3 )
+        (@ (@ (@ (@ handler \pTb:N.(@ J3 pTb ) ) \pSb:ArrNArrNN.(@ F4 pSb ) ) \pRb:N.\pQb:ArrNN.(@ (@ Z4 pRb ) pQb ) ) (@ (@ put U4 ) V4 ) ) -> (@ (@ Z4 U4 ) (@ (@ (@ (@ handler \pUc:N.(@ J3 pUc ) ) \pZc:ArrNArrNN.(@ F4 pZc ) ) \pYc:N.\pXc:ArrNN.(@ (@ Z4 pYc ) pXc ) ) V4 ) )
+        
+)
+    

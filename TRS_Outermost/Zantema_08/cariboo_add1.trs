@@ -1,0 +1,8 @@
+(VAR x y )
+(STRATEGY OUTERMOST)
+(RULES 
+        p(x,y,x) -> q(p(y,x,y))
+        q(q(x)) -> c
+        
+)
+    

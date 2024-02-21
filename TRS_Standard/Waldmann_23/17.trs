@@ -1,0 +1,6 @@
+(VAR P X Y Z )
+(RULES 
+        f(f(Y,P),f(Z,f(X,a))) -> f(f(Z,f(Y,a)),f(P,X))
+        
+)
+    

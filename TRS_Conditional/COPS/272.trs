@@ -1,0 +1,15 @@
+(VAR l m n )
+(RULES 
+        lte(0,n) -> true
+        lte(s(m),0) -> false
+        lte(s(m),s(n)) -> lte(m,n)
+        insert(nil,m) -> cons(m,nil)
+        ordered(nil) -> true
+        ordered(cons(m,nil)) -> true
+        insert(cons(n,l),m) -> cons(m,cons(n,l)) | lte(m,n) -> true
+        insert(cons(n,l),m) -> cons(n,insert(l,m)) | lte(m,n) -> false
+        ordered(cons(m,cons(n,l))) -> ordered(cons(n,l)) | lte(m,n) -> true
+        ordered(cons(m,cons(n,l))) -> false | lte(m,n) -> false
+        
+)
+    

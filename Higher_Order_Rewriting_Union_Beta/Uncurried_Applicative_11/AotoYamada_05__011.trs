@@ -1,0 +1,107 @@
+
+(HO-SIGNATURE 
+
+        X: 
+b
+ 
+        Y: 
+b
+ 
+        U: 
+b
+ 
+        H: 
+b
+ -> 
+b
+ 
+        I: 
+b
+ -> 
+b
+ 
+        P: 
+b
+ 
+        X1: 
+a
+ 
+        Z1: 
+b
+ -> 
+b
+ -> 
+b
+ 
+        U1: 
+b
+ 
+        V1: 
+b
+ 
+        
+        0: [  ] --> 
+b
+ 
+	cons: [ 
+b
+ , 
+a
+ ] --> 
+a
+ 
+	curry: [ 
+b
+ -> 
+b
+ -> 
+b
+ , 
+b
+ ] --> 
+b
+ -> 
+b
+ 
+	inc: [  ] --> 
+a
+ -> 
+a
+ 
+	map: [ 
+b
+ -> 
+b
+ ] --> 
+a
+ -> 
+a
+ 
+	nil: [  ] --> 
+a
+ 
+	plus: [  ] --> 
+b
+ -> 
+b
+ -> 
+b
+ 
+	s: [ 
+b
+ ] --> 
+b
+ 
+	
+)
+    
+(RULES 
+        (@ (@ plus 0 ) X ) -> X
+        (@ (@ plus s(Y) ) U ) -> s((@ (@ plus Y ) U ))
+        (@ map(H) nil ) -> nil
+        (@ map(I) cons(P,X1) ) -> cons((@ I P ),(@ map(I) X1 ))
+        (@ curry(Z1,U1) V1 ) -> (@ (@ Z1 U1 ) V1 )
+        inc -> map(curry(plus,s(0)))
+        
+)
+    

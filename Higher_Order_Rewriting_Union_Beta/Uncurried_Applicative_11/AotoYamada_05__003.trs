@@ -1,0 +1,67 @@
+
+(HO-SIGNATURE 
+
+        X: 
+b
+ 
+        Y: 
+b
+ 
+        U: 
+b
+ 
+        V: 
+b
+ 
+        I: 
+b
+ -> 
+b
+ 
+        J: 
+b
+ -> 
+a
+ 
+        X1: 
+b
+ 
+        
+        false: [  ] --> 
+a
+ 
+	if: [ 
+a
+ , 
+b
+ , 
+b
+ ] --> 
+b
+ 
+	true: [  ] --> 
+a
+ 
+	until: [ 
+b
+ -> 
+a
+ , 
+b
+ -> 
+b
+ , 
+b
+ ] --> 
+b
+ 
+	
+)
+    
+(RULES 
+        if(true,X,Y) -> X
+        if(false,U,V) -> V
+        until(J,I,X1) -> if((@ J X1 ),X1,until(J,I,(@ I X1 )))
+        
+)
+    

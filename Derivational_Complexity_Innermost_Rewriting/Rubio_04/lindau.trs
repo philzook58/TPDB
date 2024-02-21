@@ -1,0 +1,10 @@
+(VAR X )
+(STRATEGY INNERMOST)
+(RULES 
+        c(b(a(X))) -> a(a(b(b(c(c(X))))))
+        a(X) -> e
+        b(X) -> e
+        c(X) -> e
+        
+)
+    

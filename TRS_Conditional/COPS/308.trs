@@ -1,0 +1,7 @@
+(VAR x )
+(RULES 
+        not(x) -> false | x -> true
+        not(x) -> true | x -> false
+        
+)
+    

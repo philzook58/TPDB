@@ -1,0 +1,30 @@
+(VAR x1 )
+(STRATEGY INNERMOST)
+(RULES 
+        a(a(b(b(x1)))) -> C(C(x1))
+        b(b(c(c(x1)))) -> A(A(x1))
+        c(c(a(a(x1)))) -> B(B(x1))
+        A(A(C(C(x1)))) -> b(b(x1))
+        C(C(B(B(x1)))) -> a(a(x1))
+        B(B(A(A(x1)))) -> c(c(x1))
+        a(a(a(a(a(a(a(a(a(a(x1)))))))))) -> A(A(A(A(A(A(x1))))))
+        A(A(A(A(A(A(A(A(x1)))))))) -> a(a(a(a(a(a(a(a(x1))))))))
+        b(b(b(b(b(b(b(b(b(b(x1)))))))))) -> B(B(B(B(B(B(x1))))))
+        B(B(B(B(B(B(B(B(x1)))))))) -> b(b(b(b(b(b(b(b(x1))))))))
+        c(c(c(c(c(c(c(c(c(c(x1)))))))))) -> C(C(C(C(C(C(x1))))))
+        C(C(C(C(C(C(C(C(x1)))))))) -> c(c(c(c(c(c(c(c(x1))))))))
+        B(B(a(a(a(a(a(a(a(a(x1)))))))))) -> c(c(A(A(A(A(A(A(x1))))))))
+        A(A(A(A(A(A(b(b(x1)))))))) -> a(a(a(a(a(a(a(a(C(C(x1))))))))))
+        C(C(b(b(b(b(b(b(b(b(x1)))))))))) -> a(a(B(B(B(B(B(B(x1))))))))
+        B(B(B(B(B(B(c(c(x1)))))))) -> b(b(b(b(b(b(b(b(A(A(x1))))))))))
+        A(A(c(c(c(c(c(c(c(c(x1)))))))))) -> b(b(C(C(C(C(C(C(x1))))))))
+        C(C(C(C(C(C(a(a(x1)))))))) -> c(c(c(c(c(c(c(c(B(B(x1))))))))))
+        a(a(A(A(x1)))) -> x1
+        A(A(a(a(x1)))) -> x1
+        b(b(B(B(x1)))) -> x1
+        B(B(b(b(x1)))) -> x1
+        c(c(C(C(x1)))) -> x1
+        C(C(c(c(x1)))) -> x1
+        
+)
+    

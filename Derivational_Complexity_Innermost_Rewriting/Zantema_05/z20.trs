@@ -1,0 +1,8 @@
+(VAR x y z )
+(STRATEGY INNERMOST)
+(RULES 
+        f(f(a,b),x) -> f(b,f(a,f(c,f(b,f(a,x)))))
+        f(x,f(y,z)) -> f(f(x,y),z)
+        
+)
+    

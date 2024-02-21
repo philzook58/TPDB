@@ -1,0 +1,29 @@
+
+(HO-SIGNATURE 
+
+        X: 
+a
+ -> 
+b
+ 
+        Y: 
+a
+ 
+        
+        fapp: [ 
+a
+ -> 
+b
+ , 
+a
+ ] --> 
+b
+ 
+	
+)
+    
+(RULES 
+        fapp(X,Y) -> (@ X Y )
+        
+)
+    

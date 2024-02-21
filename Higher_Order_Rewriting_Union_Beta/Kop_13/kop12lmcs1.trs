@@ -1,0 +1,54 @@
+
+(HO-SIGNATURE 
+
+        X: 
+nat
+ 
+        Y: 
+nat
+ 
+        U: 
+nat
+ 
+        
+        f: [ 
+nat
+ , 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	g: [ 
+nat
+ , 
+nat
+ -> 
+nat
+ ] --> 
+nat
+ 
+	h: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	s: [ 
+nat
+ ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        f(X,Y,s(U)) -> g(h(X,Y),\%X:
+nat
+.f(%X,X,U))
+        h(X,X) -> f(X,s(X),s(s(X)))
+        
+)
+    

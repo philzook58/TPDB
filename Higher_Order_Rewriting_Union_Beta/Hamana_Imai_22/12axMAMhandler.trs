@@ -1,0 +1,88 @@
+
+(HO-SIGNATURE 
+
+        X: ArrNN 
+        Z: N -> N -> ArrNN 
+        U: N 
+        V: N 
+        W: ArrNN 
+        P: N 
+        F1: N -> ArrNN 
+        Y1: N 
+        U1: ArrNN 
+        V1: N 
+        I1: N -> N -> ArrNN 
+        P1: N 
+        X2: N 
+        Z2: N -> ArrNN 
+        U2: N 
+        H2: N -> ArrNN 
+        W2: N 
+        P2: c 
+        X3: c1 
+        Y3: c2 
+        U3: c1 
+        V3: c2 
+        W3: a1 
+        J3: a1 -> c 
+        F4: a2 -> c 
+        Y4: a2 
+        G4: a1 -> c 
+        H4: a2 -> c 
+        W4: N 
+        J4: N -> c 
+        F5: N -> ArrNN 
+        Z5: ArrNArrNN -> ArrNN 
+        G5: N -> ArrNN -> ArrNN 
+        H5: N -> ArrNN 
+        I5: N -> ArrNN 
+        J5: ArrNArrNN -> ArrNN 
+        F6: N -> ArrNN -> ArrNN 
+        Y6: N 
+        G6: N -> ArrNN 
+        H6: ArrNArrNN -> ArrNN 
+        I6: N -> ArrNN -> ArrNN 
+        P6: N 
+        X7: ArrNN 
+        
+        app: [  ] --> ArrNArrNN -> N -> ArrNN 
+	bang: [  ] --> Uc -> c 
+	case: [  ] --> Suma1a2 ->  (a1 -> c) ->  (a2 -> c) -> c 
+	cpair: [  ] --> c1 -> c2 -> CPairc1c2 
+	get: [  ] -->  (N -> ArrNN) -> ArrNN 
+	handler: [  ] -->  (N -> ArrNN) ->  (ArrNArrNN -> ArrNN) ->  (N -> ArrNN -> ArrNN) -> ArrNN -> ArrNN 
+	inj1: [  ] --> a1 -> Suma1a2 
+	inj2: [  ] --> a2 -> Suma1a2 
+	lam: [  ] -->  (N -> ArrNN) -> ArrNArrNN 
+	let: [  ] --> ArrNN ->  (N -> c) -> c 
+	prj1: [  ] --> CPairc1c2 -> c1 
+	prj2: [  ] --> CPairc1c2 -> c2 
+	put: [  ] --> N -> ArrNN -> ArrNN 
+	return: [  ] --> N -> ArrNN 
+	sub: [  ] -->  (N -> ArrNN) -> N -> ArrNN 
+	thunk: [  ] --> c -> Uc 
+	
+)
+    
+(RULES 
+        (@ get \pX:N.(@ (@ put pX ) X ) ) -> X
+        (@ get \pY:N.(@ get \pZ:N.(@ (@ Z pZ ) pY ) ) ) -> (@ get \pU:N.(@ (@ Z pU ) pU ) )
+        (@ (@ put U ) (@ (@ put V ) W ) ) -> (@ (@ put V ) W )
+        (@ (@ put P ) (@ get \pV:N.(@ F1 pV ) ) ) -> (@ (@ put P ) (@ (@ sub \pW:N.(@ F1 pW ) ) P ) )
+        (@ (@ sub \pF:N.(@ return pF ) ) Y1 ) -> (@ return Y1 )
+        (@ (@ sub \pG:N.U1 ) V1 ) -> U1
+        (@ (@ sub \pH:N.(@ get \pI:N.(@ (@ I1 pI ) pH ) ) ) P1 ) -> (@ get \pP:N.(@ (@ sub \pJ:N.(@ (@ I1 pP ) pJ ) ) P1 ) )
+        (@ (@ sub \pQ:N.(@ (@ put X2 ) (@ Z2 pQ ) ) ) U2 ) -> (@ (@ put X2 ) (@ (@ sub \pR:N.(@ Z2 pR ) ) U2 ) )
+        (@ (@ app (@ lam \pS:N.(@ H2 pS ) ) ) W2 ) -> (@ H2 W2 )
+        (@ bang (@ thunk P2 ) ) -> P2
+        (@ prj1 (@ (@ cpair X3 ) Y3 ) ) -> X3
+        (@ prj2 (@ (@ cpair U3 ) V3 ) ) -> V3
+        (@ (@ (@ case (@ inj1 W3 ) ) \pXb:a1.(@ J3 pXb ) ) \pT:a2.(@ F4 pT ) ) -> (@ J3 W3 )
+        (@ (@ (@ case (@ inj2 Y4 ) ) \pZb:a1.(@ G4 pZb ) ) \pYb:a2.(@ H4 pYb ) ) -> (@ H4 Y4 )
+        (@ (@ let (@ return W4 ) ) \pUb:N.(@ J4 pUb ) ) -> (@ J4 W4 )
+        (@ (@ (@ (@ handler \pHb:N.(@ F5 pHb ) ) \pGb:ArrNArrNN.(@ Z5 pGb ) ) \pFb:N.\pWb:ArrNN.(@ (@ G5 pFb ) pWb ) ) (@ get \pVb:N.(@ H5 pVb ) ) ) -> (@ Z5 (@ lam \pIb:N.(@ (@ (@ (@ handler \pRb:N.(@ F5 pRb ) ) \pQb:ArrNArrNN.(@ Z5 pQb ) ) \pPb:N.\pJb:ArrNN.(@ (@ G5 pPb ) pJb ) ) (@ H5 pIb ) ) ) )
+        (@ (@ (@ (@ handler \pYc:N.(@ I5 pYc ) ) \pXc:ArrNArrNN.(@ J5 pXc ) ) \pTb:N.\pSb:ArrNN.(@ (@ F6 pTb ) pSb ) ) (@ return Y6 ) ) -> (@ I5 Y6 )
+        (@ (@ (@ (@ handler \pWc:N.(@ G6 pWc ) ) \pVc:ArrNArrNN.(@ H6 pVc ) ) \pUc:N.\pZc:ArrNN.(@ (@ I6 pUc ) pZc ) ) (@ (@ put P6 ) X7 ) ) -> (@ (@ I6 P6 ) (@ (@ (@ (@ handler \pIc:N.(@ G6 pIc ) ) \pHc:ArrNArrNN.(@ H6 pHc ) ) \pGc:N.\pFc:ArrNN.(@ (@ I6 pGc ) pFc ) ) X7 ) )
+        
+)
+    

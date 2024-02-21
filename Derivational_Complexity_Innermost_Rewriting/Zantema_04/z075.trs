@@ -1,0 +1,15 @@
+(VAR x1 )
+(STRATEGY INNERMOST)
+(RULES 
+        t(f(x1)) -> t(c(n(x1)))
+        n(f(x1)) -> f(n(x1))
+        o(f(x1)) -> f(o(x1))
+        n(s(x1)) -> f(s(x1))
+        o(s(x1)) -> f(s(x1))
+        c(f(x1)) -> f(c(x1))
+        c(n(x1)) -> n(c(x1))
+        c(o(x1)) -> o(c(x1))
+        c(o(x1)) -> o(x1)
+        
+)
+    

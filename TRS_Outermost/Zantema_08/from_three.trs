@@ -1,0 +1,8 @@
+(VAR x xs )
+(STRATEGY OUTERMOST)
+(RULES 
+        from(x) -> cons(x,from(s(x)))
+        cons(s(s(s(x))),xs) -> nil
+        
+)
+    

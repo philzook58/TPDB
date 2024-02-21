@@ -1,0 +1,9 @@
+(VAR u x y z )
+(STRATEGY OUTERMOST)
+(RULES 
+        +(x,+(y,z)) -> +(+(x,y),z)
+        *(x,+(y,z)) -> +(*(x,y),*(x,z))
+        +(+(x,*(y,z)),*(y,u)) -> +(x,*(y,+(z,u)))
+        
+)
+    

@@ -1,0 +1,9 @@
+(VAR x y z )
+(STRATEGY OUTERMOST)
+(RULES 
+        f(g(x,y),x,z) -> f(z,z,z)
+        g(x,y) -> x
+        g(x,y) -> y
+        
+)
+    

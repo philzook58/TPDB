@@ -1,0 +1,7 @@
+(VAR U X Y Z )
+(RULES 
+        f(s(U),X,0,Y) -> f(s(0),g(X,h(0),X),g(X,h(0),X),Y)
+        f(Z,X,g(Y,h(0),Y),s(U)) -> f(Z,X,Y,s(s(0)))
+        
+)
+    

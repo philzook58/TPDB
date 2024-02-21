@@ -1,0 +1,136 @@
+
+(HO-SIGNATURE 
+
+        F: 
+A
+ -> 
+B
+ 
+        Y: 
+A
+ 
+        U: 
+arrAB
+ 
+        V: 
+A
+ 
+        W: 
+B
+ 
+        P: 
+A
+ 
+        X1: 
+B
+ 
+        Y1: 
+PAB
+ 
+        U1: 
+A
+ 
+        H1: 
+A
+ -> 
+C
+ 
+        I1: 
+B
+ -> 
+C
+ 
+        P1: 
+B
+ 
+        F2: 
+A
+ -> 
+C
+ 
+        Z2: 
+B
+ -> 
+C
+ 
+        
+        app: [  ] --> 
+arrAB
+ -> 
+A
+ -> 
+B
+ 
+	case: [  ] --> 
+SAB
+ ->  (
+A
+ -> 
+C
+) ->  (
+B
+ -> 
+C
+) -> 
+C
+ 
+	inl: [  ] --> 
+A
+ -> 
+SAB
+ 
+	inr: [  ] --> 
+B
+ -> 
+SAB
+ 
+	lam: [  ] -->  (
+A
+ -> 
+B
+) -> 
+arrAB
+ 
+	pair: [  ] --> 
+A
+ -> 
+B
+ -> 
+PAB
+ 
+	piA: [  ] --> 
+PAB
+ -> 
+A
+ 
+	piB: [  ] --> 
+PAB
+ -> 
+B
+ 
+	
+)
+    
+(RULES 
+        (@ (@ app (@ lam \%X:
+A
+.(@ F %X ) ) ) Y ) -> (@ F Y )
+        (@ lam \%Y:
+A
+.(@ (@ app U ) %Y ) ) -> U
+        (@ piA (@ (@ pair V ) W ) ) -> V
+        (@ piB (@ (@ pair P ) X1 ) ) -> X1
+        (@ (@ pair (@ piA Y1 ) ) (@ piB Y1 ) ) -> Y1
+        (@ (@ (@ case (@ inl U1 ) ) \%U:
+A
+.(@ H1 %U ) ) \%Z:
+B
+.(@ I1 %Z ) ) -> (@ H1 U1 )
+        (@ (@ (@ case (@ inr P1 ) ) \%W:
+A
+.(@ F2 %W ) ) \%V:
+B
+.(@ Z2 %V ) ) -> (@ Z2 P1 )
+        
+)
+    

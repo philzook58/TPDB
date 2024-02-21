@@ -1,0 +1,8 @@
+(VAR x y )
+(RULES 
+        f(0,y) -> 0
+        f(s(x),y) -> f(f(x,y),y)
+        rand(x) ->= x
+        rand(x) ->= rand(s(x))
+)
+    

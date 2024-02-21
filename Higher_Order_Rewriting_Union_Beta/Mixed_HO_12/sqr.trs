@@ -1,0 +1,107 @@
+
+(HO-SIGNATURE 
+
+        d: 
+nat
+ 
+        x: 
+nat
+ 
+        y: 
+nat
+ 
+        U: 
+nat
+ 
+        F: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        
+        0: [  ] --> 
+nat
+ 
+	s: [ 
+nat
+ ] --> 
+nat
+ 
+	dec: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	rec: [ 
+nat
+ , 
+nat
+ , 
+nat
+ , 
+nat
+ -> 
+nat
+ -> 
+nat
+ ] --> 
+nat
+ 
+	sumsqr: [ 
+nat
+ ] --> 
+nat
+ 
+	+: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	quad: [ 
+nat
+ ] --> 
+nat
+ 
+	sqr: [ 
+nat
+ ] --> 
+nat
+ 
+	p: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        dec(0,d) -> 0
+        dec(x,0) -> x
+        dec(s(x),s(d)) -> dec(x,d)
+        rec(0,d,U,F) -> U
+        rec(s(x),s(d),U,F) -> rec(dec(x,d),s(d),(@ (@ F U ) x ),F)
+        sumsqr(x) -> rec(x,s(0),0,\z1:
+nat
+.\z2:
+nat
+.+(sqr(p(s(z2),0)),z1))
+        +(0,x) -> x
+        +(s(x),y) -> s(+(x,y))
+        quad(0) -> 0
+        quad(s(x)) -> s(s(s(s(quad(x)))))
+        sqr(p(0,0)) -> 0
+        sqr(p(s(s(x)),y)) -> sqr(p(x,s(y)))
+        sqr(p(s(0),y)) -> +(quad(sqr(p(y,0))),s(quad(y)))
+        sqr(p(0,s(y))) -> quad(sqr(p(s(y),0)))
+        
+)
+    

@@ -1,0 +1,179 @@
+
+(HO-SIGNATURE 
+
+        X: 
+a
+ 
+        Y: 
+a
+ 
+        U: 
+a
+ 
+        V: 
+a
+ 
+        W: 
+a
+ 
+        P: 
+a
+ 
+        F1: 
+c
+ -> 
+c
+ 
+        Z1: 
+c
+ -> 
+c
+ 
+        U1: 
+c
+ 
+        V1: 
+d
+ 
+        I1: 
+c
+ -> 
+b
+ 
+        J1: 
+c
+ -> 
+b
+ 
+        X2: 
+c
+ 
+        Y2: 
+d
+ 
+        G2: 
+c
+ -> 
+b
+ 
+        V2: 
+c
+ 
+        W2: 
+d
+ 
+        J2: 
+c
+ -> 
+b
+ 
+        X3: 
+c
+ 
+        Y3: 
+d
+ 
+        
+        !minus: [ 
+a
+ , 
+a
+ ] --> 
+a
+ 
+	!plus: [ 
+a
+ , 
+a
+ ] --> 
+a
+ 
+	!times: [ 
+a
+ , 
+a
+ ] --> 
+a
+ 
+	0: [  ] --> 
+a
+ 
+	1: [  ] --> 
+a
+ 
+	D: [ 
+a
+ ] --> 
+a
+ 
+	cons: [ 
+c
+ , 
+d
+ ] --> 
+d
+ 
+	constant: [  ] --> 
+a
+ 
+	false: [  ] --> 
+b
+ 
+	filter: [ 
+c
+ -> 
+b
+ , 
+d
+ ] --> 
+d
+ 
+	filter2: [ 
+b
+ , 
+c
+ -> 
+b
+ , 
+c
+ , 
+d
+ ] --> 
+d
+ 
+	map: [ 
+c
+ -> 
+c
+ , 
+d
+ ] --> 
+d
+ 
+	nil: [  ] --> 
+d
+ 
+	t: [  ] --> 
+a
+ 
+	true: [  ] --> 
+b
+ 
+	
+)
+    
+(RULES 
+        D(t) -> 1
+        D(constant) -> 0
+        D(!plus(X,Y)) -> !plus(D(X),D(Y))
+        D(!times(U,V)) -> !plus(!times(V,D(U)),!times(U,D(V)))
+        D(!minus(W,P)) -> !minus(D(W),D(P))
+        map(F1,nil) -> nil
+        map(Z1,cons(U1,V1)) -> cons((@ Z1 U1 ),map(Z1,V1))
+        filter(I1,nil) -> nil
+        filter(J1,cons(X2,Y2)) -> filter2((@ J1 X2 ),J1,X2,Y2)
+        filter2(true,G2,V2,W2) -> cons(V2,filter(G2,W2))
+        filter2(false,J2,X3,Y3) -> filter(J2,Y3)
+        
+)
+    

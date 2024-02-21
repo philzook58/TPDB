@@ -1,0 +1,95 @@
+
+(HO-SIGNATURE 
+
+        d: 
+nat
+ 
+        x: 
+nat
+ 
+        y: 
+nat
+ 
+        U: 
+nat
+ 
+        F: 
+nat
+ -> 
+nat
+ -> 
+nat
+ 
+        
+        0: [  ] --> 
+nat
+ 
+	s: [ 
+nat
+ ] --> 
+nat
+ 
+	dec: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	grec: [ 
+nat
+ , 
+nat
+ , 
+nat
+ , 
+nat
+ -> 
+nat
+ -> 
+nat
+ ] --> 
+nat
+ 
+	sumlog: [ 
+nat
+ ] --> 
+nat
+ 
+	+: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	log2: [ 
+nat
+ , 
+nat
+ ] --> 
+nat
+ 
+	
+)
+    
+(RULES 
+        dec(0,d) -> 0
+        dec(x,0) -> x
+        dec(s(x),s(d)) -> dec(x,d)
+        grec(0,d,U,F) -> U
+        grec(s(x),s(d),U,F) -> grec(dec(x,d),s(d),(@ (@ F U ) x ),F)
+        sumlog(x) -> grec(x,s(s(0)),0,\z1:
+nat
+.\z2:
+nat
+.+(log2(s(z2),0),z1))
+        +(0,x) -> x
+        +(s(x),y) -> s(+(x,y))
+        log2(s(0),0) -> 0
+        log2(0,s(y)) -> s(log2(s(y),0))
+        log2(s(0),s(y)) -> s(log2(s(y),0))
+        log2(s(s(x)),y) -> log2(x,s(y))
+        
+)
+    

@@ -1,0 +1,135 @@
+
+(HO-SIGNATURE 
+
+        X: 
+list
+ 
+        Y: 
+nat
+ 
+        U: 
+list
+ 
+        V: 
+list
+ 
+        I: 
+list
+ -> 
+nat
+ -> 
+list
+ 
+        P: 
+list
+ 
+        F1: 
+list
+ -> 
+nat
+ -> 
+list
+ 
+        Y1: 
+list
+ 
+        U1: 
+nat
+ 
+        V1: 
+list
+ 
+        W1: 
+list
+ 
+        P1: 
+nat
+ 
+        X2: 
+list
+ 
+        Y2: 
+list
+ 
+        
+        app: [  ] --> 
+list
+ -> 
+list
+ -> 
+list
+ 
+	cons: [  ] --> 
+nat
+ -> 
+list
+ -> 
+list
+ 
+	foldl: [  ] -->  (
+list
+ -> 
+nat
+ -> 
+list
+) -> 
+list
+ -> 
+list
+ -> 
+list
+ 
+	iconsc: [  ] --> 
+list
+ -> 
+nat
+ -> 
+list
+ 
+	nil: [  ] --> 
+list
+ 
+	reverse: [  ] --> 
+list
+ -> 
+list
+ 
+	reverse1: [  ] --> 
+list
+ -> 
+list
+ 
+	
+)
+    
+(RULES 
+        (@ (@ app nil ) X ) -> X
+        (@ (@ app (@ (@ cons Y ) U ) ) V ) -> (@ (@ cons Y ) (@ (@ app U ) V ) )
+        (@ (@ (@ foldl \%Y:
+list
+.\%X:
+nat
+.(@ (@ I %Y ) %X ) ) P ) nil ) -> P
+        (@ (@ (@ foldl \%U:
+list
+.\%Z:
+nat
+.(@ (@ F1 %U ) %Z ) ) Y1 ) (@ (@ cons U1 ) V1 ) ) -> (@ (@ (@ foldl \%W:
+list
+.\%V:
+nat
+.(@ (@ F1 %W ) %V ) ) (@ (@ F1 Y1 ) U1 ) ) V1 )
+        (@ (@ iconsc W1 ) P1 ) -> (@ (@ cons P1 ) W1 )
+        (@ reverse X2 ) -> (@ (@ (@ foldl \%G:
+list
+.\%F:
+nat
+.(@ (@ iconsc %G ) %F ) ) nil ) X2 )
+        (@ reverse1 Y2 ) -> (@ (@ (@ foldl \%H:
+list
+.\%I:
+nat
+.(@ (@ app (@ (@ cons %I ) nil ) ) %H ) ) nil ) Y2 )
+        
+)
+    

@@ -1,0 +1,7 @@
+(VAR  )
+(STRATEGY OUTERMOST)
+(RULES 
+        f -> f
+        
+)
+    

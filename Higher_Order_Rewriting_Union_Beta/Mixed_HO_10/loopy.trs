@@ -1,0 +1,43 @@
+
+(HO-SIGNATURE 
+
+        X: 
+N
+ 
+        F: 
+N
+ -> 
+N
+ 
+        
+        f: [ 
+N
+ -> 
+N
+ , 
+N
+ ] --> 
+N
+ 
+	h: [ 
+N
+ ] --> 
+N
+ 
+	g: [  ] --> 
+N
+ -> 
+N
+ 
+	
+)
+    
+(RULES 
+        f(g,X) -> h(X)
+        f(F,X) -> (@ F X )
+        h(X) -> f(\z:
+N
+.z,X)
+        
+)
+    

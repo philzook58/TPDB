@@ -1,0 +1,42 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+b
+ 
+        Y: 
+a
+ 
+        U: 
+arrab
+ 
+        
+        app: [  ] --> 
+arrab
+ -> 
+a
+ -> 
+b
+ 
+	lam: [  ] -->  (
+a
+ -> 
+b
+) -> 
+arrab
+ 
+	
+)
+    
+(RULES 
+        (@ (@ app (@ lam \%X:
+a
+.(@ F %X ) ) ) Y ) -> (@ F Y )
+        (@ lam \%Y:
+a
+.(@ (@ app U ) %Y ) ) -> U
+        
+)
+    

@@ -1,0 +1,7 @@
+(VAR f x )
+(STRATEGY INNERMOST)
+(RULES 
+        app(app(iterate,f),x) -> app(app(cons,x),app(app(iterate,f),app(f,x)))
+        
+)
+    

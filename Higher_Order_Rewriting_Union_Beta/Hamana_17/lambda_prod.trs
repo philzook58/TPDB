@@ -1,0 +1,77 @@
+
+(HO-SIGNATURE 
+
+        F: 
+a
+ -> 
+b
+ 
+        Y: 
+a
+ 
+        U: 
+arrab
+ 
+        V: 
+a
+ 
+        W: 
+b
+ 
+        P: 
+a
+ 
+        X1: 
+b
+ 
+        Y1: 
+prodab
+ 
+        
+        app: [  ] --> 
+arrab
+ -> 
+a
+ -> 
+b
+ 
+	lam: [  ] -->  (
+a
+ -> 
+b
+) -> 
+arrab
+ 
+	pair: [  ] --> 
+a
+ -> 
+b
+ -> 
+prodab
+ 
+	pia: [  ] --> 
+prodab
+ -> 
+a
+ 
+	pib: [  ] --> 
+prodab
+ -> 
+b
+ 
+	
+)
+    
+(RULES 
+        (@ (@ app (@ lam \%X:
+a
+.(@ F %X ) ) ) Y ) -> (@ F Y )
+        (@ lam \%Y:
+a
+.(@ (@ app U ) %Y ) ) -> U
+        (@ pia (@ (@ pair V ) W ) ) -> V
+        (@ pib (@ (@ pair P ) X1 ) ) -> X1
+        (@ (@ pair (@ pia Y1 ) ) (@ pib Y1 ) ) -> Y1
+        
+)
+    

@@ -1,0 +1,17 @@
+(VAR x1 )
+(STRATEGY INNERMOST)
+(RULES 
+        thrice(0(x1)) -> p(s(p(p(p(s(s(s(0(p(s(p(s(x1)))))))))))))
+        thrice(s(x1)) -> p(p(s(s(half(p(p(s(s(p(s(sixtimes(p(s(p(p(s(s(x1))))))))))))))))))
+        half(0(x1)) -> p(p(s(s(p(s(0(p(s(s(s(s(x1))))))))))))
+        half(s(x1)) -> p(s(p(p(s(s(p(p(s(s(half(p(p(s(s(p(s(x1)))))))))))))))))
+        half(s(s(x1))) -> p(s(p(s(s(p(p(s(s(half(p(p(s(s(p(s(x1))))))))))))))))
+        sixtimes(0(x1)) -> p(s(p(s(0(s(s(s(s(s(p(s(p(s(x1))))))))))))))
+        sixtimes(s(x1)) -> p(p(s(s(s(s(s(s(s(p(p(s(p(s(s(s(sixtimes(p(s(p(p(p(s(s(s(x1)))))))))))))))))))))))))
+        p(p(s(x1))) -> p(x1)
+        p(s(x1)) -> x1
+        p(0(x1)) -> 0(s(s(s(s(x1)))))
+        0(x1) -> x1
+        
+)
+    

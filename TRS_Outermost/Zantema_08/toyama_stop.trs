@@ -1,0 +1,12 @@
+(VAR u v x y z )
+(STRATEGY OUTERMOST)
+(RULES 
+        f(g(u,v),y,z) -> c
+        f(0,1,x) -> f(x,x,x)
+        g(x,y) -> x
+        g(x,y) -> y
+        f(f(x,y,z),u,v) -> c
+        f(0,u,v) -> c
+        
+)
+    

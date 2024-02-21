@@ -1,0 +1,7 @@
+(VAR x )
+(STRATEGY INNERMOST)
+(RULES 
+        a(f,a(f,a(g,a(g,x)))) -> a(g,a(g,a(g,a(f,a(f,a(f,x))))))
+        
+)
+    

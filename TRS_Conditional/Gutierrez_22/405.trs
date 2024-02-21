@@ -1,0 +1,12 @@
+(VAR l x y )
+(RULES 
+        les(0,0) -> false
+        les(0,s(0)) -> true
+        les(0,s(s(x))) -> les(0,s(x))
+        les(s(0),0) -> false
+        les(s(s(x)),0) -> les(s(x),0)
+        les(s(x),s(y)) -> les(x,y)
+        dot(x,dot(y,l)) -> dot(y,dot(x,l)) | les(x,y) -> true
+        
+)
+    

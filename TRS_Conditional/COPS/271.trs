@@ -1,0 +1,9 @@
+(VAR x )
+(RULES 
+        p(q(x)) -> p(r(x))
+        q(h(x)) -> r(x)
+        s(x) -> 1
+        r(x) -> r(h(x)) | s(x) -> 0
+        
+)
+    

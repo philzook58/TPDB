@@ -1,0 +1,43 @@
+
+(HO-SIGNATURE 
+
+        x: 
+a
+ 
+        l: 
+list
+ 
+        F: 
+a
+ -> 
+a
+ 
+        
+        nil: [  ] --> 
+list
+ 
+	cons: [ 
+a
+ , 
+list
+ ] --> 
+list
+ 
+	map: [ 
+list
+ , 
+a
+ -> 
+a
+ ] --> 
+list
+ 
+	
+)
+    
+(RULES 
+        map(nil,F) -> nil
+        map(cons(x,l),F) -> cons((@ F x ),map(l,F))
+        
+)
+    
